@@ -1,0 +1,146 @@
+{
+  "NEW_INSTITUTION": {
+    "category_code": "NEW_INSTITUTION",
+    "category_name": "Setting up New Technical Institution",
+    "academic_session": "2026-2027",
+    "min_land_area_acres_urban": 4.0,
+    "min_land_area_acres_rural": 7.5,
+    "min_classrooms": 12,
+    "min_laboratories": 4,
+    "mandatory_documents": [
+      {
+        "doc_type": "TRUST_DEED",
+        "name": "Society / Trust Registration Deed",
+        "description": "Registered document under Societies Registration Act or Indian Trusts Act",
+        "category": "Legal",
+        "required_fields": ["trust_name", "registration_no", "registration_date", "valid_upto"]
+      },
+      {
+        "doc_type": "LAND_DOCUMENT",
+        "name": "Land Title / Sale Deed / Long-term Lease",
+        "description": "Continuous single piece of land registered in the name of the Trust/Society",
+        "category": "Land",
+        "required_fields": ["survey_no", "land_area_acres", "owner_name", "registration_date"]
+      },
+      {
+        "doc_type": "BUILDING_PLAN",
+        "name": "Approved Building Plan Drawing",
+        "description": "Approved by Town Planning Authority / Municipal Corporation",
+        "category": "Infrastructure",
+        "required_fields": ["approval_no", "approval_date", "total_builtup_area_sqm", "sanctioning_authority"]
+      },
+      {
+        "doc_type": "FIRE_NOC",
+        "name": "Fire & Emergency Services NOC",
+        "description": "Valid Fire Safety Clearance from State Fire Service Directorate",
+        "category": "Safety",
+        "required_fields": ["noc_number", "issue_date", "expiry_date", "issuing_officer"]
+      },
+      {
+        "doc_type": "AFFIDAVIT_1",
+        "name": "AICTE Prescribed Affidavit (Format 1)",
+        "description": "Sworn before First Class Judicial Magistrate or Notary on stamp paper",
+        "category": "Regulatory",
+        "required_fields": ["notary_reg_no", "deponent_name", "date_of_swearing"]
+      },
+      {
+        "doc_type": "ARCHITECT_CERT",
+        "name": "Registered Architect Certificate",
+        "description": "Issued by Council of Architecture registered architect verifying norms",
+        "category": "Technical",
+        "required_fields": ["architect_name", "coa_registration_no", "total_carpet_area_sqm"]
+      },
+      {
+        "doc_type": "CAMPUS_PHOTO",
+        "name": "Geo-tagged Campus Photo",
+        "description": "Color photo of front entrance & academic block with embedded GPS EXIF",
+        "category": "Infrastructure",
+        "required_fields": ["gps_latitude", "gps_longitude", "capture_timestamp"]
+      },
+      {
+        "doc_type": "FLOOR_PLAN",
+        "name": "Detailed Floor Plan Layout",
+        "description": "Floor-wise blueprint showing instructional, administrative and amenities spaces",
+        "category": "Infrastructure",
+        "required_fields": ["classroom_count", "lab_count", "total_area_sqm"]
+      }
+    ]
+  },
+  "EXTENSION_OF_APPROVAL": {
+    "category_code": "EXTENSION_OF_APPROVAL",
+    "category_name": "Extension of Approval (EoA) for Existing Institution",
+    "academic_session": "2026-2027",
+    "mandatory_documents": [
+      {
+        "doc_type": "PREVIOUS_EOA",
+        "name": "Previous AICTE Approval Order (2025-26)",
+        "description": "Official AICTE approval letter for the preceding academic cycle",
+        "category": "Regulatory",
+        "required_fields": ["approval_ref_no", "issue_date", "approved_intake"]
+      },
+      {
+        "doc_type": "FIRE_NOC",
+        "name": "Renewed Fire Safety NOC",
+        "description": "Current valid fire safety renewal order",
+        "category": "Safety",
+        "required_fields": ["noc_number", "issue_date", "expiry_date"]
+      },
+      {
+        "doc_type": "BUILDING_STABILITY",
+        "name": "Structural Stability Certificate",
+        "description": "Chartered structural engineer certificate of building fitness",
+        "category": "Safety",
+        "required_fields": ["engineer_license_no", "valid_upto", "inspection_date"]
+      },
+      {
+        "doc_type": "OCCUPANCY_CERT",
+        "name": "Building Occupancy Certificate",
+        "description": "Municipal occupancy / fit-for-use certificate",
+        "category": "Infrastructure",
+        "required_fields": ["certificate_no", "issued_by"]
+      },
+      {
+        "doc_type": "CAMPUS_PHOTO",
+        "name": "Current Geo-tagged Infrastructure Photo",
+        "description": "Recent photograph showing academic facilities with GPS metadata",
+        "category": "Infrastructure",
+        "required_fields": ["gps_latitude", "gps_longitude", "capture_timestamp"]
+      }
+    ]
+  },
+  "CLOSURE_VARIATION": {
+    "category_code": "CLOSURE_VARIATION",
+    "category_name": "Closure / Variation in Intake / Program Shift",
+    "academic_session": "2026-2027",
+    "mandatory_documents": [
+      {
+        "doc_type": "TRUST_RESOLUTION",
+        "name": "Governing Body Resolution",
+        "description": "Resolution certified by all trustees approving closure or intake reduction",
+        "category": "Governance",
+        "required_fields": ["resolution_no", "resolution_date", "signatory_count"]
+      },
+      {
+        "doc_type": "STATE_GOVT_NOC",
+        "name": "State Govt / DTE No Objection",
+        "description": "State Technical Education Department clearance for closure",
+        "category": "State Govt",
+        "required_fields": ["dte_letter_no", "issue_date"]
+      },
+      {
+        "doc_type": "UNIVERSITY_NOC",
+        "name": "Affiliating University NOC",
+        "description": "University clearance regarding student transfer and certificate custody",
+        "category": "Academic",
+        "required_fields": ["univ_ref_no", "issue_date"]
+      },
+      {
+        "doc_type": "STUDENT_REALLOCATION",
+        "name": "Student Re-allocation / Teach-out Plan",
+        "description": "Formal plan approved by University for existing enrolled batches",
+        "category": "Student Welfare",
+        "required_fields": ["total_students_affected", "host_institutes_identified"]
+      }
+    ]
+  }
+}

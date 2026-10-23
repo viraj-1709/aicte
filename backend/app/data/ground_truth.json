@@ -1,0 +1,224 @@
+[
+  {
+    "application_id": "AICTE-2026-APEX-CLEAN",
+    "is_clean": true,
+    "expected_risk_band": "LOW",
+    "injected_defects": []
+  },
+  {
+    "application_id": "AICTE-2026-APEX-TAMPERED",
+    "is_clean": false,
+    "expected_risk_band": "HIGH",
+    "injected_defects": [
+      "DEFECT_DUPLICATE_FILE_HASH",
+      "DEFECT_NAME_MISMATCH",
+      "DEFECT_LAND_AREA_DEFICIT",
+      "DEFECT_IMAGE_TAMPERING_ELA",
+      "DEFECT_GEOTAG_MISMATCH"
+    ]
+  },
+  {
+    "application_id": "AICTE-2026-MA-101",
+    "is_clean": true,
+    "expected_risk_band": "LOW",
+    "injected_defects": []
+  },
+  {
+    "application_id": "AICTE-2026-KA-102",
+    "is_clean": false,
+    "expected_risk_band": "HIGH",
+    "injected_defects": [
+      "DEFECT_MISSING_LAND_DEED"
+    ]
+  },
+  {
+    "application_id": "AICTE-2026-TA-103",
+    "is_clean": false,
+    "expected_risk_band": "HIGH",
+    "injected_defects": [
+      "DEFECT_NAME_MISMATCH"
+    ]
+  },
+  {
+    "application_id": "AICTE-2026-GU-104",
+    "is_clean": true,
+    "expected_risk_band": "LOW",
+    "injected_defects": []
+  },
+  {
+    "application_id": "AICTE-2026-MA-105",
+    "is_clean": false,
+    "expected_risk_band": "HIGH",
+    "injected_defects": [
+      "DEFECT_DUPLICATE_FILE_HASH"
+    ]
+  },
+  {
+    "application_id": "AICTE-2026-RA-106",
+    "is_clean": false,
+    "expected_risk_band": "HIGH",
+    "injected_defects": [
+      "DEFECT_GEOTAG_MISMATCH"
+    ]
+  },
+  {
+    "application_id": "AICTE-2026-TE-107",
+    "is_clean": true,
+    "expected_risk_band": "LOW",
+    "injected_defects": []
+  },
+  {
+    "application_id": "AICTE-2026-KE-108",
+    "is_clean": false,
+    "expected_risk_band": "HIGH",
+    "injected_defects": [
+      "DEFECT_MISSING_LAND_DEED"
+    ]
+  },
+  {
+    "application_id": "AICTE-2026-PU-109",
+    "is_clean": false,
+    "expected_risk_band": "HIGH",
+    "injected_defects": [
+      "DEFECT_NAME_MISMATCH"
+    ]
+  },
+  {
+    "application_id": "AICTE-2026-UT-110",
+    "is_clean": true,
+    "expected_risk_band": "LOW",
+    "injected_defects": []
+  },
+  {
+    "application_id": "AICTE-2026-MA-111",
+    "is_clean": false,
+    "expected_risk_band": "HIGH",
+    "injected_defects": [
+      "DEFECT_DUPLICATE_FILE_HASH"
+    ]
+  },
+  {
+    "application_id": "AICTE-2026-KA-112",
+    "is_clean": false,
+    "expected_risk_band": "HIGH",
+    "injected_defects": [
+      "DEFECT_GEOTAG_MISMATCH"
+    ]
+  },
+  {
+    "application_id": "AICTE-2026-TA-113",
+    "is_clean": true,
+    "expected_risk_band": "LOW",
+    "injected_defects": []
+  },
+  {
+    "application_id": "AICTE-2026-GU-114",
+    "is_clean": false,
+    "expected_risk_band": "HIGH",
+    "injected_defects": [
+      "DEFECT_MISSING_LAND_DEED"
+    ]
+  },
+  {
+    "application_id": "AICTE-2026-MA-115",
+    "is_clean": false,
+    "expected_risk_band": "HIGH",
+    "injected_defects": [
+      "DEFECT_NAME_MISMATCH"
+    ]
+  },
+  {
+    "application_id": "AICTE-2026-RA-116",
+    "is_clean": true,
+    "expected_risk_band": "LOW",
+    "injected_defects": []
+  },
+  {
+    "application_id": "AICTE-2026-TE-117",
+    "is_clean": false,
+    "expected_risk_band": "HIGH",
+    "injected_defects": [
+      "DEFECT_DUPLICATE_FILE_HASH"
+    ]
+  },
+  {
+    "application_id": "AICTE-2026-KE-118",
+    "is_clean": false,
+    "expected_risk_band": "HIGH",
+    "injected_defects": [
+      "DEFECT_GEOTAG_MISMATCH"
+    ]
+  },
+  {
+    "application_id": "AICTE-2026-PU-119",
+    "is_clean": true,
+    "expected_risk_band": "LOW",
+    "injected_defects": []
+  },
+  {
+    "application_id": "AICTE-2026-UT-120",
+    "is_clean": false,
+    "expected_risk_band": "HIGH",
+    "injected_defects": [
+      "DEFECT_MISSING_LAND_DEED"
+    ]
+  },
+  {
+    "application_id": "AICTE-2026-MA-121",
+    "is_clean": false,
+    "expected_risk_band": "HIGH",
+    "injected_defects": [
+      "DEFECT_NAME_MISMATCH"
+    ]
+  },
+  {
+    "application_id": "AICTE-2026-KA-122",
+    "is_clean": true,
+    "expected_risk_band": "LOW",
+    "injected_defects": []
+  },
+  {
+    "application_id": "AICTE-2026-TA-123",
+    "is_clean": false,
+    "expected_risk_band": "HIGH",
+    "injected_defects": [
+      "DEFECT_DUPLICATE_FILE_HASH"
+    ]
+  },
+  {
+    "application_id": "AICTE-2026-MA-124",
+    "is_clean": false,
+    "expected_risk_band": "HIGH",
+    "injected_defects": [
+      "DEFECT_GEOTAG_MISMATCH"
+    ]
+  },
+  {
+    "application_id": "AICTE-2026-RA-125",
+    "is_clean": true,
+    "expected_risk_band": "LOW",
+    "injected_defects": []
+  },
+  {
+    "application_id": "AICTE-2026-TE-126",
+    "is_clean": false,
+    "expected_risk_band": "HIGH",
+    "injected_defects": [
+      "DEFECT_MISSING_LAND_DEED"
+    ]
+  },
+  {
+    "application_id": "AICTE-2026-KE-127",
+    "is_clean": false,
+    "expected_risk_band": "HIGH",
+    "injected_defects": [
+      "DEFECT_NAME_MISMATCH"
+    ]
+  },
+  {
+    "application_id": "AICTE-2026-PU-128",
+    "is_clean": true,
+    "expected_risk_band": "LOW",
+    "injected_defects": []
+  }
+]

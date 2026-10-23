@@ -1,0 +1,3497 @@
+[
+  {
+    "id": "AICTE-2026-APEX-CLEAN",
+    "category": "NEW_INSTITUTION",
+    "category_name": "Setting up New Technical Institution",
+    "institution_name": "Apex Institute of Engineering & Technology",
+    "trust_name": "Apex Educational & Charitable Trust",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow",
+    "address": "Plot 14-16, Knowledge Park IV, Mohanlalganj, Lucknow",
+    "gps_coordinates": {
+      "latitude": 26.8467,
+      "longitude": 80.9462
+    },
+    "land_area_acres": 5.25,
+    "declared_classrooms": 12,
+    "declared_labs": 4,
+    "status": "ACCEPTED",
+    "created_at": "2026-05-10T10:00:00Z",
+    "submitted_at": "2026-05-10T11:00:00Z",
+    "pipeline_step": 6,
+    "risk_score": 0,
+    "risk_band": "LOW",
+    "risk_breakdown": [],
+    "flags": [],
+    "verification_results": [],
+    "documents": [
+      {
+        "id": "DOC-AICTE-2026-APEX-CLEAN-TRUST",
+        "application_id": "AICTE-2026-APEX-CLEAN",
+        "doc_type": "TRUST_DEED",
+        "filename": "Apex_Registered_Trust_Deed.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-APEX-CLEAN_trust_deed.jpg",
+        "file_hash": "0ba2bbaa86d4a4d02923f4914e30a62075edf2332452f922e7a280d3fcd34284",
+        "file_size": 108173,
+        "upload_timestamp": "2026-05-10T10:15:00Z",
+        "extracted_fields": {
+          "trust_name": "Apex Educational & Charitable Trust",
+          "registration_no": "SOC/UP/2014/8839",
+          "registration_date": "2014-04-12",
+          "valid_upto": "2034-04-11"
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "creator": "Canon Flatbed Scanner DR-C225",
+          "created_date": "2026-05-09"
+        }
+      },
+      {
+        "id": "DOC-AICTE-2026-APEX-CLEAN-LAND",
+        "application_id": "AICTE-2026-APEX-CLEAN",
+        "doc_type": "LAND_DOCUMENT",
+        "filename": "Apex_Land_Sale_Deed_5.25Acres.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-APEX-CLEAN_land_deed.jpg",
+        "file_hash": "10c02f91a93e17c098622802eda5bedd645afff144806715be73759ff5eb69f1",
+        "file_size": 106911,
+        "upload_timestamp": "2026-05-10T10:18:00Z",
+        "extracted_fields": {
+          "owner_name": "Apex Educational & Charitable Trust",
+          "survey_no": "SURVEY-84/2A",
+          "land_area_acres": 5.25,
+          "registration_date": "2015-06-14"
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "creator": "Canon Flatbed Scanner DR-C225"
+        }
+      },
+      {
+        "id": "DOC-AICTE-2026-APEX-CLEAN-BPLAN",
+        "application_id": "AICTE-2026-APEX-CLEAN",
+        "doc_type": "BUILDING_PLAN",
+        "filename": "Approved_Building_Sanction_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-APEX-CLEAN_building_plan.jpg",
+        "file_hash": "b08beb76bf86c98a9fbced3669abfd36054e7725a87247da6d3eadbf3acf0fa5",
+        "file_size": 70500,
+        "upload_timestamp": "2026-05-10T10:20:00Z",
+        "extracted_fields": {
+          "approval_no": "LDA/BP/2022/719",
+          "approval_date": "2022-09-15",
+          "total_builtup_area_sqm": 5200
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "software": "AutoCAD 2024 Arch"
+        }
+      },
+      {
+        "id": "DOC-AICTE-2026-APEX-CLEAN-FIRE",
+        "application_id": "AICTE-2026-APEX-CLEAN",
+        "doc_type": "FIRE_NOC",
+        "filename": "Fire_Safety_Clearance_NOC_2025_27.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-APEX-CLEAN_fire_noc.jpg",
+        "file_hash": "c8f475811e9d9ed9017fbe8560d9f4699ba58ff1cb85c75fbdeb747eb42a8932",
+        "file_size": 111224,
+        "upload_timestamp": "2026-05-10T10:22:00Z",
+        "extracted_fields": {
+          "noc_number": "UP-FS/2025/NOC-4491",
+          "issue_date": "2025-06-10",
+          "expiry_date": "2027-06-09"
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "creator": "U.P. Fire e-Vault Signer"
+        }
+      },
+      {
+        "id": "DOC-AICTE-2026-APEX-CLEAN-AFFIDAVIT",
+        "application_id": "AICTE-2026-APEX-CLEAN",
+        "doc_type": "AFFIDAVIT_1",
+        "filename": "AICTE_Affidavit_Format1_StampPaper.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-APEX-CLEAN_affidavit.jpg",
+        "file_hash": "db43f4663f564bc500aaf75128d5643f1cbd4ccbade51b9709039b8604762775",
+        "file_size": 101513,
+        "upload_timestamp": "2026-05-10T10:25:00Z",
+        "extracted_fields": {
+          "notary_reg_no": "NOTARY/UP/4901",
+          "deponent_name": "Dr. Ramesh Chandra Verma"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-APEX-CLEAN-ARCH",
+        "application_id": "AICTE-2026-APEX-CLEAN",
+        "doc_type": "ARCHITECT_CERT",
+        "filename": "Architect_CoA_Compliance_Certificate.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-APEX-CLEAN_architect_cert.jpg",
+        "file_hash": "013d184567f81fbfc45d7aa6988d1ca20b9e080f0857c01d1b7be0443ccfcbf2",
+        "file_size": 101524,
+        "upload_timestamp": "2026-05-10T10:27:00Z",
+        "extracted_fields": {
+          "architect_name": "Ar. Vikram Singhania",
+          "coa_registration_no": "CA/2008/42119"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-APEX-CLEAN-PHOTO",
+        "application_id": "AICTE-2026-APEX-CLEAN",
+        "doc_type": "CAMPUS_PHOTO",
+        "filename": "Front_Quadrangle_GeoTagged_Photo.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-APEX-CLEAN_campus_photo.jpg",
+        "file_hash": "b45f3d585ed09587ef0773fbb2fc1da4b885882a9d8fd4ba5dc0b5c9fe026504",
+        "file_size": 31421,
+        "upload_timestamp": "2026-05-10T10:30:00Z",
+        "extracted_fields": {
+          "gps_latitude": 26.8469,
+          "gps_longitude": 80.9465
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "spoofed_gps": [
+            26.8469,
+            80.9465
+          ]
+        }
+      },
+      {
+        "id": "DOC-AICTE-2026-APEX-CLEAN-FPLAN",
+        "application_id": "AICTE-2026-APEX-CLEAN",
+        "doc_type": "FLOOR_PLAN",
+        "filename": "Detailed_Instructional_Floor_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-APEX-CLEAN_floor_plan.jpg",
+        "file_hash": "492d0965e75039057c4bbee682523e9975245edab11859ee580bc674c5616488",
+        "file_size": 70413,
+        "upload_timestamp": "2026-05-10T10:32:00Z",
+        "extracted_fields": {
+          "classroom_count": 12,
+          "lab_count": 4
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      }
+    ],
+    "infrastructure_check": {},
+    "is_tampered_demo": false,
+    "audit_chain": [
+      {
+        "index": 0,
+        "timestamp": "2026-10-23T10:47:22.406763Z",
+        "application_id": "AICTE-2026-APEX-CLEAN",
+        "actor": "SYSTEM_INIT",
+        "action": "GENESIS_RECORD_CREATED",
+        "details": {
+          "description": "Application Dossier Initialized on AICTE Scrutiny Portal"
+        },
+        "data_hash": "74400d112750d839257aaf2c254ca3699829be8a40d0b32449dad4df0f8b7e00",
+        "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "hash": "214d2f08947158ce1a6ee8d50e431bbb11276e22e69881f5d802629e2fe4cd86"
+      },
+      {
+        "index": 1,
+        "timestamp": "2026-10-23T10:47:22.406763Z",
+        "application_id": "AICTE-2026-APEX-CLEAN",
+        "actor": "Dr. S. K. Sharma (Regional Scrutiny Officer)",
+        "action": "STATUTORY_DECISION_ACCEPTED",
+        "details": {
+          "decision": "ACCEPTED",
+          "remarks": "All mandatory documents verified against central state registries. Land area and infrastructure meet AICTE Approval Process Handbook norms.",
+          "risk_score_at_decision": 0
+        },
+        "data_hash": "641642ce3cf96d9c6c51171b1d9145576b6c14926af384a8784375c6cd0dc71f",
+        "prev_hash": "214d2f08947158ce1a6ee8d50e431bbb11276e22e69881f5d802629e2fe4cd86",
+        "hash": "3a711513c7768662ac07f51e2c0ba65b9cc4fe4e13089f9d08483fda1dddbcce"
+      }
+    ],
+    "officer_decision": {
+      "decision": "ACCEPTED",
+      "remarks": "All mandatory documents verified against central state registries. Land area and infrastructure meet AICTE Approval Process Handbook norms.",
+      "officer_name": "Dr. S. K. Sharma (Regional Scrutiny Officer)",
+      "timestamp": "2026-10-23T10:47:22.406763Z"
+    }
+  },
+  {
+    "id": "AICTE-2026-APEX-TAMPERED",
+    "category": "NEW_INSTITUTION",
+    "category_name": "Setting up New Technical Institution",
+    "institution_name": "Apex Institute of Engineering & Technology (Tampered Twin)",
+    "trust_name": "Apex Educational & Charitable Trust",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow",
+    "address": "Plot 14-16, Knowledge Park IV, Mohanlalganj, Lucknow",
+    "gps_coordinates": {
+      "latitude": 26.8467,
+      "longitude": 80.9462
+    },
+    "land_area_acres": 5.25,
+    "declared_classrooms": 12,
+    "declared_labs": 4,
+    "status": "SUBMITTED",
+    "created_at": "2026-05-12T14:00:00Z",
+    "submitted_at": "2026-05-12T14:30:00Z",
+    "pipeline_step": 6,
+    "risk_score": 0,
+    "risk_band": "HIGH",
+    "risk_breakdown": [],
+    "flags": [],
+    "verification_results": [],
+    "documents": [
+      {
+        "id": "DOC-AICTE-2026-APEX-TAMPERED-TRUST",
+        "application_id": "AICTE-2026-APEX-TAMPERED",
+        "doc_type": "TRUST_DEED",
+        "filename": "Apex_Reused_Trust_Certificate.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\shared_trust_certificate.jpg",
+        "file_hash": "fc8d201751ac3c5b45d96a70c4b2b9f28f919783f3ebb464c82f1f73f8a35cd6",
+        "file_size": 105231,
+        "upload_timestamp": "2026-05-12T14:10:00Z",
+        "extracted_fields": {
+          "trust_name": "Sahyadri Pratishthan Educational Society",
+          "registration_no": "SOC/MH/2012/4412",
+          "registration_date": "2012-08-19"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-APEX-TAMPERED-LAND",
+        "application_id": "AICTE-2026-APEX-TAMPERED",
+        "doc_type": "LAND_DOCUMENT",
+        "filename": "Apex_Land_Sale_Deed_3.8Acres.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-APEX-TAMPERED_land_deed.jpg",
+        "file_hash": "827b55afcdb4a1ad5c3e3a5e8bb409560c2eb8827565a7d1788499f8ffcea312",
+        "file_size": 106042,
+        "upload_timestamp": "2026-05-12T14:12:00Z",
+        "extracted_fields": {
+          "owner_name": "Apex Charitable Society",
+          "survey_no": "SURVEY-84/2A",
+          "land_area_acres": 3.8
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-APEX-TAMPERED-FIRE",
+        "application_id": "AICTE-2026-APEX-TAMPERED",
+        "doc_type": "FIRE_NOC",
+        "filename": "Fire_Safety_NOC_Altered_Date.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-APEX-TAMPERED_fire_noc.jpg",
+        "file_hash": "4436f5994c62ebb8a05d14d2e9b362f4167242d33b131968db3491bf247637fe",
+        "file_size": 113109,
+        "upload_timestamp": "2026-05-12T14:15:00Z",
+        "extracted_fields": {
+          "noc_number": "UP-FS/2025/NOC-4491",
+          "issue_date": "2024-03-01",
+          "expiry_date": "2027-06-09"
+        },
+        "bounding_boxes": {},
+        "tamper_signals": {
+          "is_tampered": true,
+          "anomaly_score": 88.5,
+          "disparity_ratio": 5.4,
+          "suspicious_box": {
+            "x": 38.0,
+            "y": 28.5,
+            "width": 18.0,
+            "height": 3.2
+          },
+          "ela_visual_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-APEX-TAMPERED_fire_noc_ela.jpg"
+        },
+        "metadata": {
+          "suspicious_software": [
+            "Adobe Photoshop 2024 (Windows)",
+            "Canva Design Platform"
+          ]
+        }
+      },
+      {
+        "id": "DOC-AICTE-2026-APEX-TAMPERED-PHOTO",
+        "application_id": "AICTE-2026-APEX-TAMPERED",
+        "doc_type": "CAMPUS_PHOTO",
+        "filename": "Campus_Photo_Spoofed_Location.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-APEX-TAMPERED_campus_photo.jpg",
+        "file_hash": "cf5b36eee1442e27bd76e9652008d298a83312fa54d303cc2ab4cdc38044a1f5",
+        "file_size": 30913,
+        "upload_timestamp": "2026-05-12T14:20:00Z",
+        "extracted_fields": {
+          "gps_latitude": 28.6139,
+          "gps_longitude": 77.209
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "spoofed_gps": [
+            28.6139,
+            77.209
+          ]
+        }
+      },
+      {
+        "id": "DOC-AICTE-2026-APEX-CLEAN-BPLAN",
+        "application_id": "AICTE-2026-APEX-CLEAN",
+        "doc_type": "BUILDING_PLAN",
+        "filename": "Approved_Building_Sanction_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-APEX-CLEAN_building_plan.jpg",
+        "file_hash": "b08beb76bf86c98a9fbced3669abfd36054e7725a87247da6d3eadbf3acf0fa5",
+        "file_size": 70500,
+        "upload_timestamp": "2026-05-10T10:20:00Z",
+        "extracted_fields": {
+          "approval_no": "LDA/BP/2022/719",
+          "approval_date": "2022-09-15",
+          "total_builtup_area_sqm": 5200
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "software": "AutoCAD 2024 Arch"
+        }
+      },
+      {
+        "id": "DOC-AICTE-2026-APEX-CLEAN-AFFIDAVIT",
+        "application_id": "AICTE-2026-APEX-CLEAN",
+        "doc_type": "AFFIDAVIT_1",
+        "filename": "AICTE_Affidavit_Format1_StampPaper.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-APEX-CLEAN_affidavit.jpg",
+        "file_hash": "db43f4663f564bc500aaf75128d5643f1cbd4ccbade51b9709039b8604762775",
+        "file_size": 101513,
+        "upload_timestamp": "2026-05-10T10:25:00Z",
+        "extracted_fields": {
+          "notary_reg_no": "NOTARY/UP/4901",
+          "deponent_name": "Dr. Ramesh Chandra Verma"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-APEX-CLEAN-ARCH",
+        "application_id": "AICTE-2026-APEX-CLEAN",
+        "doc_type": "ARCHITECT_CERT",
+        "filename": "Architect_CoA_Compliance_Certificate.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-APEX-CLEAN_architect_cert.jpg",
+        "file_hash": "013d184567f81fbfc45d7aa6988d1ca20b9e080f0857c01d1b7be0443ccfcbf2",
+        "file_size": 101524,
+        "upload_timestamp": "2026-05-10T10:27:00Z",
+        "extracted_fields": {
+          "architect_name": "Ar. Vikram Singhania",
+          "coa_registration_no": "CA/2008/42119"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-APEX-CLEAN-FPLAN",
+        "application_id": "AICTE-2026-APEX-CLEAN",
+        "doc_type": "FLOOR_PLAN",
+        "filename": "Detailed_Instructional_Floor_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-APEX-CLEAN_floor_plan.jpg",
+        "file_hash": "492d0965e75039057c4bbee682523e9975245edab11859ee580bc674c5616488",
+        "file_size": 70413,
+        "upload_timestamp": "2026-05-10T10:32:00Z",
+        "extracted_fields": {
+          "classroom_count": 12,
+          "lab_count": 4
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      }
+    ],
+    "infrastructure_check": {},
+    "is_tampered_demo": true,
+    "audit_chain": []
+  },
+  {
+    "id": "AICTE-2026-MA-101",
+    "category": "NEW_INSTITUTION",
+    "category_name": "Setting up New Technical Institution",
+    "institution_name": "Sahyadri College of Engineering & Technology",
+    "trust_name": "Sahyadri Pratishthan Educational Society",
+    "state": "Maharashtra",
+    "district": "Pune",
+    "address": "Campus Road, Sector 2, Pune, Maharashtra",
+    "gps_coordinates": {
+      "latitude": 18.522953,
+      "longitude": 73.847969
+    },
+    "land_area_acres": 5.0,
+    "declared_classrooms": 12,
+    "declared_labs": 4,
+    "status": "SUBMITTED",
+    "created_at": "2026-05-14T08:00:00Z",
+    "submitted_at": "2026-05-14T12:00:00Z",
+    "pipeline_step": 6,
+    "risk_score": 0,
+    "risk_band": "LOW",
+    "risk_breakdown": [],
+    "flags": [],
+    "verification_results": [],
+    "documents": [
+      {
+        "id": "DOC-AICTE-2026-MA-101-TRUST",
+        "application_id": "AICTE-2026-MA-101",
+        "doc_type": "TRUST_DEED",
+        "filename": "Sahyadri Pratis_RegCertificate.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-MA-101_trust_deed.jpg",
+        "file_hash": "5d484f7e804eecc6f2d73003c145603bad7bd2d1b785fb6949fddec9062f5393",
+        "file_size": 103894,
+        "upload_timestamp": "2026-05-14T09:00:00Z",
+        "extracted_fields": {
+          "trust_name": "Sahyadri Pratishthan Educational Society",
+          "registration_no": "SOC/MA/2018/1000",
+          "registration_date": "2018-03-15"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-MA-101-LAND",
+        "application_id": "AICTE-2026-MA-101",
+        "doc_type": "LAND_DOCUMENT",
+        "filename": "Land_Deed_5.0Acres.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-MA-101_land_deed.jpg",
+        "file_hash": "75f7dae103c3f89b7868401e2d966677be051c2fc574a8339f837f277d264ae9",
+        "file_size": 101107,
+        "upload_timestamp": "2026-05-14T09:12:00Z",
+        "extracted_fields": {
+          "owner_name": "Sahyadri Pratishthan Educational Society",
+          "survey_no": "SURVEY-101/1",
+          "land_area_acres": 5.0
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-MA-101-FIRE",
+        "application_id": "AICTE-2026-MA-101",
+        "doc_type": "FIRE_NOC",
+        "filename": "Fire_Safety_NOC_Valid.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-MA-101_fire_noc.jpg",
+        "file_hash": "a08c158656d13e2726e8e5351bafeb638a0cca89c7cf4730538b5e443a72cc4c",
+        "file_size": 109578,
+        "upload_timestamp": "2026-05-14T09:15:00Z",
+        "extracted_fields": {
+          "noc_number": "MA-FS/2025/NOC-3000",
+          "expiry_date": "2027-05-09"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-MA-101-AFFIDAVIT",
+        "application_id": "AICTE-2026-MA-101",
+        "doc_type": "AFFIDAVIT_1",
+        "filename": "AICTE_Affidavit_Format1.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-APEX-CLEAN_affidavit.jpg",
+        "file_hash": "db43f4663f564bc500aaf75128d5643f1cbd4ccbade51b9709039b8604762775",
+        "file_size": 101513,
+        "upload_timestamp": "2026-05-14T09:16:00Z",
+        "extracted_fields": {
+          "notary_reg_no": "NOTARY/MA/5000"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-MA-101-ARCH",
+        "application_id": "AICTE-2026-MA-101",
+        "doc_type": "ARCHITECT_CERT",
+        "filename": "Architect_Completion_Cert.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-APEX-CLEAN_architect_cert.jpg",
+        "file_hash": "013d184567f81fbfc45d7aa6988d1ca20b9e080f0857c01d1b7be0443ccfcbf2",
+        "file_size": 101524,
+        "upload_timestamp": "2026-05-14T09:17:00Z",
+        "extracted_fields": {
+          "coa_registration_no": "CA/2012/30000",
+          "architect_name": "Ar. R. K. Singhal"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-MA-101-FPLAN",
+        "application_id": "AICTE-2026-MA-101",
+        "doc_type": "FLOOR_PLAN",
+        "filename": "Ground_Floor_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-APEX-CLEAN_floor_plan.jpg",
+        "file_hash": "492d0965e75039057c4bbee682523e9975245edab11859ee580bc674c5616488",
+        "file_size": 70413,
+        "upload_timestamp": "2026-05-14T09:18:00Z",
+        "extracted_fields": {
+          "classroom_count": 12,
+          "lab_count": 4
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-MA-101-BPLAN",
+        "application_id": "AICTE-2026-MA-101",
+        "doc_type": "BUILDING_PLAN",
+        "filename": "Approved_Building_Sanction_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-MA-101_building_plan.jpg",
+        "file_hash": "da15816b07aaf987f10a6d46279c1b072c2e0339d793c788b978d051c0fc26f2",
+        "file_size": 70731,
+        "upload_timestamp": "2026-05-14T09:20:00Z",
+        "extracted_fields": {
+          "approval_no": "SANCT/101/2023",
+          "approval_date": "2023-04-10"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-MA-101-PHOTO",
+        "application_id": "AICTE-2026-MA-101",
+        "doc_type": "CAMPUS_PHOTO",
+        "filename": "Campus_Front_Photo.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-MA-101_campus_photo.jpg",
+        "file_hash": "5176f9317d3f3e1f56dddeaec9d0c5dfb1c26ea3e699abdde98700d02b34d968",
+        "file_size": 31945,
+        "upload_timestamp": "2026-05-14T09:25:00Z",
+        "extracted_fields": {
+          "gps_latitude": 18.522953450836695,
+          "gps_longitude": 73.84796939720289
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "spoofed_gps": [
+            18.522953450836695,
+            73.84796939720289
+          ]
+        }
+      }
+    ],
+    "infrastructure_check": {},
+    "is_tampered_demo": false,
+    "audit_chain": []
+  },
+  {
+    "id": "AICTE-2026-KA-102",
+    "category": "NEW_INSTITUTION",
+    "category_name": "Setting up New Technical Institution",
+    "institution_name": "Vidyavardhaka Institute of Technology",
+    "trust_name": "Vidyavardhaka Sangha Trust",
+    "state": "Karnataka",
+    "district": "Bengaluru Rural",
+    "address": "Campus Road, Sector 3, Bengaluru Rural, Karnataka",
+    "gps_coordinates": {
+      "latitude": 12.957121,
+      "longitude": 77.595884
+    },
+    "land_area_acres": 5.0,
+    "declared_classrooms": 12,
+    "declared_labs": 4,
+    "status": "SUBMITTED",
+    "created_at": "2026-05-14T08:00:00Z",
+    "submitted_at": "2026-05-14T12:00:00Z",
+    "pipeline_step": 6,
+    "risk_score": 0,
+    "risk_band": "HIGH",
+    "risk_breakdown": [],
+    "flags": [],
+    "verification_results": [],
+    "documents": [
+      {
+        "id": "DOC-AICTE-2026-KA-102-TRUST",
+        "application_id": "AICTE-2026-KA-102",
+        "doc_type": "TRUST_DEED",
+        "filename": "Vidyavardhaka S_RegCertificate.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-KA-102_trust_deed.jpg",
+        "file_hash": "4ee93c3a36e32349e6a88845d487f01d7c25160dc8753921004a04f372d9d004",
+        "file_size": 103060,
+        "upload_timestamp": "2026-05-14T09:00:00Z",
+        "extracted_fields": {
+          "trust_name": "Vidyavardhaka Sangha Trust",
+          "registration_no": "SOC/KA/2018/1001",
+          "registration_date": "2018-03-15"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-KA-102-BPLAN",
+        "application_id": "AICTE-2026-KA-102",
+        "doc_type": "BUILDING_PLAN",
+        "filename": "Approved_Building_Sanction_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-KA-102_building_plan.jpg",
+        "file_hash": "16a00797ec376334e64e08c225952af60d37b53edc127fc769f067b1bbe6ce15",
+        "file_size": 70771,
+        "upload_timestamp": "2026-05-14T09:20:00Z",
+        "extracted_fields": {
+          "approval_no": "SANCT/102/2023",
+          "approval_date": "2023-04-10"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-KA-102-PHOTO",
+        "application_id": "AICTE-2026-KA-102",
+        "doc_type": "CAMPUS_PHOTO",
+        "filename": "Campus_Front_Photo.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-KA-102_campus_photo.jpg",
+        "file_hash": "9778b70602b42caaaf1f0a2fb2a06adfdb8609e5bf1e180c63c1147e2353f980",
+        "file_size": 31982,
+        "upload_timestamp": "2026-05-14T09:25:00Z",
+        "extracted_fields": {
+          "gps_latitude": 12.957121347895994,
+          "gps_longitude": 77.5958838610771
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "spoofed_gps": [
+            12.957121347895994,
+            77.5958838610771
+          ]
+        }
+      }
+    ],
+    "infrastructure_check": {},
+    "is_tampered_demo": false,
+    "audit_chain": []
+  },
+  {
+    "id": "AICTE-2026-TA-103",
+    "category": "NEW_INSTITUTION",
+    "category_name": "Setting up New Technical Institution",
+    "institution_name": "Karpagam Institute of Technology & Sciences",
+    "trust_name": "Karpagam Academy Educational Trust",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore",
+    "address": "Campus Road, Sector 4, Coimbatore, Tamil Nadu",
+    "gps_coordinates": {
+      "latitude": 11.015164,
+      "longitude": 76.968528
+    },
+    "land_area_acres": 5.0,
+    "declared_classrooms": 12,
+    "declared_labs": 4,
+    "status": "SUBMITTED",
+    "created_at": "2026-05-14T08:00:00Z",
+    "submitted_at": "2026-05-14T12:00:00Z",
+    "pipeline_step": 6,
+    "risk_score": 0,
+    "risk_band": "HIGH",
+    "risk_breakdown": [],
+    "flags": [],
+    "verification_results": [],
+    "documents": [
+      {
+        "id": "DOC-AICTE-2026-TA-103-TRUST",
+        "application_id": "AICTE-2026-TA-103",
+        "doc_type": "TRUST_DEED",
+        "filename": "Karpagam Academ_RegCertificate.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-TA-103_trust_deed.jpg",
+        "file_hash": "8e90ea7b692b2128f9b3391006cb0261a8e721cfff1cf6d920ed9565f1cc1b53",
+        "file_size": 103361,
+        "upload_timestamp": "2026-05-14T09:00:00Z",
+        "extracted_fields": {
+          "trust_name": "Karpagam Academy Educational Trust",
+          "registration_no": "SOC/TA/2018/1002",
+          "registration_date": "2018-03-15"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-TA-103-LAND",
+        "application_id": "AICTE-2026-TA-103",
+        "doc_type": "LAND_DOCUMENT",
+        "filename": "Land_Sale_Deed_MismatchName.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-TA-103_land_deed.jpg",
+        "file_hash": "5758d2c4975f2dce31de0d43b0ede5730049fddb36f49ef028fe839238f8d447",
+        "file_size": 100301,
+        "upload_timestamp": "2026-05-14T09:12:00Z",
+        "extracted_fields": {
+          "owner_name": "Karpagam Academy Educational Trust Vikas Sanstha",
+          "survey_no": "SURVEY-103/1",
+          "land_area_acres": 5.0
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-TA-103-BPLAN",
+        "application_id": "AICTE-2026-TA-103",
+        "doc_type": "BUILDING_PLAN",
+        "filename": "Approved_Building_Sanction_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-TA-103_building_plan.jpg",
+        "file_hash": "6bd42fe1b35c2837f3628d6ff388063c63ba6114c8452c91ea4da6b42a9e1327",
+        "file_size": 70875,
+        "upload_timestamp": "2026-05-14T09:20:00Z",
+        "extracted_fields": {
+          "approval_no": "SANCT/103/2023",
+          "approval_date": "2023-04-10"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-TA-103-PHOTO",
+        "application_id": "AICTE-2026-TA-103",
+        "doc_type": "CAMPUS_PHOTO",
+        "filename": "Campus_Front_Photo.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-TA-103_campus_photo.jpg",
+        "file_hash": "240c8a2399927b2a0b9431ad0147365ad23d387777dc1266b28358785212d896",
+        "file_size": 31929,
+        "upload_timestamp": "2026-05-14T09:25:00Z",
+        "extracted_fields": {
+          "gps_latitude": 11.015164217293664,
+          "gps_longitude": 76.968527868099
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "spoofed_gps": [
+            11.015164217293664,
+            76.968527868099
+          ]
+        }
+      }
+    ],
+    "infrastructure_check": {},
+    "is_tampered_demo": false,
+    "audit_chain": []
+  },
+  {
+    "id": "AICTE-2026-GU-104",
+    "category": "NEW_INSTITUTION",
+    "category_name": "Setting up New Technical Institution",
+    "institution_name": "Shree Somnath Institute of Engineering",
+    "trust_name": "Somnath Education & Research Trust",
+    "state": "Gujarat",
+    "district": "Ahmedabad",
+    "address": "Campus Road, Sector 5, Ahmedabad, Gujarat",
+    "gps_coordinates": {
+      "latitude": 23.011195,
+      "longitude": 72.576258
+    },
+    "land_area_acres": 5.0,
+    "declared_classrooms": 12,
+    "declared_labs": 4,
+    "status": "SUBMITTED",
+    "created_at": "2026-05-14T08:00:00Z",
+    "submitted_at": "2026-05-14T12:00:00Z",
+    "pipeline_step": 6,
+    "risk_score": 0,
+    "risk_band": "LOW",
+    "risk_breakdown": [],
+    "flags": [],
+    "verification_results": [],
+    "documents": [
+      {
+        "id": "DOC-AICTE-2026-GU-104-TRUST",
+        "application_id": "AICTE-2026-GU-104",
+        "doc_type": "TRUST_DEED",
+        "filename": "Somnath Educati_RegCertificate.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-GU-104_trust_deed.jpg",
+        "file_hash": "83ba4a00336ef65f61e2c327be2986e5c3e5432a713ec7c5924c683e55afd5df",
+        "file_size": 103609,
+        "upload_timestamp": "2026-05-14T09:00:00Z",
+        "extracted_fields": {
+          "trust_name": "Somnath Education & Research Trust",
+          "registration_no": "SOC/GU/2018/1003",
+          "registration_date": "2018-03-15"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-GU-104-LAND",
+        "application_id": "AICTE-2026-GU-104",
+        "doc_type": "LAND_DOCUMENT",
+        "filename": "Land_Deed_5.0Acres.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-GU-104_land_deed.jpg",
+        "file_hash": "3cfb52cb770744a43cee45371514e4a80cd8f1ed5b1ac1e3c561f37bfd86a4c6",
+        "file_size": 101074,
+        "upload_timestamp": "2026-05-14T09:12:00Z",
+        "extracted_fields": {
+          "owner_name": "Somnath Education & Research Trust",
+          "survey_no": "SURVEY-104/1",
+          "land_area_acres": 5.0
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-GU-104-FIRE",
+        "application_id": "AICTE-2026-GU-104",
+        "doc_type": "FIRE_NOC",
+        "filename": "Fire_Safety_NOC_Valid.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-GU-104_fire_noc.jpg",
+        "file_hash": "da780d40f599158e5b4e03db38ce499db1d6d5d66f7be45af184520d25379643",
+        "file_size": 109215,
+        "upload_timestamp": "2026-05-14T09:15:00Z",
+        "extracted_fields": {
+          "noc_number": "GU-FS/2025/NOC-3003",
+          "expiry_date": "2027-05-09"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-GU-104-AFFIDAVIT",
+        "application_id": "AICTE-2026-GU-104",
+        "doc_type": "AFFIDAVIT_1",
+        "filename": "AICTE_Affidavit_Format1.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-APEX-CLEAN_affidavit.jpg",
+        "file_hash": "db43f4663f564bc500aaf75128d5643f1cbd4ccbade51b9709039b8604762775",
+        "file_size": 101513,
+        "upload_timestamp": "2026-05-14T09:16:00Z",
+        "extracted_fields": {
+          "notary_reg_no": "NOTARY/GU/5003"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-GU-104-ARCH",
+        "application_id": "AICTE-2026-GU-104",
+        "doc_type": "ARCHITECT_CERT",
+        "filename": "Architect_Completion_Cert.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-APEX-CLEAN_architect_cert.jpg",
+        "file_hash": "013d184567f81fbfc45d7aa6988d1ca20b9e080f0857c01d1b7be0443ccfcbf2",
+        "file_size": 101524,
+        "upload_timestamp": "2026-05-14T09:17:00Z",
+        "extracted_fields": {
+          "coa_registration_no": "CA/2012/30003",
+          "architect_name": "Ar. R. K. Singhal"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-GU-104-FPLAN",
+        "application_id": "AICTE-2026-GU-104",
+        "doc_type": "FLOOR_PLAN",
+        "filename": "Ground_Floor_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-APEX-CLEAN_floor_plan.jpg",
+        "file_hash": "492d0965e75039057c4bbee682523e9975245edab11859ee580bc674c5616488",
+        "file_size": 70413,
+        "upload_timestamp": "2026-05-14T09:18:00Z",
+        "extracted_fields": {
+          "classroom_count": 12,
+          "lab_count": 4
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-GU-104-BPLAN",
+        "application_id": "AICTE-2026-GU-104",
+        "doc_type": "BUILDING_PLAN",
+        "filename": "Approved_Building_Sanction_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-GU-104_building_plan.jpg",
+        "file_hash": "d44625de38ac95adcd9210a309cc228102472bbdba39f94bca10a33a6b9c5eb3",
+        "file_size": 70927,
+        "upload_timestamp": "2026-05-14T09:20:00Z",
+        "extracted_fields": {
+          "approval_no": "SANCT/104/2023",
+          "approval_date": "2023-04-10"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-GU-104-PHOTO",
+        "application_id": "AICTE-2026-GU-104",
+        "doc_type": "CAMPUS_PHOTO",
+        "filename": "Campus_Front_Photo.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-GU-104_campus_photo.jpg",
+        "file_hash": "d5cf54ffd36271a35cc365fc662fc7fd9cb613a754be6e4883122ec0f4493290",
+        "file_size": 31988,
+        "upload_timestamp": "2026-05-14T09:25:00Z",
+        "extracted_fields": {
+          "gps_latitude": 23.011194725215528,
+          "gps_longitude": 72.57625776677699
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "spoofed_gps": [
+            23.011194725215528,
+            72.57625776677699
+          ]
+        }
+      }
+    ],
+    "infrastructure_check": {},
+    "is_tampered_demo": false,
+    "audit_chain": []
+  },
+  {
+    "id": "AICTE-2026-MA-105",
+    "category": "NEW_INSTITUTION",
+    "category_name": "Setting up New Technical Institution",
+    "institution_name": "Malwa Institute of Science & Technology",
+    "trust_name": "Malwa Shiksha Samiti",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal",
+    "address": "Campus Road, Sector 6, Bhopal, Madhya Pradesh",
+    "gps_coordinates": {
+      "latitude": 23.253941,
+      "longitude": 77.412789
+    },
+    "land_area_acres": 5.0,
+    "declared_classrooms": 12,
+    "declared_labs": 4,
+    "status": "SUBMITTED",
+    "created_at": "2026-05-14T08:00:00Z",
+    "submitted_at": "2026-05-14T12:00:00Z",
+    "pipeline_step": 6,
+    "risk_score": 0,
+    "risk_band": "HIGH",
+    "risk_breakdown": [],
+    "flags": [],
+    "verification_results": [],
+    "documents": [
+      {
+        "id": "DOC-AICTE-2026-MA-105-TRUST",
+        "application_id": "AICTE-2026-MA-105",
+        "doc_type": "TRUST_DEED",
+        "filename": "Malwa Shiksha S_RegCertificate.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-MA-105_trust_deed.jpg",
+        "file_hash": "d183d274e2a2b30c96a8069c4ea96de6beffea19ee5755f45814075698e75568",
+        "file_size": 102885,
+        "upload_timestamp": "2026-05-14T09:00:00Z",
+        "extracted_fields": {
+          "trust_name": "Malwa Shiksha Samiti",
+          "registration_no": "SOC/MA/2018/1004",
+          "registration_date": "2018-03-15"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-MA-105-REUSED",
+        "application_id": "AICTE-2026-MA-105",
+        "doc_type": "TRUST_DEED",
+        "filename": "Shared_Society_Certificate_Copy.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\shared_trust_certificate.jpg",
+        "file_hash": "fc8d201751ac3c5b45d96a70c4b2b9f28f919783f3ebb464c82f1f73f8a35cd6",
+        "file_size": 105231,
+        "upload_timestamp": "2026-05-14T09:18:00Z",
+        "extracted_fields": {
+          "trust_name": "Sahyadri Pratishthan Educational Society",
+          "registration_no": "SOC/MH/2012/4412"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-MA-105-BPLAN",
+        "application_id": "AICTE-2026-MA-105",
+        "doc_type": "BUILDING_PLAN",
+        "filename": "Approved_Building_Sanction_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-MA-105_building_plan.jpg",
+        "file_hash": "666c227a11147bccdf6560833bc2454b64f3e6c9cbc7fa511fba5d4a59186118",
+        "file_size": 70846,
+        "upload_timestamp": "2026-05-14T09:20:00Z",
+        "extracted_fields": {
+          "approval_no": "SANCT/105/2023",
+          "approval_date": "2023-04-10"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-MA-105-PHOTO",
+        "application_id": "AICTE-2026-MA-105",
+        "doc_type": "CAMPUS_PHOTO",
+        "filename": "Campus_Front_Photo.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-MA-105_campus_photo.jpg",
+        "file_hash": "e9d7bf37034b289c8e0aaf38a605f8065f2c49194a6c883d6553a46e871e9f7b",
+        "file_size": 32016,
+        "upload_timestamp": "2026-05-14T09:25:00Z",
+        "extracted_fields": {
+          "gps_latitude": 23.253940801462576,
+          "gps_longitude": 77.41278894369233
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "spoofed_gps": [
+            23.253940801462576,
+            77.41278894369233
+          ]
+        }
+      }
+    ],
+    "infrastructure_check": {},
+    "is_tampered_demo": false,
+    "audit_chain": []
+  },
+  {
+    "id": "AICTE-2026-RA-106",
+    "category": "NEW_INSTITUTION",
+    "category_name": "Setting up New Technical Institution",
+    "institution_name": "Rajputana College of Engineering",
+    "trust_name": "Maharana Pratap Educational Society",
+    "state": "Rajasthan",
+    "district": "Jaipur",
+    "address": "Campus Road, Sector 7, Jaipur, Rajasthan",
+    "gps_coordinates": {
+      "latitude": 26.922362,
+      "longitude": 75.784181
+    },
+    "land_area_acres": 5.0,
+    "declared_classrooms": 12,
+    "declared_labs": 4,
+    "status": "SUBMITTED",
+    "created_at": "2026-05-14T08:00:00Z",
+    "submitted_at": "2026-05-14T12:00:00Z",
+    "pipeline_step": 6,
+    "risk_score": 0,
+    "risk_band": "HIGH",
+    "risk_breakdown": [],
+    "flags": [],
+    "verification_results": [],
+    "documents": [
+      {
+        "id": "DOC-AICTE-2026-RA-106-TRUST",
+        "application_id": "AICTE-2026-RA-106",
+        "doc_type": "TRUST_DEED",
+        "filename": "Maharana Pratap_RegCertificate.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-RA-106_trust_deed.jpg",
+        "file_hash": "00ab872ea2fc511a6fe6665a9a9277798a8ffc8cb0d63107b4a322f7e60e120e",
+        "file_size": 103483,
+        "upload_timestamp": "2026-05-14T09:00:00Z",
+        "extracted_fields": {
+          "trust_name": "Maharana Pratap Educational Society",
+          "registration_no": "SOC/RA/2018/1005",
+          "registration_date": "2018-03-15"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-RA-106-PHOTO",
+        "application_id": "AICTE-2026-RA-106",
+        "doc_type": "CAMPUS_PHOTO",
+        "filename": "Campus_Photo_Spoofed.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-RA-106_campus_photo.jpg",
+        "file_hash": "20abfd116bbe5604fb48df379332682c78b02ae0f32b7103a24b75a7030c0adb",
+        "file_size": 31851,
+        "upload_timestamp": "2026-05-14T09:22:00Z",
+        "extracted_fields": {
+          "gps_latitude": 31.422362144162314,
+          "gps_longitude": 78.98418147091107
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "spoofed_gps": [
+            31.422362144162314,
+            78.98418147091107
+          ]
+        }
+      },
+      {
+        "id": "DOC-AICTE-2026-RA-106-BPLAN",
+        "application_id": "AICTE-2026-RA-106",
+        "doc_type": "BUILDING_PLAN",
+        "filename": "Approved_Building_Sanction_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-RA-106_building_plan.jpg",
+        "file_hash": "2bd695cadc27f1390ffdf52538b0f9f6140210d21127fcbad3f8c9b2d5c0b84e",
+        "file_size": 70816,
+        "upload_timestamp": "2026-05-14T09:20:00Z",
+        "extracted_fields": {
+          "approval_no": "SANCT/106/2023",
+          "approval_date": "2023-04-10"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      }
+    ],
+    "infrastructure_check": {},
+    "is_tampered_demo": false,
+    "audit_chain": []
+  },
+  {
+    "id": "AICTE-2026-TE-107",
+    "category": "NEW_INSTITUTION",
+    "category_name": "Setting up New Technical Institution",
+    "institution_name": "Kakatiya Institute of Technical Sciences",
+    "trust_name": "Kakatiya Academy Foundation",
+    "state": "Telangana",
+    "district": "Hyderabad",
+    "address": "Campus Road, Sector 8, Hyderabad, Telangana",
+    "gps_coordinates": {
+      "latitude": 17.383531,
+      "longitude": 78.468483
+    },
+    "land_area_acres": 5.0,
+    "declared_classrooms": 12,
+    "declared_labs": 4,
+    "status": "SUBMITTED",
+    "created_at": "2026-05-14T08:00:00Z",
+    "submitted_at": "2026-05-14T12:00:00Z",
+    "pipeline_step": 6,
+    "risk_score": 0,
+    "risk_band": "LOW",
+    "risk_breakdown": [],
+    "flags": [],
+    "verification_results": [],
+    "documents": [
+      {
+        "id": "DOC-AICTE-2026-TE-107-TRUST",
+        "application_id": "AICTE-2026-TE-107",
+        "doc_type": "TRUST_DEED",
+        "filename": "Kakatiya Academ_RegCertificate.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-TE-107_trust_deed.jpg",
+        "file_hash": "8c97d5a5b3c8c367f89df857221c19f8db75f77278389bdb30adfb926b11eebd",
+        "file_size": 103111,
+        "upload_timestamp": "2026-05-14T09:00:00Z",
+        "extracted_fields": {
+          "trust_name": "Kakatiya Academy Foundation",
+          "registration_no": "SOC/TE/2018/1006",
+          "registration_date": "2018-03-15"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-TE-107-LAND",
+        "application_id": "AICTE-2026-TE-107",
+        "doc_type": "LAND_DOCUMENT",
+        "filename": "Land_Deed_5.0Acres.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-TE-107_land_deed.jpg",
+        "file_hash": "8a15b46cd9a5fade990fc0e7ffb6a287f4db2f4842be44b73b33189585abde3b",
+        "file_size": 100658,
+        "upload_timestamp": "2026-05-14T09:12:00Z",
+        "extracted_fields": {
+          "owner_name": "Kakatiya Academy Foundation",
+          "survey_no": "SURVEY-107/1",
+          "land_area_acres": 5.0
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-TE-107-FIRE",
+        "application_id": "AICTE-2026-TE-107",
+        "doc_type": "FIRE_NOC",
+        "filename": "Fire_Safety_NOC_Valid.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-TE-107_fire_noc.jpg",
+        "file_hash": "b90367d37e02d93dac0c91244bc9041f3a3a31c29a5660a3274fd825a82f1e25",
+        "file_size": 109120,
+        "upload_timestamp": "2026-05-14T09:15:00Z",
+        "extracted_fields": {
+          "noc_number": "TE-FS/2025/NOC-3006",
+          "expiry_date": "2027-05-09"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-TE-107-AFFIDAVIT",
+        "application_id": "AICTE-2026-TE-107",
+        "doc_type": "AFFIDAVIT_1",
+        "filename": "AICTE_Affidavit_Format1.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-APEX-CLEAN_affidavit.jpg",
+        "file_hash": "db43f4663f564bc500aaf75128d5643f1cbd4ccbade51b9709039b8604762775",
+        "file_size": 101513,
+        "upload_timestamp": "2026-05-14T09:16:00Z",
+        "extracted_fields": {
+          "notary_reg_no": "NOTARY/TE/5006"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-TE-107-ARCH",
+        "application_id": "AICTE-2026-TE-107",
+        "doc_type": "ARCHITECT_CERT",
+        "filename": "Architect_Completion_Cert.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-APEX-CLEAN_architect_cert.jpg",
+        "file_hash": "013d184567f81fbfc45d7aa6988d1ca20b9e080f0857c01d1b7be0443ccfcbf2",
+        "file_size": 101524,
+        "upload_timestamp": "2026-05-14T09:17:00Z",
+        "extracted_fields": {
+          "coa_registration_no": "CA/2012/30006",
+          "architect_name": "Ar. R. K. Singhal"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-TE-107-FPLAN",
+        "application_id": "AICTE-2026-TE-107",
+        "doc_type": "FLOOR_PLAN",
+        "filename": "Ground_Floor_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-APEX-CLEAN_floor_plan.jpg",
+        "file_hash": "492d0965e75039057c4bbee682523e9975245edab11859ee580bc674c5616488",
+        "file_size": 70413,
+        "upload_timestamp": "2026-05-14T09:18:00Z",
+        "extracted_fields": {
+          "classroom_count": 12,
+          "lab_count": 4
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-TE-107-BPLAN",
+        "application_id": "AICTE-2026-TE-107",
+        "doc_type": "BUILDING_PLAN",
+        "filename": "Approved_Building_Sanction_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-TE-107_building_plan.jpg",
+        "file_hash": "70a2b6ef8b15a189fcfeefe730df52d2eb27167280e77dce42beec9674c1a7b0",
+        "file_size": 70677,
+        "upload_timestamp": "2026-05-14T09:20:00Z",
+        "extracted_fields": {
+          "approval_no": "SANCT/107/2023",
+          "approval_date": "2023-04-10"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-TE-107-PHOTO",
+        "application_id": "AICTE-2026-TE-107",
+        "doc_type": "CAMPUS_PHOTO",
+        "filename": "Campus_Front_Photo.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-TE-107_campus_photo.jpg",
+        "file_hash": "41ff4c438b4fa884d9c281347e3d6f6b6a4757cc0ca1a30e564df6cb205f05d4",
+        "file_size": 31916,
+        "upload_timestamp": "2026-05-14T09:25:00Z",
+        "extracted_fields": {
+          "gps_latitude": 17.383531368597108,
+          "gps_longitude": 78.46848267162497
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "spoofed_gps": [
+            17.383531368597108,
+            78.46848267162497
+          ]
+        }
+      }
+    ],
+    "infrastructure_check": {},
+    "is_tampered_demo": false,
+    "audit_chain": []
+  },
+  {
+    "id": "AICTE-2026-KE-108",
+    "category": "NEW_INSTITUTION",
+    "category_name": "Setting up New Technical Institution",
+    "institution_name": "Mar Thoma College of Engineering & Tech",
+    "trust_name": "Mar Thoma Educational Society",
+    "state": "Kerala",
+    "district": "Ernakulam",
+    "address": "Campus Road, Sector 9, Ernakulam, Kerala",
+    "gps_coordinates": {
+      "latitude": 9.988509,
+      "longitude": 76.293556
+    },
+    "land_area_acres": 5.0,
+    "declared_classrooms": 12,
+    "declared_labs": 4,
+    "status": "SUBMITTED",
+    "created_at": "2026-05-14T08:00:00Z",
+    "submitted_at": "2026-05-14T12:00:00Z",
+    "pipeline_step": 6,
+    "risk_score": 0,
+    "risk_band": "HIGH",
+    "risk_breakdown": [],
+    "flags": [],
+    "verification_results": [],
+    "documents": [
+      {
+        "id": "DOC-AICTE-2026-KE-108-TRUST",
+        "application_id": "AICTE-2026-KE-108",
+        "doc_type": "TRUST_DEED",
+        "filename": "Mar Thoma Educa_RegCertificate.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-KE-108_trust_deed.jpg",
+        "file_hash": "ff5f2abc404fd6a970fdeabb6d296c86a8d8f7420d86668bdedffcf661837c62",
+        "file_size": 103186,
+        "upload_timestamp": "2026-05-14T09:00:00Z",
+        "extracted_fields": {
+          "trust_name": "Mar Thoma Educational Society",
+          "registration_no": "SOC/KE/2018/1007",
+          "registration_date": "2018-03-15"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-KE-108-BPLAN",
+        "application_id": "AICTE-2026-KE-108",
+        "doc_type": "BUILDING_PLAN",
+        "filename": "Approved_Building_Sanction_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-KE-108_building_plan.jpg",
+        "file_hash": "59a31436844f3aae00c11aee1a16b0c8fb8f1cc8d414d40fa561415595ec2904",
+        "file_size": 70831,
+        "upload_timestamp": "2026-05-14T09:20:00Z",
+        "extracted_fields": {
+          "approval_no": "SANCT/108/2023",
+          "approval_date": "2023-04-10"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-KE-108-PHOTO",
+        "application_id": "AICTE-2026-KE-108",
+        "doc_type": "CAMPUS_PHOTO",
+        "filename": "Campus_Front_Photo.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-KE-108_campus_photo.jpg",
+        "file_hash": "7755861fc988af59ea4421f98efd42bf642506433a1004da3bf3f89b6d89a92d",
+        "file_size": 31983,
+        "upload_timestamp": "2026-05-14T09:25:00Z",
+        "extracted_fields": {
+          "gps_latitude": 9.988509165267569,
+          "gps_longitude": 76.29355562830273
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "spoofed_gps": [
+            9.988509165267569,
+            76.29355562830273
+          ]
+        }
+      }
+    ],
+    "infrastructure_check": {},
+    "is_tampered_demo": false,
+    "audit_chain": []
+  },
+  {
+    "id": "AICTE-2026-PU-109",
+    "category": "NEW_INSTITUTION",
+    "category_name": "Setting up New Technical Institution",
+    "institution_name": "Guru Nanak Dev Institute of Higher Tech",
+    "trust_name": "Guru Nanak Dev Mission Trust",
+    "state": "Punjab",
+    "district": "Ludhiana",
+    "address": "Campus Road, Sector 10, Ludhiana, Punjab",
+    "gps_coordinates": {
+      "latitude": 30.894856,
+      "longitude": 75.866197
+    },
+    "land_area_acres": 5.0,
+    "declared_classrooms": 12,
+    "declared_labs": 4,
+    "status": "SUBMITTED",
+    "created_at": "2026-05-14T08:00:00Z",
+    "submitted_at": "2026-05-14T12:00:00Z",
+    "pipeline_step": 6,
+    "risk_score": 0,
+    "risk_band": "HIGH",
+    "risk_breakdown": [],
+    "flags": [],
+    "verification_results": [],
+    "documents": [
+      {
+        "id": "DOC-AICTE-2026-PU-109-TRUST",
+        "application_id": "AICTE-2026-PU-109",
+        "doc_type": "TRUST_DEED",
+        "filename": "Guru Nanak Dev _RegCertificate.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-PU-109_trust_deed.jpg",
+        "file_hash": "be4fd9fd49b9167081489dad1ca434b23719cceaf14d377ea5d284845c3fd32f",
+        "file_size": 103309,
+        "upload_timestamp": "2026-05-14T09:00:00Z",
+        "extracted_fields": {
+          "trust_name": "Guru Nanak Dev Mission Trust",
+          "registration_no": "SOC/PU/2018/1008",
+          "registration_date": "2018-03-15"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-PU-109-LAND",
+        "application_id": "AICTE-2026-PU-109",
+        "doc_type": "LAND_DOCUMENT",
+        "filename": "Land_Sale_Deed_MismatchName.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-PU-109_land_deed.jpg",
+        "file_hash": "80849a002f04eee1951488876a2c7852f404ab527b27ff2d8cb47b389c72576a",
+        "file_size": 100105,
+        "upload_timestamp": "2026-05-14T09:12:00Z",
+        "extracted_fields": {
+          "owner_name": "Guru Nanak Dev Mission Trust Vikas Sanstha",
+          "survey_no": "SURVEY-109/1",
+          "land_area_acres": 5.0
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-PU-109-BPLAN",
+        "application_id": "AICTE-2026-PU-109",
+        "doc_type": "BUILDING_PLAN",
+        "filename": "Approved_Building_Sanction_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-PU-109_building_plan.jpg",
+        "file_hash": "a174ffd4724cc9dceb2ef4ee78c8488682e7f5234c99a7b954a0a72bb7880f5d",
+        "file_size": 70754,
+        "upload_timestamp": "2026-05-14T09:20:00Z",
+        "extracted_fields": {
+          "approval_no": "SANCT/109/2023",
+          "approval_date": "2023-04-10"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-PU-109-PHOTO",
+        "application_id": "AICTE-2026-PU-109",
+        "doc_type": "CAMPUS_PHOTO",
+        "filename": "Campus_Front_Photo.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-PU-109_campus_photo.jpg",
+        "file_hash": "0debe260066bf0f1c1559329486595e308d754388088e5ede501ed015d24a9cd",
+        "file_size": 31919,
+        "upload_timestamp": "2026-05-14T09:25:00Z",
+        "extracted_fields": {
+          "gps_latitude": 30.894856364606635,
+          "gps_longitude": 75.86619688713041
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "spoofed_gps": [
+            30.894856364606635,
+            75.86619688713041
+          ]
+        }
+      }
+    ],
+    "infrastructure_check": {},
+    "is_tampered_demo": false,
+    "audit_chain": []
+  },
+  {
+    "id": "AICTE-2026-UT-110",
+    "category": "NEW_INSTITUTION",
+    "category_name": "Setting up New Technical Institution",
+    "institution_name": "Aryabhatta Institute of Technology",
+    "trust_name": "Aryabhatta Shodh Sansthan",
+    "state": "Uttar Pradesh",
+    "district": "Varanasi",
+    "address": "Campus Road, Sector 1, Varanasi, Uttar Pradesh",
+    "gps_coordinates": {
+      "latitude": 26.854888,
+      "longitude": 80.940938
+    },
+    "land_area_acres": 5.0,
+    "declared_classrooms": 12,
+    "declared_labs": 4,
+    "status": "SUBMITTED",
+    "created_at": "2026-05-14T08:00:00Z",
+    "submitted_at": "2026-05-14T12:00:00Z",
+    "pipeline_step": 6,
+    "risk_score": 0,
+    "risk_band": "LOW",
+    "risk_breakdown": [],
+    "flags": [],
+    "verification_results": [],
+    "documents": [
+      {
+        "id": "DOC-AICTE-2026-UT-110-TRUST",
+        "application_id": "AICTE-2026-UT-110",
+        "doc_type": "TRUST_DEED",
+        "filename": "Aryabhatta Shod_RegCertificate.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-UT-110_trust_deed.jpg",
+        "file_hash": "590bafff247ab12349c4d7e3d3ba67e870f73e267e78ff05d953650358fa06f1",
+        "file_size": 103163,
+        "upload_timestamp": "2026-05-14T09:00:00Z",
+        "extracted_fields": {
+          "trust_name": "Aryabhatta Shodh Sansthan",
+          "registration_no": "SOC/UT/2018/1009",
+          "registration_date": "2018-03-15"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-UT-110-LAND",
+        "application_id": "AICTE-2026-UT-110",
+        "doc_type": "LAND_DOCUMENT",
+        "filename": "Land_Deed_5.0Acres.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-UT-110_land_deed.jpg",
+        "file_hash": "42684cf23d43427ce62957bb586549fcdeeaeca0e6d0d96768efd06865b89658",
+        "file_size": 100418,
+        "upload_timestamp": "2026-05-14T09:12:00Z",
+        "extracted_fields": {
+          "owner_name": "Aryabhatta Shodh Sansthan",
+          "survey_no": "SURVEY-110/1",
+          "land_area_acres": 5.0
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-UT-110-FIRE",
+        "application_id": "AICTE-2026-UT-110",
+        "doc_type": "FIRE_NOC",
+        "filename": "Fire_Safety_NOC_Valid.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-UT-110_fire_noc.jpg",
+        "file_hash": "6e1a64ee431b55cce0fedec80257dbf8f3ac135b9516e0501f695dfc5d7462b7",
+        "file_size": 108750,
+        "upload_timestamp": "2026-05-14T09:15:00Z",
+        "extracted_fields": {
+          "noc_number": "UT-FS/2025/NOC-3009",
+          "expiry_date": "2027-05-09"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-UT-110-AFFIDAVIT",
+        "application_id": "AICTE-2026-UT-110",
+        "doc_type": "AFFIDAVIT_1",
+        "filename": "AICTE_Affidavit_Format1.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-APEX-CLEAN_affidavit.jpg",
+        "file_hash": "db43f4663f564bc500aaf75128d5643f1cbd4ccbade51b9709039b8604762775",
+        "file_size": 101513,
+        "upload_timestamp": "2026-05-14T09:16:00Z",
+        "extracted_fields": {
+          "notary_reg_no": "NOTARY/UT/5009"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-UT-110-ARCH",
+        "application_id": "AICTE-2026-UT-110",
+        "doc_type": "ARCHITECT_CERT",
+        "filename": "Architect_Completion_Cert.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-APEX-CLEAN_architect_cert.jpg",
+        "file_hash": "013d184567f81fbfc45d7aa6988d1ca20b9e080f0857c01d1b7be0443ccfcbf2",
+        "file_size": 101524,
+        "upload_timestamp": "2026-05-14T09:17:00Z",
+        "extracted_fields": {
+          "coa_registration_no": "CA/2012/30009",
+          "architect_name": "Ar. R. K. Singhal"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-UT-110-FPLAN",
+        "application_id": "AICTE-2026-UT-110",
+        "doc_type": "FLOOR_PLAN",
+        "filename": "Ground_Floor_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-APEX-CLEAN_floor_plan.jpg",
+        "file_hash": "492d0965e75039057c4bbee682523e9975245edab11859ee580bc674c5616488",
+        "file_size": 70413,
+        "upload_timestamp": "2026-05-14T09:18:00Z",
+        "extracted_fields": {
+          "classroom_count": 12,
+          "lab_count": 4
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-UT-110-BPLAN",
+        "application_id": "AICTE-2026-UT-110",
+        "doc_type": "BUILDING_PLAN",
+        "filename": "Approved_Building_Sanction_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-UT-110_building_plan.jpg",
+        "file_hash": "7459b344abb0cc0b07d6f6cb8060c2c2542330f5a00721f3fb4da519c7a63a9d",
+        "file_size": 70844,
+        "upload_timestamp": "2026-05-14T09:20:00Z",
+        "extracted_fields": {
+          "approval_no": "SANCT/110/2023",
+          "approval_date": "2023-04-10"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-UT-110-PHOTO",
+        "application_id": "AICTE-2026-UT-110",
+        "doc_type": "CAMPUS_PHOTO",
+        "filename": "Campus_Front_Photo.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-UT-110_campus_photo.jpg",
+        "file_hash": "f296a2efe8b98725b9f3bfa667a349294f30529e60fb081da26c7a97399bca3d",
+        "file_size": 32017,
+        "upload_timestamp": "2026-05-14T09:25:00Z",
+        "extracted_fields": {
+          "gps_latitude": 26.854888099297995,
+          "gps_longitude": 80.94093836180156
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "spoofed_gps": [
+            26.854888099297995,
+            80.94093836180156
+          ]
+        }
+      }
+    ],
+    "infrastructure_check": {},
+    "is_tampered_demo": false,
+    "audit_chain": []
+  },
+  {
+    "id": "AICTE-2026-MA-111",
+    "category": "NEW_INSTITUTION",
+    "category_name": "Setting up New Technical Institution",
+    "institution_name": "Sinhgad Academy of Engineering",
+    "trust_name": "Sinhgad Technical Education Society",
+    "state": "Maharashtra",
+    "district": "Nashik",
+    "address": "Campus Road, Sector 2, Nashik, Maharashtra",
+    "gps_coordinates": {
+      "latitude": 18.511663,
+      "longitude": 73.8668
+    },
+    "land_area_acres": 5.0,
+    "declared_classrooms": 12,
+    "declared_labs": 4,
+    "status": "SUBMITTED",
+    "created_at": "2026-05-14T08:00:00Z",
+    "submitted_at": "2026-05-14T12:00:00Z",
+    "pipeline_step": 6,
+    "risk_score": 0,
+    "risk_band": "HIGH",
+    "risk_breakdown": [],
+    "flags": [],
+    "verification_results": [],
+    "documents": [
+      {
+        "id": "DOC-AICTE-2026-MA-111-TRUST",
+        "application_id": "AICTE-2026-MA-111",
+        "doc_type": "TRUST_DEED",
+        "filename": "Sinhgad Technic_RegCertificate.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-MA-111_trust_deed.jpg",
+        "file_hash": "72a007b6d225d524b76e22f171a0930de79d088c150fe10783914a60966aa123",
+        "file_size": 103689,
+        "upload_timestamp": "2026-05-14T09:00:00Z",
+        "extracted_fields": {
+          "trust_name": "Sinhgad Technical Education Society",
+          "registration_no": "SOC/MA/2018/1010",
+          "registration_date": "2018-03-15"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-MA-111-REUSED",
+        "application_id": "AICTE-2026-MA-111",
+        "doc_type": "TRUST_DEED",
+        "filename": "Shared_Society_Certificate_Copy.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\shared_trust_certificate.jpg",
+        "file_hash": "fc8d201751ac3c5b45d96a70c4b2b9f28f919783f3ebb464c82f1f73f8a35cd6",
+        "file_size": 105231,
+        "upload_timestamp": "2026-05-14T09:18:00Z",
+        "extracted_fields": {
+          "trust_name": "Sahyadri Pratishthan Educational Society",
+          "registration_no": "SOC/MH/2012/4412"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-MA-111-BPLAN",
+        "application_id": "AICTE-2026-MA-111",
+        "doc_type": "BUILDING_PLAN",
+        "filename": "Approved_Building_Sanction_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-MA-111_building_plan.jpg",
+        "file_hash": "15c29dde7941c9cf17ef95c8d954adf4f97e8d7cb331e71d8c03a6a5d62fd892",
+        "file_size": 70683,
+        "upload_timestamp": "2026-05-14T09:20:00Z",
+        "extracted_fields": {
+          "approval_no": "SANCT/111/2023",
+          "approval_date": "2023-04-10"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-MA-111-PHOTO",
+        "application_id": "AICTE-2026-MA-111",
+        "doc_type": "CAMPUS_PHOTO",
+        "filename": "Campus_Front_Photo.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-MA-111_campus_photo.jpg",
+        "file_hash": "4d73fa551077cbed1ab31708609d479018a0a880e08bb103e5b1372860772f88",
+        "file_size": 31694,
+        "upload_timestamp": "2026-05-14T09:25:00Z",
+        "extracted_fields": {
+          "gps_latitude": 18.5116628766619,
+          "gps_longitude": 73.86679966667874
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "spoofed_gps": [
+            18.5116628766619,
+            73.86679966667874
+          ]
+        }
+      }
+    ],
+    "infrastructure_check": {},
+    "is_tampered_demo": false,
+    "audit_chain": []
+  },
+  {
+    "id": "AICTE-2026-KA-112",
+    "category": "NEW_INSTITUTION",
+    "category_name": "Setting up New Technical Institution",
+    "institution_name": "Basaveshwara College of Engineering",
+    "trust_name": "Basaveshwara Vidyaniketan",
+    "state": "Karnataka",
+    "district": "Mysuru",
+    "address": "Campus Road, Sector 3, Mysuru, Karnataka",
+    "gps_coordinates": {
+      "latitude": 12.974068,
+      "longitude": 77.597683
+    },
+    "land_area_acres": 5.0,
+    "declared_classrooms": 12,
+    "declared_labs": 4,
+    "status": "SUBMITTED",
+    "created_at": "2026-05-14T08:00:00Z",
+    "submitted_at": "2026-05-14T12:00:00Z",
+    "pipeline_step": 6,
+    "risk_score": 0,
+    "risk_band": "HIGH",
+    "risk_breakdown": [],
+    "flags": [],
+    "verification_results": [],
+    "documents": [
+      {
+        "id": "DOC-AICTE-2026-KA-112-TRUST",
+        "application_id": "AICTE-2026-KA-112",
+        "doc_type": "TRUST_DEED",
+        "filename": "Basaveshwara Vi_RegCertificate.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-KA-112_trust_deed.jpg",
+        "file_hash": "1241167e8ce27e8f99b8aa01cb1d593468565b85d059f53fbac676fddbe3d082",
+        "file_size": 102813,
+        "upload_timestamp": "2026-05-14T09:00:00Z",
+        "extracted_fields": {
+          "trust_name": "Basaveshwara Vidyaniketan",
+          "registration_no": "SOC/KA/2018/1011",
+          "registration_date": "2018-03-15"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-KA-112-PHOTO",
+        "application_id": "AICTE-2026-KA-112",
+        "doc_type": "CAMPUS_PHOTO",
+        "filename": "Campus_Photo_Spoofed.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-KA-112_campus_photo.jpg",
+        "file_hash": "2b5d54dec0bf951ca78903960302895c7376952d92cc416c7a6980a8da8ab255",
+        "file_size": 32071,
+        "upload_timestamp": "2026-05-14T09:22:00Z",
+        "extracted_fields": {
+          "gps_latitude": 17.474068347568,
+          "gps_longitude": 80.79768283942268
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "spoofed_gps": [
+            17.474068347568,
+            80.79768283942268
+          ]
+        }
+      },
+      {
+        "id": "DOC-AICTE-2026-KA-112-BPLAN",
+        "application_id": "AICTE-2026-KA-112",
+        "doc_type": "BUILDING_PLAN",
+        "filename": "Approved_Building_Sanction_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-KA-112_building_plan.jpg",
+        "file_hash": "58412ab63d65a4b862b9719762b3c22433c432a2314e68dc4ea22b86d4f5ca9b",
+        "file_size": 70910,
+        "upload_timestamp": "2026-05-14T09:20:00Z",
+        "extracted_fields": {
+          "approval_no": "SANCT/112/2023",
+          "approval_date": "2023-04-10"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      }
+    ],
+    "infrastructure_check": {},
+    "is_tampered_demo": false,
+    "audit_chain": []
+  },
+  {
+    "id": "AICTE-2026-TA-113",
+    "category": "NEW_INSTITUTION",
+    "category_name": "Setting up New Technical Institution",
+    "institution_name": "Kongu Engineering College & Research",
+    "trust_name": "Kongu Vellalar Institute Trust",
+    "state": "Tamil Nadu",
+    "district": "Erode",
+    "address": "Campus Road, Sector 4, Erode, Tamil Nadu",
+    "gps_coordinates": {
+      "latitude": 11.01669,
+      "longitude": 76.955685
+    },
+    "land_area_acres": 5.0,
+    "declared_classrooms": 12,
+    "declared_labs": 4,
+    "status": "SUBMITTED",
+    "created_at": "2026-05-14T08:00:00Z",
+    "submitted_at": "2026-05-14T12:00:00Z",
+    "pipeline_step": 6,
+    "risk_score": 0,
+    "risk_band": "LOW",
+    "risk_breakdown": [],
+    "flags": [],
+    "verification_results": [],
+    "documents": [
+      {
+        "id": "DOC-AICTE-2026-TA-113-TRUST",
+        "application_id": "AICTE-2026-TA-113",
+        "doc_type": "TRUST_DEED",
+        "filename": "Kongu Vellalar _RegCertificate.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-TA-113_trust_deed.jpg",
+        "file_hash": "31abbdf1c089520a0cb19f3d54700c0e6299107bc5c18ee749992fd0e31fd35d",
+        "file_size": 103165,
+        "upload_timestamp": "2026-05-14T09:00:00Z",
+        "extracted_fields": {
+          "trust_name": "Kongu Vellalar Institute Trust",
+          "registration_no": "SOC/TA/2018/1012",
+          "registration_date": "2018-03-15"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-TA-113-LAND",
+        "application_id": "AICTE-2026-TA-113",
+        "doc_type": "LAND_DOCUMENT",
+        "filename": "Land_Deed_5.0Acres.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-TA-113_land_deed.jpg",
+        "file_hash": "7c42d40413b5d1aafa599d5744cba7b930b6c44165c7b70942d8ac8fe4e0675b",
+        "file_size": 100486,
+        "upload_timestamp": "2026-05-14T09:12:00Z",
+        "extracted_fields": {
+          "owner_name": "Kongu Vellalar Institute Trust",
+          "survey_no": "SURVEY-113/1",
+          "land_area_acres": 5.0
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-TA-113-FIRE",
+        "application_id": "AICTE-2026-TA-113",
+        "doc_type": "FIRE_NOC",
+        "filename": "Fire_Safety_NOC_Valid.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-TA-113_fire_noc.jpg",
+        "file_hash": "bb5de78afdaef3757bef7ce292d45c42c0783464fda3bc244501e6e770ca5702",
+        "file_size": 109054,
+        "upload_timestamp": "2026-05-14T09:15:00Z",
+        "extracted_fields": {
+          "noc_number": "TA-FS/2025/NOC-3012",
+          "expiry_date": "2027-05-09"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-TA-113-AFFIDAVIT",
+        "application_id": "AICTE-2026-TA-113",
+        "doc_type": "AFFIDAVIT_1",
+        "filename": "AICTE_Affidavit_Format1.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-APEX-CLEAN_affidavit.jpg",
+        "file_hash": "db43f4663f564bc500aaf75128d5643f1cbd4ccbade51b9709039b8604762775",
+        "file_size": 101513,
+        "upload_timestamp": "2026-05-14T09:16:00Z",
+        "extracted_fields": {
+          "notary_reg_no": "NOTARY/TA/5012"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-TA-113-ARCH",
+        "application_id": "AICTE-2026-TA-113",
+        "doc_type": "ARCHITECT_CERT",
+        "filename": "Architect_Completion_Cert.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-APEX-CLEAN_architect_cert.jpg",
+        "file_hash": "013d184567f81fbfc45d7aa6988d1ca20b9e080f0857c01d1b7be0443ccfcbf2",
+        "file_size": 101524,
+        "upload_timestamp": "2026-05-14T09:17:00Z",
+        "extracted_fields": {
+          "coa_registration_no": "CA/2012/30012",
+          "architect_name": "Ar. R. K. Singhal"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-TA-113-FPLAN",
+        "application_id": "AICTE-2026-TA-113",
+        "doc_type": "FLOOR_PLAN",
+        "filename": "Ground_Floor_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-APEX-CLEAN_floor_plan.jpg",
+        "file_hash": "492d0965e75039057c4bbee682523e9975245edab11859ee580bc674c5616488",
+        "file_size": 70413,
+        "upload_timestamp": "2026-05-14T09:18:00Z",
+        "extracted_fields": {
+          "classroom_count": 12,
+          "lab_count": 4
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-TA-113-BPLAN",
+        "application_id": "AICTE-2026-TA-113",
+        "doc_type": "BUILDING_PLAN",
+        "filename": "Approved_Building_Sanction_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-TA-113_building_plan.jpg",
+        "file_hash": "ef28082015b1e1d0c671123d51443692396f0ac2f1f4a898619186d61c18a317",
+        "file_size": 70761,
+        "upload_timestamp": "2026-05-14T09:20:00Z",
+        "extracted_fields": {
+          "approval_no": "SANCT/113/2023",
+          "approval_date": "2023-04-10"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-TA-113-PHOTO",
+        "application_id": "AICTE-2026-TA-113",
+        "doc_type": "CAMPUS_PHOTO",
+        "filename": "Campus_Front_Photo.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-TA-113_campus_photo.jpg",
+        "file_hash": "edfe9e810bf24958d3bf5a47190d8ac358fa4abf00111412e0bcb55cdba1cdb9",
+        "file_size": 32074,
+        "upload_timestamp": "2026-05-14T09:25:00Z",
+        "extracted_fields": {
+          "gps_latitude": 11.016690354766379,
+          "gps_longitude": 76.95568509166102
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "spoofed_gps": [
+            11.016690354766379,
+            76.95568509166102
+          ]
+        }
+      }
+    ],
+    "infrastructure_check": {},
+    "is_tampered_demo": false,
+    "audit_chain": []
+  },
+  {
+    "id": "AICTE-2026-GU-114",
+    "category": "EXTENSION_OF_APPROVAL",
+    "category_name": "Extension of Approval (EoA) for Existing Institution",
+    "institution_name": "Sardar Patel Institute of Modern Tech",
+    "trust_name": "Sardar Vallabhbhai Memorial Society",
+    "state": "Gujarat",
+    "district": "Surat",
+    "address": "Campus Road, Sector 5, Surat, Gujarat",
+    "gps_coordinates": {
+      "latitude": 23.032158,
+      "longitude": 72.585864
+    },
+    "land_area_acres": 4.5,
+    "declared_classrooms": 12,
+    "declared_labs": 4,
+    "status": "SUBMITTED",
+    "created_at": "2026-05-14T08:00:00Z",
+    "submitted_at": "2026-05-14T12:00:00Z",
+    "pipeline_step": 6,
+    "risk_score": 0,
+    "risk_band": "HIGH",
+    "risk_breakdown": [],
+    "flags": [],
+    "verification_results": [],
+    "documents": [
+      {
+        "id": "DOC-AICTE-2026-GU-114-TRUST",
+        "application_id": "AICTE-2026-GU-114",
+        "doc_type": "TRUST_DEED",
+        "filename": "Sardar Vallabhb_RegCertificate.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-GU-114_trust_deed.jpg",
+        "file_hash": "b324892ecb8aa5cb9c4e85a2bd7a556e831792e19d5935d030fdb16ef7339ccb",
+        "file_size": 103754,
+        "upload_timestamp": "2026-05-14T09:00:00Z",
+        "extracted_fields": {
+          "trust_name": "Sardar Vallabhbhai Memorial Society",
+          "registration_no": "SOC/GU/2018/1013",
+          "registration_date": "2018-03-15"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-GU-114-BPLAN",
+        "application_id": "AICTE-2026-GU-114",
+        "doc_type": "BUILDING_PLAN",
+        "filename": "Approved_Building_Sanction_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-GU-114_building_plan.jpg",
+        "file_hash": "bef7c1b94412ec2ad3042ddbbad310f7c62d53cf184e2a59e81aabcd62c17d6e",
+        "file_size": 70855,
+        "upload_timestamp": "2026-05-14T09:20:00Z",
+        "extracted_fields": {
+          "approval_no": "SANCT/114/2023",
+          "approval_date": "2023-04-10"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-GU-114-PHOTO",
+        "application_id": "AICTE-2026-GU-114",
+        "doc_type": "CAMPUS_PHOTO",
+        "filename": "Campus_Front_Photo.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-GU-114_campus_photo.jpg",
+        "file_hash": "72a92285fb3af77b36060f6e73dcf4211a4ad80bdd288a6b519e4ee159f5d3ae",
+        "file_size": 31876,
+        "upload_timestamp": "2026-05-14T09:25:00Z",
+        "extracted_fields": {
+          "gps_latitude": 23.032158420612955,
+          "gps_longitude": 72.58586381086016
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "spoofed_gps": [
+            23.032158420612955,
+            72.58586381086016
+          ]
+        }
+      }
+    ],
+    "infrastructure_check": {},
+    "is_tampered_demo": false,
+    "audit_chain": []
+  },
+  {
+    "id": "AICTE-2026-MA-115",
+    "category": "EXTENSION_OF_APPROVAL",
+    "category_name": "Extension of Approval (EoA) for Existing Institution",
+    "institution_name": "Bhojpal Institute of Applied Sciences",
+    "trust_name": "Bhojpal Technical Society",
+    "state": "Madhya Pradesh",
+    "district": "Indore",
+    "address": "Campus Road, Sector 6, Indore, Madhya Pradesh",
+    "gps_coordinates": {
+      "latitude": 23.252627,
+      "longitude": 77.423191
+    },
+    "land_area_acres": 4.5,
+    "declared_classrooms": 12,
+    "declared_labs": 4,
+    "status": "SUBMITTED",
+    "created_at": "2026-05-14T08:00:00Z",
+    "submitted_at": "2026-05-14T12:00:00Z",
+    "pipeline_step": 6,
+    "risk_score": 0,
+    "risk_band": "HIGH",
+    "risk_breakdown": [],
+    "flags": [],
+    "verification_results": [],
+    "documents": [
+      {
+        "id": "DOC-AICTE-2026-MA-115-TRUST",
+        "application_id": "AICTE-2026-MA-115",
+        "doc_type": "TRUST_DEED",
+        "filename": "Bhojpal Technic_RegCertificate.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-MA-115_trust_deed.jpg",
+        "file_hash": "78307e1db3d930544b17dd757a5bce517c02144ddd77b485736b1da2cb03203c",
+        "file_size": 102961,
+        "upload_timestamp": "2026-05-14T09:00:00Z",
+        "extracted_fields": {
+          "trust_name": "Bhojpal Technical Society",
+          "registration_no": "SOC/MA/2018/1014",
+          "registration_date": "2018-03-15"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-MA-115-LAND",
+        "application_id": "AICTE-2026-MA-115",
+        "doc_type": "LAND_DOCUMENT",
+        "filename": "Land_Sale_Deed_MismatchName.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-MA-115_land_deed.jpg",
+        "file_hash": "809ec9810ede8562948f28abb959e6335de8fc7b07bc090e4fa56624b6dc2743",
+        "file_size": 99658,
+        "upload_timestamp": "2026-05-14T09:12:00Z",
+        "extracted_fields": {
+          "owner_name": "Bhojpal Technical Society Vikas Sanstha",
+          "survey_no": "SURVEY-115/1",
+          "land_area_acres": 4.5
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-MA-115-BPLAN",
+        "application_id": "AICTE-2026-MA-115",
+        "doc_type": "BUILDING_PLAN",
+        "filename": "Approved_Building_Sanction_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-MA-115_building_plan.jpg",
+        "file_hash": "a94b962df63ea7be2db213bb11a2ac82c114e20cdad25420da6502114b5cfd0e",
+        "file_size": 70820,
+        "upload_timestamp": "2026-05-14T09:20:00Z",
+        "extracted_fields": {
+          "approval_no": "SANCT/115/2023",
+          "approval_date": "2023-04-10"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-MA-115-PHOTO",
+        "application_id": "AICTE-2026-MA-115",
+        "doc_type": "CAMPUS_PHOTO",
+        "filename": "Campus_Front_Photo.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-MA-115_campus_photo.jpg",
+        "file_hash": "05cf97418f0086587e4f20c393dea9f18367f6b3ed5d5899bf67cb3cb779413f",
+        "file_size": 31857,
+        "upload_timestamp": "2026-05-14T09:25:00Z",
+        "extracted_fields": {
+          "gps_latitude": 23.252627219326882,
+          "gps_longitude": 77.42319065621606
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "spoofed_gps": [
+            23.252627219326882,
+            77.42319065621606
+          ]
+        }
+      }
+    ],
+    "infrastructure_check": {},
+    "is_tampered_demo": false,
+    "audit_chain": []
+  },
+  {
+    "id": "AICTE-2026-RA-116",
+    "category": "EXTENSION_OF_APPROVAL",
+    "category_name": "Extension of Approval (EoA) for Existing Institution",
+    "institution_name": "Mewar Institute of Engineering & Tech",
+    "trust_name": "Mewar Foundation Trust",
+    "state": "Rajasthan",
+    "district": "Udaipur",
+    "address": "Campus Road, Sector 7, Udaipur, Rajasthan",
+    "gps_coordinates": {
+      "latitude": 26.903102,
+      "longitude": 75.794433
+    },
+    "land_area_acres": 4.5,
+    "declared_classrooms": 12,
+    "declared_labs": 4,
+    "status": "SUBMITTED",
+    "created_at": "2026-05-14T08:00:00Z",
+    "submitted_at": "2026-05-14T12:00:00Z",
+    "pipeline_step": 6,
+    "risk_score": 0,
+    "risk_band": "LOW",
+    "risk_breakdown": [],
+    "flags": [],
+    "verification_results": [],
+    "documents": [
+      {
+        "id": "DOC-AICTE-2026-RA-116-TRUST",
+        "application_id": "AICTE-2026-RA-116",
+        "doc_type": "TRUST_DEED",
+        "filename": "Mewar Foundatio_RegCertificate.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-RA-116_trust_deed.jpg",
+        "file_hash": "6c5082f7c2a4823a8d65b513a4e7c755a89142669b80b381ee43bc38b126fba7",
+        "file_size": 102804,
+        "upload_timestamp": "2026-05-14T09:00:00Z",
+        "extracted_fields": {
+          "trust_name": "Mewar Foundation Trust",
+          "registration_no": "SOC/RA/2018/1015",
+          "registration_date": "2018-03-15"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-RA-116-LAND",
+        "application_id": "AICTE-2026-RA-116",
+        "doc_type": "LAND_DOCUMENT",
+        "filename": "Land_Deed_4.5Acres.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-RA-116_land_deed.jpg",
+        "file_hash": "1a77057e3d52e4a2509dd7bfefbc1bd21c2f38602c73d7035870c6a717779f8d",
+        "file_size": 100233,
+        "upload_timestamp": "2026-05-14T09:12:00Z",
+        "extracted_fields": {
+          "owner_name": "Mewar Foundation Trust",
+          "survey_no": "SURVEY-116/1",
+          "land_area_acres": 4.5
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-RA-116-FIRE",
+        "application_id": "AICTE-2026-RA-116",
+        "doc_type": "FIRE_NOC",
+        "filename": "Fire_Safety_NOC_Valid.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-RA-116_fire_noc.jpg",
+        "file_hash": "8f73c999b4eee5c73078991f183ab79b1847de9183168e46e4d1e5a1116f3983",
+        "file_size": 108860,
+        "upload_timestamp": "2026-05-14T09:15:00Z",
+        "extracted_fields": {
+          "noc_number": "RA-FS/2025/NOC-3015",
+          "expiry_date": "2027-05-09"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-RA-116-BPLAN",
+        "application_id": "AICTE-2026-RA-116",
+        "doc_type": "BUILDING_PLAN",
+        "filename": "Approved_Building_Sanction_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-RA-116_building_plan.jpg",
+        "file_hash": "184ff9b9113d68c8d0c8958aa40301987135e4e691baebdcc300aa558dd94dbc",
+        "file_size": 70862,
+        "upload_timestamp": "2026-05-14T09:20:00Z",
+        "extracted_fields": {
+          "approval_no": "SANCT/116/2023",
+          "approval_date": "2023-04-10"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-RA-116-PHOTO",
+        "application_id": "AICTE-2026-RA-116",
+        "doc_type": "CAMPUS_PHOTO",
+        "filename": "Campus_Front_Photo.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-RA-116_campus_photo.jpg",
+        "file_hash": "51686065e6c8114c900152b22e27a8492d4580f72608d820e1022063f3009cea",
+        "file_size": 31994,
+        "upload_timestamp": "2026-05-14T09:25:00Z",
+        "extracted_fields": {
+          "gps_latitude": 26.903101773184588,
+          "gps_longitude": 75.79443297326817
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "spoofed_gps": [
+            26.903101773184588,
+            75.79443297326817
+          ]
+        }
+      }
+    ],
+    "infrastructure_check": {},
+    "is_tampered_demo": false,
+    "audit_chain": []
+  },
+  {
+    "id": "AICTE-2026-TE-117",
+    "category": "EXTENSION_OF_APPROVAL",
+    "category_name": "Extension of Approval (EoA) for Existing Institution",
+    "institution_name": "Telangana Institute of Emerging Tech",
+    "trust_name": "Telangana Pragathi Trust",
+    "state": "Telangana",
+    "district": "Warangal",
+    "address": "Campus Road, Sector 8, Warangal, Telangana",
+    "gps_coordinates": {
+      "latitude": 17.39362,
+      "longitude": 78.493819
+    },
+    "land_area_acres": 4.5,
+    "declared_classrooms": 12,
+    "declared_labs": 4,
+    "status": "SUBMITTED",
+    "created_at": "2026-05-14T08:00:00Z",
+    "submitted_at": "2026-05-14T12:00:00Z",
+    "pipeline_step": 6,
+    "risk_score": 0,
+    "risk_band": "HIGH",
+    "risk_breakdown": [],
+    "flags": [],
+    "verification_results": [],
+    "documents": [
+      {
+        "id": "DOC-AICTE-2026-TE-117-TRUST",
+        "application_id": "AICTE-2026-TE-117",
+        "doc_type": "TRUST_DEED",
+        "filename": "Telangana Praga_RegCertificate.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-TE-117_trust_deed.jpg",
+        "file_hash": "a0efc87c3041273c45becec300b161867eae39592c455b1ec05900b0902289aa",
+        "file_size": 102915,
+        "upload_timestamp": "2026-05-14T09:00:00Z",
+        "extracted_fields": {
+          "trust_name": "Telangana Pragathi Trust",
+          "registration_no": "SOC/TE/2018/1016",
+          "registration_date": "2018-03-15"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-TE-117-REUSED",
+        "application_id": "AICTE-2026-TE-117",
+        "doc_type": "TRUST_DEED",
+        "filename": "Shared_Society_Certificate_Copy.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\shared_trust_certificate.jpg",
+        "file_hash": "fc8d201751ac3c5b45d96a70c4b2b9f28f919783f3ebb464c82f1f73f8a35cd6",
+        "file_size": 105231,
+        "upload_timestamp": "2026-05-14T09:18:00Z",
+        "extracted_fields": {
+          "trust_name": "Sahyadri Pratishthan Educational Society",
+          "registration_no": "SOC/MH/2012/4412"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-TE-117-BPLAN",
+        "application_id": "AICTE-2026-TE-117",
+        "doc_type": "BUILDING_PLAN",
+        "filename": "Approved_Building_Sanction_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-TE-117_building_plan.jpg",
+        "file_hash": "9d2097c05901f66542ab0710885d77ae2e7f929259438735c2f42482fb90e451",
+        "file_size": 70643,
+        "upload_timestamp": "2026-05-14T09:20:00Z",
+        "extracted_fields": {
+          "approval_no": "SANCT/117/2023",
+          "approval_date": "2023-04-10"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-TE-117-PHOTO",
+        "application_id": "AICTE-2026-TE-117",
+        "doc_type": "CAMPUS_PHOTO",
+        "filename": "Campus_Front_Photo.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-TE-117_campus_photo.jpg",
+        "file_hash": "25a8adad5feb2b052af8c2f620211e08796002e6f6b82969299ac5f3fe017791",
+        "file_size": 31965,
+        "upload_timestamp": "2026-05-14T09:25:00Z",
+        "extracted_fields": {
+          "gps_latitude": 17.393620488529862,
+          "gps_longitude": 78.49381867025912
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "spoofed_gps": [
+            17.393620488529862,
+            78.49381867025912
+          ]
+        }
+      }
+    ],
+    "infrastructure_check": {},
+    "is_tampered_demo": false,
+    "audit_chain": []
+  },
+  {
+    "id": "AICTE-2026-KE-118",
+    "category": "EXTENSION_OF_APPROVAL",
+    "category_name": "Extension of Approval (EoA) for Existing Institution",
+    "institution_name": "Travancore Institute of Technology",
+    "trust_name": "Travancore Charitable Trust",
+    "state": "Kerala",
+    "district": "Thiruvananthapuram",
+    "address": "Campus Road, Sector 9, Thiruvananthapuram, Kerala",
+    "gps_coordinates": {
+      "latitude": 9.999726,
+      "longitude": 76.313725
+    },
+    "land_area_acres": 4.5,
+    "declared_classrooms": 12,
+    "declared_labs": 4,
+    "status": "SUBMITTED",
+    "created_at": "2026-05-14T08:00:00Z",
+    "submitted_at": "2026-05-14T12:00:00Z",
+    "pipeline_step": 6,
+    "risk_score": 0,
+    "risk_band": "HIGH",
+    "risk_breakdown": [],
+    "flags": [],
+    "verification_results": [],
+    "documents": [
+      {
+        "id": "DOC-AICTE-2026-KE-118-TRUST",
+        "application_id": "AICTE-2026-KE-118",
+        "doc_type": "TRUST_DEED",
+        "filename": "Travancore Char_RegCertificate.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-KE-118_trust_deed.jpg",
+        "file_hash": "e3ad12f4bc4fb75b282c30cec89358b8550a54ffab6dc173e959e26a5d81f563",
+        "file_size": 102962,
+        "upload_timestamp": "2026-05-14T09:00:00Z",
+        "extracted_fields": {
+          "trust_name": "Travancore Charitable Trust",
+          "registration_no": "SOC/KE/2018/1017",
+          "registration_date": "2018-03-15"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-KE-118-PHOTO",
+        "application_id": "AICTE-2026-KE-118",
+        "doc_type": "CAMPUS_PHOTO",
+        "filename": "Campus_Photo_Spoofed.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-KE-118_campus_photo.jpg",
+        "file_hash": "f9cc9aab728aebf25e76f6c9ea99ffa4c567e448c738e29ffdf165085edb24cc",
+        "file_size": 32000,
+        "upload_timestamp": "2026-05-14T09:22:00Z",
+        "extracted_fields": {
+          "gps_latitude": 14.49972555544503,
+          "gps_longitude": 79.51372542653708
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "spoofed_gps": [
+            14.49972555544503,
+            79.51372542653708
+          ]
+        }
+      },
+      {
+        "id": "DOC-AICTE-2026-KE-118-BPLAN",
+        "application_id": "AICTE-2026-KE-118",
+        "doc_type": "BUILDING_PLAN",
+        "filename": "Approved_Building_Sanction_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-KE-118_building_plan.jpg",
+        "file_hash": "dd449c0fd21c74261ce4d6acbd9d6d7d12d7ed9d646fbd3f8ff449f6b74001f2",
+        "file_size": 70803,
+        "upload_timestamp": "2026-05-14T09:20:00Z",
+        "extracted_fields": {
+          "approval_no": "SANCT/118/2023",
+          "approval_date": "2023-04-10"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      }
+    ],
+    "infrastructure_check": {},
+    "is_tampered_demo": false,
+    "audit_chain": []
+  },
+  {
+    "id": "AICTE-2026-PU-119",
+    "category": "EXTENSION_OF_APPROVAL",
+    "category_name": "Extension of Approval (EoA) for Existing Institution",
+    "institution_name": "Baba Farid College of Engineering",
+    "trust_name": "Baba Farid Educational Society",
+    "state": "Punjab",
+    "district": "Bathinda",
+    "address": "Campus Road, Sector 10, Bathinda, Punjab",
+    "gps_coordinates": {
+      "latitude": 30.909547,
+      "longitude": 75.861562
+    },
+    "land_area_acres": 4.5,
+    "declared_classrooms": 12,
+    "declared_labs": 4,
+    "status": "SUBMITTED",
+    "created_at": "2026-05-14T08:00:00Z",
+    "submitted_at": "2026-05-14T12:00:00Z",
+    "pipeline_step": 6,
+    "risk_score": 0,
+    "risk_band": "LOW",
+    "risk_breakdown": [],
+    "flags": [],
+    "verification_results": [],
+    "documents": [
+      {
+        "id": "DOC-AICTE-2026-PU-119-TRUST",
+        "application_id": "AICTE-2026-PU-119",
+        "doc_type": "TRUST_DEED",
+        "filename": "Baba Farid Educ_RegCertificate.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-PU-119_trust_deed.jpg",
+        "file_hash": "4c00bbb609981808620360e5248ca3a72a49d2fbe191e1ceecce02efcc25d82f",
+        "file_size": 103386,
+        "upload_timestamp": "2026-05-14T09:00:00Z",
+        "extracted_fields": {
+          "trust_name": "Baba Farid Educational Society",
+          "registration_no": "SOC/PU/2018/1018",
+          "registration_date": "2018-03-15"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-PU-119-LAND",
+        "application_id": "AICTE-2026-PU-119",
+        "doc_type": "LAND_DOCUMENT",
+        "filename": "Land_Deed_4.5Acres.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-PU-119_land_deed.jpg",
+        "file_hash": "e7896c5d8e151e79ccc91557452adec1ecde3a1ef2e5d92188bb967d035d347c",
+        "file_size": 100663,
+        "upload_timestamp": "2026-05-14T09:12:00Z",
+        "extracted_fields": {
+          "owner_name": "Baba Farid Educational Society",
+          "survey_no": "SURVEY-119/1",
+          "land_area_acres": 4.5
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-PU-119-FIRE",
+        "application_id": "AICTE-2026-PU-119",
+        "doc_type": "FIRE_NOC",
+        "filename": "Fire_Safety_NOC_Valid.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-PU-119_fire_noc.jpg",
+        "file_hash": "920ab4dcd01d24c611742d9ce08e6509d76ef0f17ebae0b9c15a3dc77f804c38",
+        "file_size": 108823,
+        "upload_timestamp": "2026-05-14T09:15:00Z",
+        "extracted_fields": {
+          "noc_number": "PU-FS/2025/NOC-3018",
+          "expiry_date": "2027-05-09"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-PU-119-BPLAN",
+        "application_id": "AICTE-2026-PU-119",
+        "doc_type": "BUILDING_PLAN",
+        "filename": "Approved_Building_Sanction_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-PU-119_building_plan.jpg",
+        "file_hash": "0c9cb146c6c498c005a2567e4adebe8dde571c07bfbd4fb3c8f4d7a42d8f36ab",
+        "file_size": 70880,
+        "upload_timestamp": "2026-05-14T09:20:00Z",
+        "extracted_fields": {
+          "approval_no": "SANCT/119/2023",
+          "approval_date": "2023-04-10"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-PU-119-PHOTO",
+        "application_id": "AICTE-2026-PU-119",
+        "doc_type": "CAMPUS_PHOTO",
+        "filename": "Campus_Front_Photo.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-PU-119_campus_photo.jpg",
+        "file_hash": "2fb7de254dfc39e7e88d623589a38f37de33206d751734897dedc658acd6bca7",
+        "file_size": 31791,
+        "upload_timestamp": "2026-05-14T09:25:00Z",
+        "extracted_fields": {
+          "gps_latitude": 30.909546710046655,
+          "gps_longitude": 75.8615616646116
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "spoofed_gps": [
+            30.909546710046655,
+            75.8615616646116
+          ]
+        }
+      }
+    ],
+    "infrastructure_check": {},
+    "is_tampered_demo": false,
+    "audit_chain": []
+  },
+  {
+    "id": "AICTE-2026-UT-120",
+    "category": "EXTENSION_OF_APPROVAL",
+    "category_name": "Extension of Approval (EoA) for Existing Institution",
+    "institution_name": "Avadh Institute of Technology",
+    "trust_name": "Avadh Shaikshanik Trust",
+    "state": "Uttar Pradesh",
+    "district": "Ayodhya",
+    "address": "Campus Road, Sector 1, Ayodhya, Uttar Pradesh",
+    "gps_coordinates": {
+      "latitude": 26.835093,
+      "longitude": 80.939948
+    },
+    "land_area_acres": 4.5,
+    "declared_classrooms": 12,
+    "declared_labs": 4,
+    "status": "SUBMITTED",
+    "created_at": "2026-05-14T08:00:00Z",
+    "submitted_at": "2026-05-14T12:00:00Z",
+    "pipeline_step": 6,
+    "risk_score": 0,
+    "risk_band": "HIGH",
+    "risk_breakdown": [],
+    "flags": [],
+    "verification_results": [],
+    "documents": [
+      {
+        "id": "DOC-AICTE-2026-UT-120-TRUST",
+        "application_id": "AICTE-2026-UT-120",
+        "doc_type": "TRUST_DEED",
+        "filename": "Avadh Shaikshan_RegCertificate.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-UT-120_trust_deed.jpg",
+        "file_hash": "c4323a7329f6ecd9b60fdd2a305bf7dc10c988c6cead1e1a18ccf817c8ee813e",
+        "file_size": 102996,
+        "upload_timestamp": "2026-05-14T09:00:00Z",
+        "extracted_fields": {
+          "trust_name": "Avadh Shaikshanik Trust",
+          "registration_no": "SOC/UT/2018/1019",
+          "registration_date": "2018-03-15"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-UT-120-BPLAN",
+        "application_id": "AICTE-2026-UT-120",
+        "doc_type": "BUILDING_PLAN",
+        "filename": "Approved_Building_Sanction_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-UT-120_building_plan.jpg",
+        "file_hash": "0b292d07d865d9bd3d2b837b3ea2bbab003c67a29e0a7a6ee072b7f54b5487e6",
+        "file_size": 70748,
+        "upload_timestamp": "2026-05-14T09:20:00Z",
+        "extracted_fields": {
+          "approval_no": "SANCT/120/2023",
+          "approval_date": "2023-04-10"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-UT-120-PHOTO",
+        "application_id": "AICTE-2026-UT-120",
+        "doc_type": "CAMPUS_PHOTO",
+        "filename": "Campus_Front_Photo.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-UT-120_campus_photo.jpg",
+        "file_hash": "f9332db45bc1ffbe80a4be9eaa15239cb14f2c2172fffd8501d00eb4e5c77bf1",
+        "file_size": 31615,
+        "upload_timestamp": "2026-05-14T09:25:00Z",
+        "extracted_fields": {
+          "gps_latitude": 26.835092908435506,
+          "gps_longitude": 80.9399478883468
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "spoofed_gps": [
+            26.835092908435506,
+            80.9399478883468
+          ]
+        }
+      }
+    ],
+    "infrastructure_check": {},
+    "is_tampered_demo": false,
+    "audit_chain": []
+  },
+  {
+    "id": "AICTE-2026-MA-121",
+    "category": "EXTENSION_OF_APPROVAL",
+    "category_name": "Extension of Approval (EoA) for Existing Institution",
+    "institution_name": "Vidarbha Institute of Science & Tech",
+    "trust_name": "Vidarbha Vikas Samiti",
+    "state": "Maharashtra",
+    "district": "Nagpur",
+    "address": "Campus Road, Sector 2, Nagpur, Maharashtra",
+    "gps_coordinates": {
+      "latitude": 18.53475,
+      "longitude": 73.871627
+    },
+    "land_area_acres": 4.5,
+    "declared_classrooms": 12,
+    "declared_labs": 4,
+    "status": "SUBMITTED",
+    "created_at": "2026-05-14T08:00:00Z",
+    "submitted_at": "2026-05-14T12:00:00Z",
+    "pipeline_step": 6,
+    "risk_score": 0,
+    "risk_band": "HIGH",
+    "risk_breakdown": [],
+    "flags": [],
+    "verification_results": [],
+    "documents": [
+      {
+        "id": "DOC-AICTE-2026-MA-121-TRUST",
+        "application_id": "AICTE-2026-MA-121",
+        "doc_type": "TRUST_DEED",
+        "filename": "Vidarbha Vikas _RegCertificate.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-MA-121_trust_deed.jpg",
+        "file_hash": "075bd686c50ccf9ba2b2bec7f2b28111d696269ae5340d588cd2fb271f57d9d0",
+        "file_size": 102880,
+        "upload_timestamp": "2026-05-14T09:00:00Z",
+        "extracted_fields": {
+          "trust_name": "Vidarbha Vikas Samiti",
+          "registration_no": "SOC/MA/2018/1020",
+          "registration_date": "2018-03-15"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-MA-121-LAND",
+        "application_id": "AICTE-2026-MA-121",
+        "doc_type": "LAND_DOCUMENT",
+        "filename": "Land_Sale_Deed_MismatchName.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-MA-121_land_deed.jpg",
+        "file_hash": "8b64c68e9883aa96c834e450141e098c2ef9fdecff68a23093b0d882836ffc24",
+        "file_size": 99632,
+        "upload_timestamp": "2026-05-14T09:12:00Z",
+        "extracted_fields": {
+          "owner_name": "Vidarbha Vikas Samiti Vikas Sanstha",
+          "survey_no": "SURVEY-121/1",
+          "land_area_acres": 4.5
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-MA-121-BPLAN",
+        "application_id": "AICTE-2026-MA-121",
+        "doc_type": "BUILDING_PLAN",
+        "filename": "Approved_Building_Sanction_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-MA-121_building_plan.jpg",
+        "file_hash": "e3aa8f1162cba30007ac488609f9e9144f3c0bf0487cbf78b5b869cf5e187555",
+        "file_size": 70798,
+        "upload_timestamp": "2026-05-14T09:20:00Z",
+        "extracted_fields": {
+          "approval_no": "SANCT/121/2023",
+          "approval_date": "2023-04-10"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-MA-121-PHOTO",
+        "application_id": "AICTE-2026-MA-121",
+        "doc_type": "CAMPUS_PHOTO",
+        "filename": "Campus_Front_Photo.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-MA-121_campus_photo.jpg",
+        "file_hash": "8b570f19b80063d64742a6a1df4e32818f8a894db49e8c8c22cc020f1f1b4b80",
+        "file_size": 31877,
+        "upload_timestamp": "2026-05-14T09:25:00Z",
+        "extracted_fields": {
+          "gps_latitude": 18.53474950907182,
+          "gps_longitude": 73.87162654082883
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "spoofed_gps": [
+            18.53474950907182,
+            73.87162654082883
+          ]
+        }
+      }
+    ],
+    "infrastructure_check": {},
+    "is_tampered_demo": false,
+    "audit_chain": []
+  },
+  {
+    "id": "AICTE-2026-KA-122",
+    "category": "EXTENSION_OF_APPROVAL",
+    "category_name": "Extension of Approval (EoA) for Existing Institution",
+    "institution_name": "Cauvery Engineering Institute",
+    "trust_name": "Cauvery Educational Foundation",
+    "state": "Karnataka",
+    "district": "Mangaluru",
+    "address": "Campus Road, Sector 3, Mangaluru, Karnataka",
+    "gps_coordinates": {
+      "latitude": 12.959125,
+      "longitude": 77.580134
+    },
+    "land_area_acres": 4.5,
+    "declared_classrooms": 12,
+    "declared_labs": 4,
+    "status": "SUBMITTED",
+    "created_at": "2026-05-14T08:00:00Z",
+    "submitted_at": "2026-05-14T12:00:00Z",
+    "pipeline_step": 6,
+    "risk_score": 0,
+    "risk_band": "LOW",
+    "risk_breakdown": [],
+    "flags": [],
+    "verification_results": [],
+    "documents": [
+      {
+        "id": "DOC-AICTE-2026-KA-122-TRUST",
+        "application_id": "AICTE-2026-KA-122",
+        "doc_type": "TRUST_DEED",
+        "filename": "Cauvery Educati_RegCertificate.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-KA-122_trust_deed.jpg",
+        "file_hash": "108ba06a400cf965b3baca26d9bccdb4bd1b6212f2503be06c9eaa0eb7aa5023",
+        "file_size": 103114,
+        "upload_timestamp": "2026-05-14T09:00:00Z",
+        "extracted_fields": {
+          "trust_name": "Cauvery Educational Foundation",
+          "registration_no": "SOC/KA/2018/1021",
+          "registration_date": "2018-03-15"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-KA-122-LAND",
+        "application_id": "AICTE-2026-KA-122",
+        "doc_type": "LAND_DOCUMENT",
+        "filename": "Land_Deed_4.5Acres.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-KA-122_land_deed.jpg",
+        "file_hash": "3cd9bbe34e9ca3acd78f704eaa315fbbf417fa4654c6ebf173320686d3e8cf19",
+        "file_size": 100841,
+        "upload_timestamp": "2026-05-14T09:12:00Z",
+        "extracted_fields": {
+          "owner_name": "Cauvery Educational Foundation",
+          "survey_no": "SURVEY-122/1",
+          "land_area_acres": 4.5
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-KA-122-FIRE",
+        "application_id": "AICTE-2026-KA-122",
+        "doc_type": "FIRE_NOC",
+        "filename": "Fire_Safety_NOC_Valid.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-KA-122_fire_noc.jpg",
+        "file_hash": "afefd97581490e83ffbb2a3b3448b9a0ab48105b156a39128a1174b0cdbf94ab",
+        "file_size": 108144,
+        "upload_timestamp": "2026-05-14T09:15:00Z",
+        "extracted_fields": {
+          "noc_number": "KA-FS/2025/NOC-3021",
+          "expiry_date": "2027-05-09"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-KA-122-BPLAN",
+        "application_id": "AICTE-2026-KA-122",
+        "doc_type": "BUILDING_PLAN",
+        "filename": "Approved_Building_Sanction_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-KA-122_building_plan.jpg",
+        "file_hash": "3ff4eca32eabc314a87f1e101e7d8210f154b3dd932bba6e9fadfa7715fc7930",
+        "file_size": 70808,
+        "upload_timestamp": "2026-05-14T09:20:00Z",
+        "extracted_fields": {
+          "approval_no": "SANCT/122/2023",
+          "approval_date": "2023-04-10"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-KA-122-PHOTO",
+        "application_id": "AICTE-2026-KA-122",
+        "doc_type": "CAMPUS_PHOTO",
+        "filename": "Campus_Front_Photo.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-KA-122_campus_photo.jpg",
+        "file_hash": "7c17c781271daa6fbf70dc9f4a8ef9df391f18b43d9f9858911f2bc3aa86ee0e",
+        "file_size": 31602,
+        "upload_timestamp": "2026-05-14T09:25:00Z",
+        "extracted_fields": {
+          "gps_latitude": 12.9591245192149,
+          "gps_longitude": 77.58013441198251
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "spoofed_gps": [
+            12.9591245192149,
+            77.58013441198251
+          ]
+        }
+      }
+    ],
+    "infrastructure_check": {},
+    "is_tampered_demo": false,
+    "audit_chain": []
+  },
+  {
+    "id": "AICTE-2026-TA-123",
+    "category": "EXTENSION_OF_APPROVAL",
+    "category_name": "Extension of Approval (EoA) for Existing Institution",
+    "institution_name": "Annamalai Applied Tech Academy",
+    "trust_name": "Annamalai Trust",
+    "state": "Tamil Nadu",
+    "district": "Madurai",
+    "address": "Campus Road, Sector 4, Madurai, Tamil Nadu",
+    "gps_coordinates": {
+      "latitude": 11.003443,
+      "longitude": 76.969241
+    },
+    "land_area_acres": 4.5,
+    "declared_classrooms": 12,
+    "declared_labs": 4,
+    "status": "SUBMITTED",
+    "created_at": "2026-05-14T08:00:00Z",
+    "submitted_at": "2026-05-14T12:00:00Z",
+    "pipeline_step": 6,
+    "risk_score": 0,
+    "risk_band": "HIGH",
+    "risk_breakdown": [],
+    "flags": [],
+    "verification_results": [],
+    "documents": [
+      {
+        "id": "DOC-AICTE-2026-TA-123-TRUST",
+        "application_id": "AICTE-2026-TA-123",
+        "doc_type": "TRUST_DEED",
+        "filename": "Annamalai Trust_RegCertificate.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-TA-123_trust_deed.jpg",
+        "file_hash": "b77a23a43401bcfba4b4dd3fc076e4b0fb02b2738336f2e6259f148b3178ccc9",
+        "file_size": 102325,
+        "upload_timestamp": "2026-05-14T09:00:00Z",
+        "extracted_fields": {
+          "trust_name": "Annamalai Trust",
+          "registration_no": "SOC/TA/2018/1022",
+          "registration_date": "2018-03-15"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-TA-123-REUSED",
+        "application_id": "AICTE-2026-TA-123",
+        "doc_type": "TRUST_DEED",
+        "filename": "Shared_Society_Certificate_Copy.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\shared_trust_certificate.jpg",
+        "file_hash": "fc8d201751ac3c5b45d96a70c4b2b9f28f919783f3ebb464c82f1f73f8a35cd6",
+        "file_size": 105231,
+        "upload_timestamp": "2026-05-14T09:18:00Z",
+        "extracted_fields": {
+          "trust_name": "Sahyadri Pratishthan Educational Society",
+          "registration_no": "SOC/MH/2012/4412"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-TA-123-BPLAN",
+        "application_id": "AICTE-2026-TA-123",
+        "doc_type": "BUILDING_PLAN",
+        "filename": "Approved_Building_Sanction_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-TA-123_building_plan.jpg",
+        "file_hash": "e72145b50b6aff68f2113d186e586ef62e754c1bb4a3272969981acd4d2f178a",
+        "file_size": 70638,
+        "upload_timestamp": "2026-05-14T09:20:00Z",
+        "extracted_fields": {
+          "approval_no": "SANCT/123/2023",
+          "approval_date": "2023-04-10"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-TA-123-PHOTO",
+        "application_id": "AICTE-2026-TA-123",
+        "doc_type": "CAMPUS_PHOTO",
+        "filename": "Campus_Front_Photo.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-TA-123_campus_photo.jpg",
+        "file_hash": "65f837f0dad8326521f6089e4b905e6685e6c0397dd00126e2c8eb14d201e278",
+        "file_size": 31702,
+        "upload_timestamp": "2026-05-14T09:25:00Z",
+        "extracted_fields": {
+          "gps_latitude": 11.003442819388708,
+          "gps_longitude": 76.9692406148906
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "spoofed_gps": [
+            11.003442819388708,
+            76.9692406148906
+          ]
+        }
+      }
+    ],
+    "infrastructure_check": {},
+    "is_tampered_demo": false,
+    "audit_chain": []
+  },
+  {
+    "id": "AICTE-2026-MA-124",
+    "category": "CLOSURE_VARIATION",
+    "category_name": "Closure / Variation in Intake / Program Shift",
+    "institution_name": "Narmada Valley Institute of Technology",
+    "trust_name": "Narmada Shikshan Trust",
+    "state": "Madhya Pradesh",
+    "district": "Jabalpur",
+    "address": "Campus Road, Sector 5, Jabalpur, Madhya Pradesh",
+    "gps_coordinates": {
+      "latitude": 23.254015,
+      "longitude": 77.42653
+    },
+    "land_area_acres": 4.5,
+    "declared_classrooms": 12,
+    "declared_labs": 4,
+    "status": "SUBMITTED",
+    "created_at": "2026-05-14T08:00:00Z",
+    "submitted_at": "2026-05-14T12:00:00Z",
+    "pipeline_step": 6,
+    "risk_score": 0,
+    "risk_band": "HIGH",
+    "risk_breakdown": [],
+    "flags": [],
+    "verification_results": [],
+    "documents": [
+      {
+        "id": "DOC-AICTE-2026-MA-124-TRUST",
+        "application_id": "AICTE-2026-MA-124",
+        "doc_type": "TRUST_DEED",
+        "filename": "Narmada Shiksha_RegCertificate.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-MA-124_trust_deed.jpg",
+        "file_hash": "2407a02dca6a32d03731498637f1c1e6e8f54069ca424fd41c8ae70fe962558d",
+        "file_size": 103029,
+        "upload_timestamp": "2026-05-14T09:00:00Z",
+        "extracted_fields": {
+          "trust_name": "Narmada Shikshan Trust",
+          "registration_no": "SOC/MA/2018/1023",
+          "registration_date": "2018-03-15"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-MA-124-PHOTO",
+        "application_id": "AICTE-2026-MA-124",
+        "doc_type": "CAMPUS_PHOTO",
+        "filename": "Campus_Photo_Spoofed.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-MA-124_campus_photo.jpg",
+        "file_hash": "3202fe0f8c1eef1846b4ee6302c7f537c397783cf00eb5277e4e0960f7a2776d",
+        "file_size": 32012,
+        "upload_timestamp": "2026-05-14T09:22:00Z",
+        "extracted_fields": {
+          "gps_latitude": 27.754014605809296,
+          "gps_longitude": 80.62653045374054
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "spoofed_gps": [
+            27.754014605809296,
+            80.62653045374054
+          ]
+        }
+      },
+      {
+        "id": "DOC-AICTE-2026-MA-124-BPLAN",
+        "application_id": "AICTE-2026-MA-124",
+        "doc_type": "BUILDING_PLAN",
+        "filename": "Approved_Building_Sanction_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-MA-124_building_plan.jpg",
+        "file_hash": "fddc5935c59356a6270c64ec369b5372f3b7366dd28b0b5daefcf9201351adc0",
+        "file_size": 70860,
+        "upload_timestamp": "2026-05-14T09:20:00Z",
+        "extracted_fields": {
+          "approval_no": "SANCT/124/2023",
+          "approval_date": "2023-04-10"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      }
+    ],
+    "infrastructure_check": {},
+    "is_tampered_demo": false,
+    "audit_chain": []
+  },
+  {
+    "id": "AICTE-2026-RA-125",
+    "category": "CLOSURE_VARIATION",
+    "category_name": "Closure / Variation in Intake / Program Shift",
+    "institution_name": "Bikaner Technical College",
+    "trust_name": "Bikaner Foundation",
+    "state": "Rajasthan",
+    "district": "Bikaner",
+    "address": "Campus Road, Sector 6, Bikaner, Rajasthan",
+    "gps_coordinates": {
+      "latitude": 26.931629,
+      "longitude": 75.795504
+    },
+    "land_area_acres": 4.5,
+    "declared_classrooms": 12,
+    "declared_labs": 4,
+    "status": "SUBMITTED",
+    "created_at": "2026-05-14T08:00:00Z",
+    "submitted_at": "2026-05-14T12:00:00Z",
+    "pipeline_step": 6,
+    "risk_score": 0,
+    "risk_band": "LOW",
+    "risk_breakdown": [],
+    "flags": [],
+    "verification_results": [],
+    "documents": [
+      {
+        "id": "DOC-AICTE-2026-RA-125-TRUST",
+        "application_id": "AICTE-2026-RA-125",
+        "doc_type": "TRUST_DEED",
+        "filename": "Bikaner Foundat_RegCertificate.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-RA-125_trust_deed.jpg",
+        "file_hash": "d9744d928b7f488b0164ad6df6b7644e3f63f5186a25e27f9cf5834e5b1db773",
+        "file_size": 102554,
+        "upload_timestamp": "2026-05-14T09:00:00Z",
+        "extracted_fields": {
+          "trust_name": "Bikaner Foundation",
+          "registration_no": "SOC/RA/2018/1024",
+          "registration_date": "2018-03-15"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-RA-125-LAND",
+        "application_id": "AICTE-2026-RA-125",
+        "doc_type": "LAND_DOCUMENT",
+        "filename": "Land_Deed_4.5Acres.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-RA-125_land_deed.jpg",
+        "file_hash": "70e9ad3ea48d82ae697a1dd916a333be312d2517e46edc4457cbd6a680d6efb1",
+        "file_size": 99922,
+        "upload_timestamp": "2026-05-14T09:12:00Z",
+        "extracted_fields": {
+          "owner_name": "Bikaner Foundation",
+          "survey_no": "SURVEY-125/1",
+          "land_area_acres": 4.5
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-RA-125-FIRE",
+        "application_id": "AICTE-2026-RA-125",
+        "doc_type": "FIRE_NOC",
+        "filename": "Fire_Safety_NOC_Valid.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-RA-125_fire_noc.jpg",
+        "file_hash": "8c6b91c89a08cad2e880942503cb35477fd06248c3bb6571744452d101164a17",
+        "file_size": 108184,
+        "upload_timestamp": "2026-05-14T09:15:00Z",
+        "extracted_fields": {
+          "noc_number": "RA-FS/2025/NOC-3024",
+          "expiry_date": "2027-05-09"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-RA-125-BPLAN",
+        "application_id": "AICTE-2026-RA-125",
+        "doc_type": "BUILDING_PLAN",
+        "filename": "Approved_Building_Sanction_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-RA-125_building_plan.jpg",
+        "file_hash": "c5dd8fdf64514f664ff61ec1519c5cef8eb0e94ca18578ba87dca55a94635e06",
+        "file_size": 70795,
+        "upload_timestamp": "2026-05-14T09:20:00Z",
+        "extracted_fields": {
+          "approval_no": "SANCT/125/2023",
+          "approval_date": "2023-04-10"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-RA-125-PHOTO",
+        "application_id": "AICTE-2026-RA-125",
+        "doc_type": "CAMPUS_PHOTO",
+        "filename": "Campus_Front_Photo.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-RA-125_campus_photo.jpg",
+        "file_hash": "0bcd5d55d9ef8725a1671f476f1629b781d0d117a0a7476c39c55e7c26b4049c",
+        "file_size": 31300,
+        "upload_timestamp": "2026-05-14T09:25:00Z",
+        "extracted_fields": {
+          "gps_latitude": 26.93162867111798,
+          "gps_longitude": 75.79550386811047
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "spoofed_gps": [
+            26.93162867111798,
+            75.79550386811047
+          ]
+        }
+      }
+    ],
+    "infrastructure_check": {},
+    "is_tampered_demo": false,
+    "audit_chain": []
+  },
+  {
+    "id": "AICTE-2026-TE-126",
+    "category": "CLOSURE_VARIATION",
+    "category_name": "Closure / Variation in Intake / Program Shift",
+    "institution_name": "Deccan Institute of Advanced Studies",
+    "trust_name": "Deccan Education Council",
+    "state": "Telangana",
+    "district": "Nizamabad",
+    "address": "Campus Road, Sector 7, Nizamabad, Telangana",
+    "gps_coordinates": {
+      "latitude": 17.380733,
+      "longitude": 78.491077
+    },
+    "land_area_acres": 4.5,
+    "declared_classrooms": 12,
+    "declared_labs": 4,
+    "status": "SUBMITTED",
+    "created_at": "2026-05-14T08:00:00Z",
+    "submitted_at": "2026-05-14T12:00:00Z",
+    "pipeline_step": 6,
+    "risk_score": 0,
+    "risk_band": "HIGH",
+    "risk_breakdown": [],
+    "flags": [],
+    "verification_results": [],
+    "documents": [
+      {
+        "id": "DOC-AICTE-2026-TE-126-TRUST",
+        "application_id": "AICTE-2026-TE-126",
+        "doc_type": "TRUST_DEED",
+        "filename": "Deccan Educatio_RegCertificate.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-TE-126_trust_deed.jpg",
+        "file_hash": "14cf640a7d75a4f3ecee2f3c0490c8e8cb8f429298e613df99e6a8d1f38080ec",
+        "file_size": 102879,
+        "upload_timestamp": "2026-05-14T09:00:00Z",
+        "extracted_fields": {
+          "trust_name": "Deccan Education Council",
+          "registration_no": "SOC/TE/2018/1025",
+          "registration_date": "2018-03-15"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-TE-126-BPLAN",
+        "application_id": "AICTE-2026-TE-126",
+        "doc_type": "BUILDING_PLAN",
+        "filename": "Approved_Building_Sanction_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-TE-126_building_plan.jpg",
+        "file_hash": "33415ba26705ed3504f350506cf1d5a03945f92ba232b4549513860912b7731d",
+        "file_size": 70800,
+        "upload_timestamp": "2026-05-14T09:20:00Z",
+        "extracted_fields": {
+          "approval_no": "SANCT/126/2023",
+          "approval_date": "2023-04-10"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-TE-126-PHOTO",
+        "application_id": "AICTE-2026-TE-126",
+        "doc_type": "CAMPUS_PHOTO",
+        "filename": "Campus_Front_Photo.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-TE-126_campus_photo.jpg",
+        "file_hash": "e28584863b889f009ca904ee0bafe7f70eba10ff8cb21f5b4e96c65532425ea5",
+        "file_size": 32010,
+        "upload_timestamp": "2026-05-14T09:25:00Z",
+        "extracted_fields": {
+          "gps_latitude": 17.38073290409263,
+          "gps_longitude": 78.49107687551871
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "spoofed_gps": [
+            17.38073290409263,
+            78.49107687551871
+          ]
+        }
+      }
+    ],
+    "infrastructure_check": {},
+    "is_tampered_demo": false,
+    "audit_chain": []
+  },
+  {
+    "id": "AICTE-2026-KE-127",
+    "category": "CLOSURE_VARIATION",
+    "category_name": "Closure / Variation in Intake / Program Shift",
+    "institution_name": "Kochi Institute of Engineering",
+    "trust_name": "Cochin Academic Trust",
+    "state": "Kerala",
+    "district": "Kollam",
+    "address": "Campus Road, Sector 8, Kollam, Kerala",
+    "gps_coordinates": {
+      "latitude": 9.988116,
+      "longitude": 76.280766
+    },
+    "land_area_acres": 4.5,
+    "declared_classrooms": 12,
+    "declared_labs": 4,
+    "status": "SUBMITTED",
+    "created_at": "2026-05-14T08:00:00Z",
+    "submitted_at": "2026-05-14T12:00:00Z",
+    "pipeline_step": 6,
+    "risk_score": 0,
+    "risk_band": "HIGH",
+    "risk_breakdown": [],
+    "flags": [],
+    "verification_results": [],
+    "documents": [
+      {
+        "id": "DOC-AICTE-2026-KE-127-TRUST",
+        "application_id": "AICTE-2026-KE-127",
+        "doc_type": "TRUST_DEED",
+        "filename": "Cochin Academic_RegCertificate.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-KE-127_trust_deed.jpg",
+        "file_hash": "faf7c21b30e9de038620bf13bc76cf5a922b4bcc5bcebff5bc3735c3644d0433",
+        "file_size": 102821,
+        "upload_timestamp": "2026-05-14T09:00:00Z",
+        "extracted_fields": {
+          "trust_name": "Cochin Academic Trust",
+          "registration_no": "SOC/KE/2018/1026",
+          "registration_date": "2018-03-15"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-KE-127-LAND",
+        "application_id": "AICTE-2026-KE-127",
+        "doc_type": "LAND_DOCUMENT",
+        "filename": "Land_Sale_Deed_MismatchName.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-KE-127_land_deed.jpg",
+        "file_hash": "8b8a528bc3a5c0bf63e3ef1d999b38d4cbefe75a36a0c691402a5b759db3d675",
+        "file_size": 99587,
+        "upload_timestamp": "2026-05-14T09:12:00Z",
+        "extracted_fields": {
+          "owner_name": "Cochin Academic Trust Vikas Sanstha",
+          "survey_no": "SURVEY-127/1",
+          "land_area_acres": 4.5
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-KE-127-BPLAN",
+        "application_id": "AICTE-2026-KE-127",
+        "doc_type": "BUILDING_PLAN",
+        "filename": "Approved_Building_Sanction_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-KE-127_building_plan.jpg",
+        "file_hash": "bcbc6766d367ab44dba3c7b0041b6b7744139d8ecab67692357adbbbe8ced219",
+        "file_size": 70772,
+        "upload_timestamp": "2026-05-14T09:20:00Z",
+        "extracted_fields": {
+          "approval_no": "SANCT/127/2023",
+          "approval_date": "2023-04-10"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-KE-127-PHOTO",
+        "application_id": "AICTE-2026-KE-127",
+        "doc_type": "CAMPUS_PHOTO",
+        "filename": "Campus_Front_Photo.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-KE-127_campus_photo.jpg",
+        "file_hash": "404f0d609ee42540358ea91e9858e7f8ab64f08790291f5d0824a43246394c5a",
+        "file_size": 31597,
+        "upload_timestamp": "2026-05-14T09:25:00Z",
+        "extracted_fields": {
+          "gps_latitude": 9.98811619009721,
+          "gps_longitude": 76.28076607285404
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "spoofed_gps": [
+            9.98811619009721,
+            76.28076607285404
+          ]
+        }
+      }
+    ],
+    "infrastructure_check": {},
+    "is_tampered_demo": false,
+    "audit_chain": []
+  },
+  {
+    "id": "AICTE-2026-PU-128",
+    "category": "CLOSURE_VARIATION",
+    "category_name": "Closure / Variation in Intake / Program Shift",
+    "institution_name": "Doaba Institute of Technology",
+    "trust_name": "Doaba Welfare Society",
+    "state": "Punjab",
+    "district": "Jalandhar",
+    "address": "Campus Road, Sector 9, Jalandhar, Punjab",
+    "gps_coordinates": {
+      "latitude": 30.883299,
+      "longitude": 75.861855
+    },
+    "land_area_acres": 4.5,
+    "declared_classrooms": 12,
+    "declared_labs": 4,
+    "status": "SUBMITTED",
+    "created_at": "2026-05-14T08:00:00Z",
+    "submitted_at": "2026-05-14T12:00:00Z",
+    "pipeline_step": 6,
+    "risk_score": 0,
+    "risk_band": "LOW",
+    "risk_breakdown": [],
+    "flags": [],
+    "verification_results": [],
+    "documents": [
+      {
+        "id": "DOC-AICTE-2026-PU-128-TRUST",
+        "application_id": "AICTE-2026-PU-128",
+        "doc_type": "TRUST_DEED",
+        "filename": "Doaba Welfare S_RegCertificate.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-PU-128_trust_deed.jpg",
+        "file_hash": "1eba22df48d6b81d0b6dcc8f1d273b8c534ae6f5262cdb34cd238f662bdfd215",
+        "file_size": 102869,
+        "upload_timestamp": "2026-05-14T09:00:00Z",
+        "extracted_fields": {
+          "trust_name": "Doaba Welfare Society",
+          "registration_no": "SOC/PU/2018/1027",
+          "registration_date": "2018-03-15"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-PU-128-LAND",
+        "application_id": "AICTE-2026-PU-128",
+        "doc_type": "LAND_DOCUMENT",
+        "filename": "Land_Deed_4.5Acres.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-PU-128_land_deed.jpg",
+        "file_hash": "503d8a0b7b62d6396612ebfea1681214539467d161bf54495f338d24d668b8a9",
+        "file_size": 100347,
+        "upload_timestamp": "2026-05-14T09:12:00Z",
+        "extracted_fields": {
+          "owner_name": "Doaba Welfare Society",
+          "survey_no": "SURVEY-128/1",
+          "land_area_acres": 4.5
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-PU-128-FIRE",
+        "application_id": "AICTE-2026-PU-128",
+        "doc_type": "FIRE_NOC",
+        "filename": "Fire_Safety_NOC_Valid.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-PU-128_fire_noc.jpg",
+        "file_hash": "90fed560b57bd1a50891bdc7ec0e59d40d953915155278c360133e63a961f166",
+        "file_size": 108225,
+        "upload_timestamp": "2026-05-14T09:15:00Z",
+        "extracted_fields": {
+          "noc_number": "PU-FS/2025/NOC-3027",
+          "expiry_date": "2027-05-09"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-PU-128-BPLAN",
+        "application_id": "AICTE-2026-PU-128",
+        "doc_type": "BUILDING_PLAN",
+        "filename": "Approved_Building_Sanction_Plan.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-PU-128_building_plan.jpg",
+        "file_hash": "bc70d749f18eaab764edb8df2cc3d72fd033c5ccaca3e44022a2b9a69195bd47",
+        "file_size": 70766,
+        "upload_timestamp": "2026-05-14T09:20:00Z",
+        "extracted_fields": {
+          "approval_no": "SANCT/128/2023",
+          "approval_date": "2023-04-10"
+        },
+        "bounding_boxes": {},
+        "metadata": {}
+      },
+      {
+        "id": "DOC-AICTE-2026-PU-128-PHOTO",
+        "application_id": "AICTE-2026-PU-128",
+        "doc_type": "CAMPUS_PHOTO",
+        "filename": "Campus_Front_Photo.jpg",
+        "file_path": "C:\\Users\\VIRAJ SINGH\\.gemini\\antigravity\\scratch\\aicte\\backend\\storage\\documents\\AICTE-2026-PU-128_campus_photo.jpg",
+        "file_hash": "71186597b2d98d0e7f472bfc038ed474b3749d8a74076f114758549b5f7f913d",
+        "file_size": 31602,
+        "upload_timestamp": "2026-05-14T09:25:00Z",
+        "extracted_fields": {
+          "gps_latitude": 30.883299140355295,
+          "gps_longitude": 75.86185460030211
+        },
+        "bounding_boxes": {},
+        "metadata": {
+          "spoofed_gps": [
+            30.883299140355295,
+            75.86185460030211
+          ]
+        }
+      }
+    ],
+    "infrastructure_check": {},
+    "is_tampered_demo": false,
+    "audit_chain": []
+  }
+]

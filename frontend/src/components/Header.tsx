@@ -4,32 +4,58 @@ import {
   ShieldCheck, 
   AlertTriangle, 
   Zap, 
-  FileCheck2, 
-  User, 
-  LayoutDashboard, 
-  BarChart3, 
   Bell, 
-  Globe2, 
   Info,
+  Globe2,
+  Sun,
+  Moon,
+  Keyboard,
+  Compass,
+  Activity,
+  Network,
+  BookOpen,
+  FileText,
+  LogOut,
+  User,
+  Sliders,
   CheckCircle2,
-  ExternalLink
+  ChevronDown
 } from 'lucide-react';
 import { api } from '../services/api';
-import { AlertItem } from '../types';
+import { AlertItem, UserRole } from '../types';
+import { LANGUAGE_OPTIONS } from '../locales';
 
-export const Header: React.FC = () => {
+interface HeaderProps {
+  currentView?: string;
+  setCurrentView?: (v: any) => void;
+}
+
+export const Header: React.FC<HeaderProps> = ({ currentView, setCurrentView }) => {
   const { 
+    user,
+    logout,
     role, 
     setRole, 
+    theme, 
+    toggleTheme,
+    textSize,
+    toggleTextSize,
     lang, 
-    setLang, 
+    setLang,
     t, 
-    setIsTamperDemoOpen, 
-    showToast 
+    selectedAppId,
+    setIsTamperDemoOpen,
+    setIsAuditModalOpen,
+    setIsLinkGraphOpen,
+    setIsModelCardOpen,
+    setIsHealthCheckOpen,
+    setIsTourOpen,
+    setIsShortcutsOpen
   } = useApp();
 
   const [alerts, setAlerts] = useState<AlertItem[]>([]);
   const [showAlertsDropdown, setShowAlertsDropdown] = useState(false);
+  const [showRoleDropdown, setShowRoleDropdown] = useState(false);
 
   useEffect(() => {
     api.getAdminAlerts()
@@ -38,148 +64,161 @@ export const Header: React.FC = () => {
   }, []);
 
   return (
-    <header className="bg-slate-900 border-b border-slate-800 text-white sticky top-0 z-50 shadow-md">
+    <header className="sticky top-0 z-30 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 shadow-xs">
       {/* 1. Mandatory Legal Product Principle Banner */}
-      <div className="bg-gradient-to-r from-amber-900/90 via-orange-950/90 to-amber-900/90 border-b border-amber-600/40 px-4 py-1.5 text-xs text-amber-200/95 flex items-center justify-between shadow-inner">
-        <div className="flex items-center space-x-2 max-w-7xl mx-auto w-full">
-          <span className="flex items-center gap-1 font-bold text-amber-300 uppercase tracking-wider bg-amber-900/80 px-2 py-0.5 rounded border border-amber-500/30 text-[10px] shrink-0">
-            <Info className="w-3.5 h-3.5 text-amber-400" />
-            Decision Support System
-          </span>
-          <span className="truncate font-medium">
-            {t.header.principle}
-          </span>
+      <div className="bg-amber-50 dark:bg-amber-950/60 border-b border-amber-200 dark:border-amber-900 px-4 py-1.5 text-xs text-amber-900 dark:text-amber-200">
+        <div className="max-w-7xl mx-auto flex items-center justify-between gap-3">
+          <div className="flex items-center space-x-2 truncate">
+            <span className="font-bold uppercase tracking-wider text-[10px] bg-amber-200 dark:bg-amber-900 text-amber-900 dark:text-amber-100 px-1.5 py-0.5 rounded shrink-0">
+              Decision Support Only
+            </span>
+            <span className="truncate text-[11px] font-medium">
+              {t.header.principleBanner}
+            </span>
+          </div>
+
+          <div className="hidden lg:flex items-center space-x-3 text-[11px] text-amber-800 dark:text-amber-300 shrink-0">
+            <span>Official Scrutiny System</span>
+            <span>•</span>
+            <span>AICTE Approval Process 2026-27</span>
+          </div>
         </div>
       </div>
 
-      {/* Main Navigation Bar */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
-        {/* Brand / Logo */}
+      {/* 2. Main Official Header Bar */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-2.5 flex items-center justify-between gap-4">
+        {/* Left: Emblem placeholder + Portal Name */}
         <div className="flex items-center space-x-3">
-          <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-700 via-govNavy-900 to-slate-950 flex items-center justify-center border border-blue-500/30 shadow-lg shadow-blue-950/50">
-            <ShieldCheck className="w-6 h-6 text-orange-400" />
+          <div className="w-9 h-9 rounded bg-govNavy-900 border border-govNavy-950 flex items-center justify-center text-white shrink-0 shadow-xs">
+            <ShieldCheck className="w-5 h-5 text-govSaffron-500" />
           </div>
           <div>
             <div className="flex items-center space-x-2">
-              <span className="font-extrabold text-lg tracking-tight bg-gradient-to-r from-white via-slate-100 to-slate-300 bg-clip-text text-transparent">
-                AICTE Validation Platform
+              <span className="font-bold text-sm sm:text-base text-slate-900 dark:text-slate-100 tracking-tight">
+                {t.header.appTitle}
               </span>
-              <span className="text-[10px] font-semibold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 px-1.5 py-0.5 rounded">
-                SIH 2026
-              </span>
-              <span className="text-[10px] font-bold bg-amber-500/20 text-orange-300 border border-amber-500/30 px-1.5 py-0.5 rounded">
-                CrashCoders
+              <span className="hidden sm:inline-block text-[10px] font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-300 dark:border-slate-700 px-1.5 py-0.2 rounded">
+                Prototype
               </span>
             </div>
-            <div className="text-[11px] text-slate-400 flex items-center gap-2">
-              <span>Approval Process 2026-27</span>
-              <span>•</span>
-              <span className="text-emerald-400 font-medium flex items-center gap-1">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                Govt Regulatory Sandbox Active
-              </span>
+            <div className="text-[11px] text-slate-500 dark:text-slate-400 font-medium">
+              All India Council for Technical Education • Statutory Scrutiny
             </div>
           </div>
         </div>
 
-        {/* Center: Role Switcher Tabs */}
-        <div className="hidden md:flex items-center bg-slate-950/80 p-1 rounded-xl border border-slate-800 shadow-inner">
-          <button
-            onClick={() => setRole('OFFICER')}
-            className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
-              role === 'OFFICER'
-                ? 'bg-blue-600 text-white shadow-md shadow-blue-900/50'
-                : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/50'
-            }`}
-          >
-            <ShieldCheck className="w-3.5 h-3.5" />
-            <span>{t.header.roleOfficer}</span>
-          </button>
-
-          <button
-            onClick={() => setRole('APPLICANT')}
-            className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
-              role === 'APPLICANT'
-                ? 'bg-blue-600 text-white shadow-md shadow-blue-900/50'
-                : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/50'
-            }`}
-          >
-            <User className="w-3.5 h-3.5" />
-            <span>{t.header.roleApplicant}</span>
-          </button>
-
-          <button
-            onClick={() => setRole('ADMIN')}
-            className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
-              role === 'ADMIN'
-                ? 'bg-blue-600 text-white shadow-md shadow-blue-900/50'
-                : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/50'
-            }`}
-          >
-            <LayoutDashboard className="w-3.5 h-3.5" />
-            <span>{t.header.roleAdmin}</span>
-          </button>
-
-          <button
-            onClick={() => setRole('EVALUATION')}
-            className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
-              role === 'EVALUATION'
-                ? 'bg-blue-600 text-white shadow-md shadow-blue-900/50'
-                : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/50'
-            }`}
-          >
-            <BarChart3 className="w-3.5 h-3.5" />
-            <span>{t.header.roleEval}</span>
-          </button>
-        </div>
-
-        {/* Right Actions: Standout Tamper Demo, Alerts, Language */}
-        <div className="flex items-center space-x-2.5">
-          {/* STANDOUT FEATURE: Tamper Demo Mode Button */}
+        {/* Center/Right: Quick Action Bar */}
+        <div className="flex items-center space-x-1.5 sm:space-x-2 text-xs">
+          {/* Tamper Forensics Pill Button */}
           <button
             onClick={() => setIsTamperDemoOpen(true)}
-            className="flex items-center space-x-1.5 bg-gradient-to-r from-orange-500 via-amber-500 to-orange-600 hover:from-orange-600 hover:to-amber-600 text-slate-950 px-3.5 py-1.5 rounded-lg text-xs font-extrabold shadow-lg shadow-orange-900/40 hover:scale-[1.02] active:scale-[0.98] transition-all border border-orange-400/40"
+            className="hidden md:flex items-center space-x-1.5 px-2.5 py-1.5 bg-amber-600 hover:bg-amber-700 text-white rounded font-semibold transition-colors shadow-xs"
+            title="Open Tamper Forensics Demo"
           >
-            <Zap className="w-3.5 h-3.5 fill-slate-950" />
-            <span>{t.header.tamperDemo}</span>
+            <Zap className="w-3.5 h-3.5" />
+            <span>Tamper Demo</span>
           </button>
+
+          {/* Audit Ledger Pill Button */}
+          <button
+            onClick={() => setIsAuditModalOpen(true)}
+            className="hidden sm:flex items-center space-x-1 px-2.5 py-1.5 bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-200 rounded font-semibold hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+            title="Inspect Hash-Chained Audit Trail"
+          >
+            <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
+            <span>Audit Trail</span>
+          </button>
+
+          {/* Link Graph Pill Button */}
+          <button
+            onClick={() => setIsLinkGraphOpen(true)}
+            className="hidden lg:flex items-center space-x-1 px-2 py-1.5 bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-200 rounded font-semibold hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+            title="Cross-Application Fraud Link Graph"
+          >
+            <Network className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" />
+            <span>Link Graph</span>
+          </button>
+
+          {/* Model Card Pill Button */}
+          <button
+            onClick={() => setIsModelCardOpen(true)}
+            className="hidden xl:flex items-center space-x-1 px-2 py-1.5 bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-200 rounded font-semibold hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+            title="Model Card & Fairness Statement"
+          >
+            <BookOpen className="w-3.5 h-3.5 text-slate-500" />
+            <span>Model Card</span>
+          </button>
+
+          {/* System Health Diagnostics */}
+          <button
+            onClick={() => setIsHealthCheckOpen(true)}
+            className="p-1.5 rounded bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors"
+            title="System Service Diagnostics"
+          >
+            <Activity className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
+          </button>
+
+          {/* Guided Tour */}
+          <button
+            onClick={() => setIsTourOpen(true)}
+            className="p-1.5 rounded bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors"
+            title="Guided Tour"
+          >
+            <Compass className="w-4 h-4 text-govNavy-700 dark:text-blue-400" />
+          </button>
+
+          {/* Keyboard Shortcuts Help */}
+          <button
+            onClick={() => setIsShortcutsOpen(true)}
+            className="p-1.5 rounded bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-mono font-bold transition-colors"
+            title="Keyboard Shortcuts (?)"
+          >
+            <Keyboard className="w-4 h-4" />
+          </button>
+
+          {/* Divider */}
+          <div className="h-5 w-px bg-slate-300 dark:bg-slate-700 mx-0.5" />
 
           {/* Alerts Bell Dropdown */}
           <div className="relative">
             <button
               onClick={() => setShowAlertsDropdown(!showAlertsDropdown)}
-              className="p-2 rounded-lg bg-slate-800/80 hover:bg-slate-700/80 text-slate-300 hover:text-white transition-colors relative border border-slate-700/50"
-              title={t.header.alerts}
+              className="p-1.5 rounded bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors relative"
+              title="System Alerts Feed"
             >
               <Bell className="w-4 h-4" />
               {alerts.length > 0 && (
-                <span className="absolute -top-1 -right-1 w-4 h-4 bg-red-500 text-white text-[9px] font-bold rounded-full flex items-center justify-center animate-pulse">
+                <span className="absolute -top-1 -right-1 w-3.5 h-3.5 bg-red-600 text-white text-[9px] font-bold rounded-full flex items-center justify-center">
                   {alerts.length}
                 </span>
               )}
             </button>
 
             {showAlertsDropdown && (
-              <div className="absolute right-0 mt-2 w-80 bg-slate-900 border border-slate-700 rounded-xl shadow-2xl z-50 p-3 max-h-96 overflow-y-auto">
-                <div className="flex items-center justify-between pb-2 mb-2 border-b border-slate-800">
-                  <span className="text-xs font-bold text-slate-200">Regulatory Alerts Feed</span>
-                  <span className="text-[10px] text-slate-400">{alerts.length} active notifications</span>
+              <div className="absolute right-0 mt-2 w-80 sm:w-96 rounded-md bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 shadow-lg z-50 p-3 max-h-96 overflow-y-auto">
+                <div className="flex items-center justify-between pb-2 mb-2 border-b border-slate-200 dark:border-slate-800">
+                  <span className="text-xs font-bold text-slate-800 dark:text-slate-200">
+                    System Alerts & Risk Warnings
+                  </span>
+                  <span className="text-[10px] text-red-600 font-bold bg-red-50 dark:bg-red-950 px-1.5 py-0.2 rounded border border-red-200 dark:border-red-900">
+                    {alerts.length} Active
+                  </span>
                 </div>
                 <div className="space-y-2">
-                  {alerts.slice(0, 6).map(al => (
+                  {alerts.map(al => (
                     <div 
                       key={al.id} 
-                      className={`p-2 rounded-lg text-xs border ${
+                      className={`p-2.5 rounded text-xs border ${
                         al.level === 'CRITICAL' 
-                          ? 'bg-red-950/40 border-red-800/60 text-red-200' 
-                          : 'bg-amber-950/30 border-amber-800/50 text-amber-200'
+                          ? 'bg-red-50/70 dark:bg-red-950/40 border-red-200 dark:border-red-900 text-red-900 dark:text-red-200' 
+                          : 'bg-amber-50/70 dark:bg-amber-950/40 border-amber-200 dark:border-amber-900 text-amber-900 dark:text-amber-200'
                       }`}
                     >
-                      <div className="font-semibold text-slate-100 flex items-center gap-1">
-                        <AlertTriangle className="w-3 h-3 text-orange-400 shrink-0" />
+                      <div className="font-bold flex items-center gap-1.5">
+                        <AlertTriangle className="w-3.5 h-3.5 text-red-600 dark:text-red-400 shrink-0" />
                         <span className="truncate">{al.title}</span>
                       </div>
-                      <p className="text-[11px] text-slate-300 mt-1 line-clamp-2">{al.details}</p>
+                      <p className="text-[11px] opacity-85 mt-1">{al.details}</p>
                     </div>
                   ))}
                 </div>
@@ -187,23 +226,63 @@ export const Header: React.FC = () => {
             )}
           </div>
 
-          {/* Language Toggle: EN / हिन्दी */}
-          <div className="flex items-center bg-slate-800/80 rounded-lg p-0.5 border border-slate-700/50 text-xs">
-            <button
-              onClick={() => setLang('en')}
-              className={`px-2 py-1 rounded font-semibold transition-all ${
-                lang === 'en' ? 'bg-blue-600 text-white' : 'text-slate-400 hover:text-slate-200'
-              }`}
+          {/* 8-Language Switcher Dropdown */}
+          <div className="flex items-center bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded px-2 py-1">
+            <Globe2 className="w-3.5 h-3.5 mr-1 text-slate-500" />
+            <select
+              value={lang}
+              onChange={(e) => setLang(e.target.value as any)}
+              className="bg-transparent text-slate-800 dark:text-slate-200 text-xs font-medium focus:outline-none cursor-pointer"
+              aria-label={t.header.langLabel}
             >
-              EN
-            </button>
+              {LANGUAGE_OPTIONS.map((opt) => (
+                <option key={opt.code} value={opt.code} className="bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100">
+                  {opt.nativeName} ({opt.name})
+                </option>
+              ))}
+            </select>
+          </div>
+
+          {/* Light / Dark Mode Toggle */}
+          <button
+            onClick={toggleTheme}
+            className="p-1.5 rounded bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white transition-colors"
+            title={theme === 'dark' ? t.header.themeLight : t.header.themeDark}
+            aria-label={theme === 'dark' ? t.header.themeLight : t.header.themeDark}
+          >
+            {theme === 'dark' ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4" />}
+          </button>
+
+          {/* Text Size (A- / A+) */}
+          <button
+            onClick={toggleTextSize}
+            className="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-mono font-bold text-xs"
+            title="Text size scale (A- / A+)"
+          >
+            {textSize === 'normal' ? 'A+' : 'A-'}
+          </button>
+
+          {/* Divider */}
+          <div className="h-5 w-px bg-slate-300 dark:bg-slate-700 mx-0.5" />
+
+          {/* Logged in User Pill + Sign Out */}
+          <div className="flex items-center space-x-2">
+            <div className="hidden sm:block text-right">
+              <div className="font-bold text-xs text-slate-800 dark:text-slate-200 leading-tight">
+                {user?.name || 'Dr. S. K. Sharma'}
+              </div>
+              <div className="text-[10px] text-slate-500 font-mono">
+                {role}
+              </div>
+            </div>
+
             <button
-              onClick={() => setLang('hi')}
-              className={`px-2 py-1 rounded font-semibold transition-all ${
-                lang === 'hi' ? 'bg-orange-500 text-slate-950 font-bold' : 'text-slate-400 hover:text-slate-200'
-              }`}
+              onClick={logout}
+              className="p-1.5 rounded bg-slate-100 dark:bg-slate-800 hover:bg-red-50 dark:hover:bg-red-950/50 border border-slate-300 dark:border-slate-700 text-slate-600 hover:text-red-600 transition-colors"
+              title="Sign Out of Scrutiny Session"
+              aria-label="Sign Out"
             >
-              हिन्दी
+              <LogOut className="w-4 h-4" />
             </button>
           </div>
         </div>

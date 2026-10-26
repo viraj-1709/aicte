@@ -1,7 +1,6 @@
 @echo off
 echo =========================================================================
-echo   AICTE Application Validation Platform (Smart India Hackathon 2026)
-echo   Team: CrashCoders
+echo   AICTE Application Validation Platform (Prototype)
 echo =========================================================================
 echo.
 echo Product Principle: DECISION SUPPORT, NOT A DECISION MAKER.

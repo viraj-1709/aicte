@@ -6,8 +6,6 @@ from fastapi.staticfiles import StaticFiles
 
 from .config import (
     PROJECT_NAME,
-    TEAM_NAME,
-    HACKATHON_EVENT,
     PRODUCT_PRINCIPLE,
     DOCUMENTS_DIR
 )
@@ -15,9 +13,9 @@ from .api import applications, documents, admin, tamper_demo, evaluation
 from .issuer_mock.mock_service import mock_issuer_service
 
 app = FastAPI(
-    title=f"{PROJECT_NAME} - Team {TEAM_NAME}",
+    title=PROJECT_NAME,
     description=(
-        f"Smart India Hackathon 2026 Prototype. {PRODUCT_PRINCIPLE}"
+        f"Official Regulatory Validation Platform (Prototype). {PRODUCT_PRINCIPLE}"
     ),
     version="1.0.0"
 )
@@ -68,8 +66,6 @@ def toggle_issuer_outage(service_name: str = None):
 def root():
     return {
         "project": PROJECT_NAME,
-        "team": TEAM_NAME,
-        "event": HACKATHON_EVENT,
         "product_principle": PRODUCT_PRINCIPLE,
         "status": "RUNNING",
         "documentation": "/docs"

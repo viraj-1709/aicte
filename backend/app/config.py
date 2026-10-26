@@ -10,10 +10,8 @@ STORAGE_DIR.mkdir(parents=True, exist_ok=True)
 DOCUMENTS_DIR.mkdir(parents=True, exist_ok=True)
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 
-# Team & Project Metadata
-TEAM_NAME = "CrashCoders"
-PROJECT_NAME = "AICTE Application Validation Platform"
-HACKATHON_EVENT = "Smart India Hackathon 2026"
+# Project Metadata
+PROJECT_NAME = "AICTE Application Validation Platform (Prototype)"
 PRODUCT_PRINCIPLE = (
     "DECISION SUPPORT, NOT A DECISION MAKER: Every flag is advisory, carries evidence "
     "and a plain-language reason, and the final decision always stays with the AICTE scrutiny officer."

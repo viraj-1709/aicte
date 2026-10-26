@@ -1,3 +1,18 @@
+export type UserRole = 'OFFICER' | 'APPLICANT' | 'ADMIN';
+export type Lang = 'en' | 'hi' | 'ta' | 'te' | 'mr' | 'gu' | 'bn' | 'ur';
+export type Theme = 'light' | 'dark';
+export type TextSize = 'normal' | 'large';
+
+export interface UserSession {
+  id: string;
+  name: string;
+  email: string;
+  role: UserRole;
+  designation?: string;
+  institution_name?: string;
+  token?: string;
+}
+
 export interface BoundingBox {
   page: number;
   x: number;      // 0-100 percentage
@@ -27,6 +42,17 @@ export interface DocumentItem {
     suspicious_box?: BoundingBox;
     ela_visual_path?: string;
   };
+  perceptual_hash?: {
+    phash: string;
+    duplicate_match_id?: string;
+    similarity_percent?: number;
+  };
+  quality_check?: {
+    is_blurry: boolean;
+    resolution_dpi: number;
+    rotation_degrees: number;
+    cropped_warning: boolean;
+  };
   qr_data?: string;
   digital_signature?: {
     valid: boolean;
@@ -50,6 +76,7 @@ export interface FlagItem {
   };
   reason: string;
   confidence: number;
+  confidence_level?: 'HIGH' | 'MEDIUM' | 'LOW';
   risk_points: number;
   officer_feedback?: 'CORRECT' | 'FALSE_ALARM' | null;
   officer_remarks?: string | null;
@@ -76,6 +103,7 @@ export interface AuditBlock {
   data_hash: string;
   prev_hash: string;
   hash: string;
+  is_tampered_simulated?: boolean;
 }
 
 export interface RiskBreakdownItem {
@@ -87,10 +115,32 @@ export interface RiskBreakdownItem {
   base_points: number;
   is_discounted: boolean;
   feedback?: string | null;
+  is_simulated_excluded?: boolean;
+}
+
+export type ApplicationStatus = 'DRAFT' | 'SUBMITTED' | 'IN_SCRUTINY' | 'ACCEPTED' | 'REJECTED' | 'CLARIFICATION_REQUESTED';
+
+export interface ApplicationSummary {
+  id: string;
+  reference_no: string;
+  category: string;
+  category_name: string;
+  institution_name: string;
+  trust_name: string;
+  state: string;
+  district: string;
+  risk_score: number;
+  risk_band: 'LOW' | 'MEDIUM' | 'HIGH';
+  flags_count: number;
+  status: ApplicationStatus;
+  submission_date: string;
+  sla_days_remaining: number;
+  sla_urgency: 'NORMAL' | 'URGENT' | 'BREACHED';
 }
 
 export interface ApplicationDetail {
   id: string;
+  reference_no: string;
   category: string;
   category_name: string;
   institution_name: string;
@@ -102,7 +152,7 @@ export interface ApplicationDetail {
   land_area_acres: number;
   declared_classrooms: number;
   declared_labs: number;
-  status: 'DRAFT' | 'SUBMITTED' | 'IN_SCRUTINY' | 'ACCEPTED' | 'REJECTED' | 'CLARIFICATION_REQUESTED';
+  status: ApplicationStatus;
   created_at: string;
   submitted_at?: string;
   pipeline_step: number;
@@ -115,6 +165,7 @@ export interface ApplicationDetail {
   infrastructure_check?: {
     geotag_analysis?: any;
     floorplan_analysis?: any;
+    detected_rooms?: any[];
   };
   is_tampered_demo: boolean;
   officer_decision?: {
@@ -122,8 +173,17 @@ export interface ApplicationDetail {
     remarks: string;
     officer_name: string;
     timestamp: string;
+    reason_for_access?: string;
   };
   audit_chain: AuditBlock[];
+  clarification_thread?: {
+    request_message: string;
+    requested_at: string;
+    deadline_date: string;
+    applicant_response?: string;
+    reuploaded_doc_type?: string;
+    status: 'PENDING_APPLICANT' | 'RE_EVALUATED';
+  };
 }
 
 export interface AdminKPIs {
@@ -157,6 +217,11 @@ export interface RuleConfigItem {
   risk_points: number;
   enabled: boolean;
   parameters: Record<string, any>;
+  last_threshold_adjustment?: {
+    previous_points: number;
+    adjusted_at: string;
+    reason: string;
+  };
 }
 
 export interface AlertItem {
@@ -166,4 +231,17 @@ export interface AlertItem {
   timestamp: string;
   details: string;
   application_id: string;
+}
+
+export interface GraphNode {
+  id: string;
+  label: string;
+  type: 'APPLICATION' | 'PHONE' | 'TRUST' | 'DOCUMENT_HASH' | 'ADDRESS';
+  risk?: 'LOW' | 'HIGH' | 'CRITICAL';
+}
+
+export interface GraphLink {
+  source: string;
+  target: string;
+  label: string;
 }

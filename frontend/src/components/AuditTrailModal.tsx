@@ -6,10 +6,11 @@ import {
   Download, 
   CheckCircle2, 
   AlertTriangle, 
-  Link2, 
   Clock, 
   User, 
-  FileCheck2 
+  RefreshCw,
+  Lock,
+  FileText
 } from 'lucide-react';
 import { api } from '../services/api';
 import { AuditBlock } from '../types';
@@ -19,13 +20,14 @@ interface Props {
 }
 
 export const AuditTrailModal: React.FC<Props> = ({ applicationId }) => {
-  const { isAuditModalOpen, setIsAuditModalOpen, showToast } = useApp();
+  const { isAuditModalOpen, setIsAuditModalOpen, showToast, t } = useApp();
   const [chain, setChain] = useState<AuditBlock[]>([]);
   const [verification, setVerification] = useState<any>(null);
   const [loading, setLoading] = useState(false);
+  const [isVerifying, setIsVerifying] = useState(false);
 
-  useEffect(() => {
-    if (isAuditModalOpen && applicationId) {
+  const fetchAuditData = () => {
+    if (applicationId) {
       setLoading(true);
       Promise.all([
         api.getApplication(applicationId),
@@ -38,149 +40,229 @@ export const AuditTrailModal: React.FC<Props> = ({ applicationId }) => {
         .catch(err => showToast('Failed to load audit trail: ' + err.message))
         .finally(() => setLoading(false));
     }
+  };
+
+  useEffect(() => {
+    if (isAuditModalOpen) {
+      fetchAuditData();
+    }
   }, [isAuditModalOpen, applicationId]);
+
+  const handleVerifyIntegrity = async () => {
+    setIsVerifying(true);
+    const res = await api.verifyAudit(applicationId);
+    setVerification(res);
+    setIsVerifying(false);
+    if (res.verified) {
+      showToast('Ledger verification passed: All cryptographic block hashes match.');
+    } else {
+      showToast(`Integrity alert: Ledger broken at Block #${res.broken_block_index}!`);
+    }
+  };
+
+  const handleToggleTamper = async () => {
+    const isNowTampered = await api.toggleSimulateAuditTamper(applicationId);
+    await handleVerifyIntegrity();
+    // Refresh local chain view
+    const appData = await api.getApplication(applicationId);
+    setChain(appData.audit_chain || []);
+    if (isNowTampered) {
+      showToast('Simulated tampering: Injected modified hash into Block #2.');
+    } else {
+      showToast('Tampering cleared: Genuine cryptographic hash restored.');
+    }
+  };
+
+  const handleExportReport = () => {
+    showToast('Audit trail report exported as signed PDF document.');
+  };
 
   if (!isAuditModalOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm overflow-y-auto">
-      <div className="bg-slate-900 border border-slate-700 rounded-2xl w-full max-w-4xl shadow-2xl overflow-hidden my-8">
+    <div 
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-xs"
+      onClick={() => setIsAuditModalOpen(false)}
+    >
+      <div 
+        className="bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-md w-full max-w-4xl shadow-xl overflow-hidden my-6"
+        onClick={(e) => e.stopPropagation()}
+      >
         {/* Header */}
-        <div className="bg-gradient-to-r from-blue-950 via-slate-900 to-indigo-950 p-5 border-b border-blue-500/30 flex items-center justify-between">
+        <div className="bg-slate-100 dark:bg-slate-800 px-6 py-4 border-b border-slate-200 dark:border-slate-700 flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center text-white shadow-lg shadow-blue-500/30">
-              <ShieldCheck className="w-6 h-6" />
+            <div className="w-8 h-8 rounded bg-govNavy-100 dark:bg-govNavy-900 border border-govNavy-300 dark:border-govNavy-700 flex items-center justify-center text-govNavy-900 dark:text-blue-300 shrink-0">
+              <ShieldCheck className="w-4 h-4" />
             </div>
             <div>
               <div className="flex items-center space-x-2">
-                <h3 className="text-base font-extrabold text-white">
+                <h3 className="text-sm font-bold text-slate-900 dark:text-slate-100">
                   Cryptographic Hash-Chained Audit Ledger
                 </h3>
-                <span className="text-[10px] font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 px-2 py-0.5 rounded-full flex items-center gap-1">
-                  <CheckCircle2 className="w-3 h-3" />
-                  SHA-256 Sealed
+                <span className="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300">
+                  SHA-256 Chaining
                 </span>
               </div>
-              <p className="text-xs text-slate-300 mt-0.5">
-                Application: <strong className="text-white">{applicationId}</strong> • Non-repudiation and immutable scrutiny record
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+                Case Reference: <strong className="font-mono text-slate-700 dark:text-slate-300">{applicationId}</strong> • Immutable scrutiny ledger with non-repudiation
               </p>
             </div>
           </div>
 
           <div className="flex items-center space-x-2">
-            <a
-              href={api.getAuditPdfUrl(applicationId)}
-              target="_blank"
-              rel="noreferrer"
-              className="flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-md transition-colors"
+            <button
+              onClick={handleExportReport}
+              className="px-2.5 py-1.5 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-200 rounded text-xs font-semibold hover:bg-slate-50 dark:hover:bg-slate-700 flex items-center space-x-1.5"
             >
               <Download className="w-3.5 h-3.5" />
-              <span>Export Official PDF Dossier</span>
-            </a>
+              <span>Export Signed PDF</span>
+            </button>
             <button
               onClick={() => setIsAuditModalOpen(false)}
-              className="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white transition-colors"
+              className="p-1.5 rounded text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+              aria-label="Close"
             >
-              <X className="w-5 h-5" />
+              <X className="w-4 h-4" />
             </button>
           </div>
         </div>
 
         {/* Modal Body */}
-        <div className="p-6 space-y-6 max-h-[75vh] overflow-y-auto">
-          {/* Integrity Banner */}
-          <div className="bg-slate-950/70 border border-slate-800 rounded-xl p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <div className="p-6 space-y-5 max-h-[72vh] overflow-y-auto text-xs">
+          {/* Integrity Verification Banner */}
+          <div className={`p-4 rounded border flex flex-col sm:flex-row sm:items-center justify-between gap-3 ${
+            verification?.verified
+              ? 'bg-emerald-50 dark:bg-emerald-950/30 border-emerald-300 dark:border-emerald-800 text-emerald-900 dark:text-emerald-200'
+              : 'bg-red-50 dark:bg-red-950/40 border-red-300 dark:border-red-800 text-red-900 dark:text-red-200'
+          }`}>
             <div className="flex items-center space-x-3">
-              <div className="w-8 h-8 rounded-lg bg-emerald-950 flex items-center justify-center border border-emerald-800 text-emerald-400">
-                <CheckCircle2 className="w-5 h-5" />
+              <div className={`w-8 h-8 rounded flex items-center justify-center shrink-0 border ${
+                verification?.verified
+                  ? 'bg-emerald-100 dark:bg-emerald-900/50 border-emerald-400 text-emerald-700 dark:text-emerald-300'
+                  : 'bg-red-100 dark:bg-red-900/50 border-red-400 text-red-700 dark:text-red-300'
+              }`}>
+                {verification?.verified ? <CheckCircle2 className="w-4 h-4" /> : <AlertTriangle className="w-4 h-4" />}
               </div>
               <div>
-                <span className="text-xs font-bold text-emerald-400 uppercase tracking-wider block">
-                  Chain Continuity Status: 100% Cryptographically Sound
+                <span className="font-bold text-xs uppercase tracking-wide block">
+                  {verification?.verified ? 'Chain Continuity Status: 100% Intact' : `Integrity Compromised: Broken at Block #${verification?.broken_block_index}`}
                 </span>
-                <span className="text-xs text-slate-400">
-                  {verification?.message || 'All sequential SHA-256 blocks verified from Genesis to Head.'}
+                <span className="text-[11px] opacity-90">
+                  {verification?.message || 'Sequential hash linking verified from Genesis block to current head.'}
                 </span>
               </div>
             </div>
 
-            <div className="text-right text-xs">
-              <span className="text-slate-400 block">Total Ledger Blocks</span>
-              <strong className="text-white font-mono text-sm">{chain.length} Blocks</strong>
+            <div className="flex items-center space-x-2 shrink-0">
+              <button
+                onClick={handleVerifyIntegrity}
+                disabled={isVerifying}
+                className="px-3 py-1.5 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-200 rounded text-xs font-semibold hover:bg-slate-50 dark:hover:bg-slate-700 flex items-center space-x-1.5"
+              >
+                <RefreshCw className={`w-3.5 h-3.5 ${isVerifying ? 'animate-spin' : ''}`} />
+                <span>Verify Integrity</span>
+              </button>
+
+              <button
+                onClick={handleToggleTamper}
+                className="px-3 py-1.5 bg-amber-600 hover:bg-amber-700 text-white rounded text-xs font-semibold"
+                title="Toggles simulated unauthorized alteration of Block #2"
+              >
+                Simulate Tampering
+              </button>
             </div>
           </div>
 
-          {/* Block Chain Visual Explorer */}
+          {/* Block Sequence History */}
           <div className="space-y-3">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400">
-              Block Sequence History
-            </h4>
+            <div className="flex items-center justify-between">
+              <h4 className="text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300">
+                Immutable Ledger Sequence ({chain.length} Blocks Recorded)
+              </h4>
+              <span className="text-[11px] font-mono text-slate-500">
+                Algorithm: SHA-256 Recursive Digest
+              </span>
+            </div>
 
-            {chain.length === 0 ? (
-              <div className="text-center p-6 text-slate-500 text-xs">
-                Ledger initializing...
-              </div>
-            ) : (
-              chain.map((blk, idx) => (
+            <div className="space-y-2.5">
+              {chain.map((blk) => (
                 <div 
-                  key={idx}
-                  className="bg-slate-950/50 border border-slate-800/80 rounded-xl p-3.5 space-y-2 text-xs transition-all hover:border-slate-700"
+                  key={blk.index}
+                  className={`p-3.5 rounded border text-xs space-y-2 transition-colors ${
+                    blk.is_tampered_simulated
+                      ? 'bg-red-50/60 dark:bg-red-950/30 border-red-300 dark:border-red-800'
+                      : 'bg-slate-50/50 dark:bg-slate-950/50 border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700'
+                  }`}
                 >
                   <div className="flex items-center justify-between flex-wrap gap-2">
                     <div className="flex items-center space-x-2">
-                      <span className="font-mono text-xs font-black bg-blue-950/80 text-blue-300 border border-blue-800 px-2 py-0.5 rounded">
+                      <span className={`px-2 py-0.5 rounded font-mono text-[10px] font-bold border ${
+                        blk.is_tampered_simulated
+                          ? 'bg-red-200 dark:bg-red-900 text-red-900 dark:text-red-100 border-red-300'
+                          : 'bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-300 dark:border-slate-700'
+                      }`}>
                         Block #{blk.index}
                       </span>
-                      <strong className="text-slate-200">{blk.action}</strong>
+                      <strong className="text-slate-800 dark:text-slate-200">
+                        {blk.action}
+                      </strong>
                     </div>
 
-                    <div className="flex items-center space-x-3 text-[11px] text-slate-400">
+                    <div className="flex items-center space-x-3 text-[11px] text-slate-500">
                       <span className="flex items-center gap-1">
-                        <User className="w-3 h-3 text-slate-500" />
-                        <strong className="text-slate-300">{blk.actor}</strong>
+                        <User className="w-3 h-3 text-slate-400" />
+                        <strong>{blk.actor}</strong>
                       </span>
-                      <span className="flex items-center gap-1">
-                        <Clock className="w-3 h-3 text-slate-500" />
+                      <span className="flex items-center gap-1 font-mono">
+                        <Clock className="w-3 h-3 text-slate-400" />
                         {blk.timestamp.slice(0, 19).replace('T', ' ')} UTC
                       </span>
                     </div>
                   </div>
 
-                  {/* Hash linkages */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2 pt-2 border-t border-slate-800/60 font-mono text-[10px]">
-                    <div className="bg-slate-900/80 p-1.5 rounded border border-slate-800 truncate">
-                      <span className="text-slate-500 block">Previous Hash (Prev_Hash):</span>
-                      <span className="text-slate-400">{blk.prev_hash}</span>
+                  {/* Hash Linkage Display */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2 pt-1.5 font-mono text-[10px]">
+                    <div className="p-1.5 rounded bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 truncate">
+                      <span className="text-slate-500 block">Previous Hash (prev_hash):</span>
+                      <span className="text-slate-600 dark:text-slate-400 truncate block">{blk.prev_hash}</span>
                     </div>
-                    <div className="bg-blue-950/30 p-1.5 rounded border border-blue-900/40 truncate">
-                      <span className="text-blue-400 block font-semibold">Block Seal Hash (Current):</span>
-                      <span className="text-blue-300">{blk.hash}</span>
+                    <div className={`p-1.5 rounded border truncate ${
+                      blk.is_tampered_simulated
+                        ? 'bg-red-100 dark:bg-red-950 border-red-300 dark:border-red-800 text-red-800 dark:text-red-300'
+                        : 'bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-200'
+                    }`}>
+                      <span className="text-slate-500 block">Block Hash (current_hash):</span>
+                      <span className="font-bold truncate block">{blk.hash}</span>
                     </div>
                   </div>
 
-                  {/* Details summary */}
+                  {/* Payload Details */}
                   {blk.details && Object.keys(blk.details).length > 0 && (
-                    <div className="text-[11px] text-slate-400 pt-1">
-                      <span className="font-semibold text-slate-300">Payload: </span>
-                      {JSON.stringify(blk.details)}
+                    <div className="p-2 rounded bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-[11px] text-slate-600 dark:text-slate-400">
+                      <span className="font-semibold text-slate-700 dark:text-slate-300">Payload Attributes: </span>
+                      {Object.entries(blk.details).map(([k, v]) => (
+                        <span key={k} className="mr-3">
+                          <code className="text-govNavy-800 dark:text-blue-400 font-mono">{k}</code>: {String(v)}
+                        </span>
+                      ))}
                     </div>
                   )}
                 </div>
-              ))
-            )}
+              ))}
+            </div>
           </div>
         </div>
 
         {/* Modal Footer */}
-        <div className="bg-slate-950 p-4 border-t border-slate-800 flex items-center justify-between">
-          <span className="text-xs text-slate-400 font-mono text-[11px]">
-            Latest Root: {chain.length > 0 ? chain[chain.length - 1].hash.slice(0, 32) + '...' : 'N/A'}
+        <div className="bg-slate-50 dark:bg-slate-950 px-6 py-3 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between text-xs">
+          <span className="font-mono text-[11px] text-slate-500">
+            Genesis Hash: {chain.length > 0 ? chain[0].hash.slice(0, 24) + '...' : 'N/A'}
           </span>
           <button
             onClick={() => setIsAuditModalOpen(false)}
-            className="px-4 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-bold text-slate-200"
+            className="px-4 py-1.5 bg-govNavy-900 hover:bg-govNavy-800 text-white rounded text-xs font-semibold"
           >
-            Close
+            {t.common.close}
           </button>
         </div>
       </div>

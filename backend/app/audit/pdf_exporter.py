@@ -92,7 +92,7 @@ def generate_audit_pdf(app_data: Dict[str, Any], output_path: str) -> str:
     # Header
     story.append(Paragraph("ALL INDIA COUNCIL FOR TECHNICAL EDUCATION", title_style))
     story.append(Paragraph("STATUTORY BODY OF THE GOVERNMENT OF INDIA | APPROVAL PROCESS 2026-27", subtitle_style))
-    story.append(Paragraph("AICTE APPLICATION VALIDATION PLATFORM (PROTOTYPE) - OFFICIAL DOSSIER", subtitle_style))
+    story.append(Paragraph("AICTE APPLICATION VALIDATION PLATFORM - OFFICIAL DOSSIER", subtitle_style))
     story.append(Spacer(1, 8))
 
     # Mandatory Product Principle Banner
@@ -296,7 +296,7 @@ def generate_audit_pdf(app_data: Dict[str, Any], output_path: str) -> str:
         story.append(t_chain)
 
     story.append(Spacer(1, 16))
-    story.append(Paragraph("<b>End of Official AICTE Scrutiny Dossier</b> | Generated securely by AICTE Application Validation Platform (Prototype)", subtitle_style))
+    story.append(Paragraph("<b>End of Official AICTE Scrutiny Dossier</b> | Generated securely by AICTE Application Validation Platform", subtitle_style))
 
     doc.build(story)
     return output_path

@@ -2,6 +2,18 @@ import { en } from './en';
 
 export const te: typeof en = {
   common: {
+    skipToContent: "ప్రధాన కంటెంట్‌కు వెళ్లండి",
+    primaryNavigation: "ప్రాథమిక నావిగేషన్",
+    collapseSidebar: "నావిగేషన్‌ను కుదించు",
+    expandSidebar: "నావిగేషన్‌ను విస్తరించు",
+    sectionWorkspace: "పని ప్రదేశం మరియు క్యూ",
+    sectionTools: "నియంత్రణ పరిశీలన సాధనాలు",
+    sectionGovernance: "పాలన మరియు కార్యకలాపాలు",
+    sectionCompliance: "ఆడిట్ మరియు విశ్లేషణ",
+    sectionResources: "దరఖాస్తుదారు వనరులు",
+    statutoryGuidelines: "చట్టబద్ధమైన మార్గదర్శకాలు (APH)",
+    technicalHelpdesk: "సాంకేతిక సహాయ కేంద్రం",
+
     close: "మూసివేయి",
     cancel: "రద్దు చేయి",
     confirm: "ధృవీకరించు",
@@ -59,12 +71,22 @@ export const te: typeof en = {
     langLabel: "భాష",
     themeLight: "లైట్ మోడ్",
     themeDark: "డార్క్ మోడ్",
-    textSize: "టెక్స్ట్ పరిమాణం",
     tour: "గైడెడ్ టూర్",
     modelCard: "మోడల్ కార్డ్ & న్యాయబద్ధత",
     healthCheck: "సిస్టమ్ స్థితి",
     logout: "సైన్ అవుట్",
-    officerBadge: "అధికారి"
+    officerBadge: "అధికారి",
+    logoAlt: "AICTE అధికారిక చిహ్నం మరియు పోర్టల్ లోగో",
+    moreMenu: "మరిన్ని ఎంపికలు",
+    breadcrumbsHome: "AICTE పోర్టల్",
+    officerBreadcrumb: "పరిశీలన అధికారి",
+    adminBreadcrumb: "కౌన్సిల్ పరిపాలన",
+    applicantBreadcrumb: "సంస్థాగత దరఖాస్తుదారు",
+    queueBreadcrumb: "సమీక్ష క్యూ మరియు డాసియర్",
+    rulesBreadcrumb: "KPIలు మరియు నియమాల కాన్ఫిగరేషన్",
+    benchmarkBreadcrumb: "మోడల్ మూల్యాంకన ప్రమాణాలు",
+    checklistBreadcrumb: "పత్రాల తనిఖీ జాబితా మరియు దిద్దుబాటు",
+    accessDenied: "యాక్సెస్ నిరాకరించబడింది: ఈ విభాగాన్ని వీక్షించడానికి మీకు అనుమతి లేదు."
   },
   pipeline: {
     step1: "1. ఇన్‌టేక్",
@@ -139,7 +161,6 @@ export const te: typeof en = {
     btnAuditTrail: "ఆడిట్ ట్రయల్ చూడండి",
     btnDownloadPdf: "PDF డౌన్‌లోడ్ చేయండి",
     linkGraphTitle: "దరఖాస్తుల లింక్ గ్రాఫ్",
-    keyboardShortcutsTitle: "కీబోర్డ్ షార్ట్‌కట్‌లు (?)",
     timelineTitle: "ఆడిట్ టైమ్‌లైన్"
   },
   applicant: {

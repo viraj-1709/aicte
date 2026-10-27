@@ -2,6 +2,18 @@ import { en } from './en';
 
 export const ur: typeof en = {
   common: {
+    skipToContent: "بنیادی مواد پر جائیں",
+    primaryNavigation: "بنیادی نیویگیشن",
+    collapseSidebar: "نیویگیشن سکیڑیں",
+    expandSidebar: "نیویگیشن پھیلائیں",
+    sectionWorkspace: "ورک اسپیس اور قطار",
+    sectionTools: "ریگولیٹری جانچ پڑتال کے آلات",
+    sectionGovernance: "انتظامیہ اور آپریشنز",
+    sectionCompliance: "آڈٹ اور تشخیص",
+    sectionResources: "درخواست گزار وسائل",
+    statutoryGuidelines: "قانونی رہنما اصول (APH)",
+    technicalHelpdesk: "تکنیکی ہیلپ ڈیسک",
+
     close: "بند کریں",
     cancel: "منسوخ کریں",
     confirm: "تصدیق کریں",
@@ -59,12 +71,22 @@ export const ur: typeof en = {
     langLabel: "زبان",
     themeLight: "لائٹ موڈ",
     themeDark: "ڈارک موڈ",
-    textSize: "فونٹ سائز",
     tour: "رہنمائی کا دورہ",
     modelCard: "ماڈل کارڈ اور انصاف",
     healthCheck: "سسٹم کی حالت",
     logout: "سائن آؤٹ",
-    officerBadge: "افسر"
+    officerBadge: "افسر",
+    logoAlt: "AICTE کا سرکاری نشان اور پورٹل لوگو",
+    moreMenu: "مزید اختیارات",
+    breadcrumbsHome: "AICTE پورٹل",
+    officerBreadcrumb: "جانچ افسر",
+    adminBreadcrumb: "کونسل انتظامیہ",
+    applicantBreadcrumb: "ادارہ جاتی درخواست گزار",
+    queueBreadcrumb: "جائزہ قطار اور ڈوزیئر",
+    rulesBreadcrumb: "کے پی آئی اور قواعد کی ترتیبات",
+    benchmarkBreadcrumb: "ماڈل تشخیصی معیارات",
+    checklistBreadcrumb: "دستاویز چیک لسٹ اور درستگی",
+    accessDenied: "رسائی مسترد: آپ کو اس سیکشن کو دیکھنے کی اجازت نہیں ہے۔"
   },
   pipeline: {
     step1: "1. اندراج",
@@ -139,7 +161,6 @@ export const ur: typeof en = {
     btnAuditTrail: "آڈٹ ٹریل دیکھیں",
     btnDownloadPdf: "PDF ڈاؤن لوڈ کریں",
     linkGraphTitle: "درخواستوں کا باہمی لنک گراف",
-    keyboardShortcutsTitle: "کی بورڈ شارٹ کٹس (؟)",
     timelineTitle: "ٹائم لائن"
   },
   applicant: {

@@ -3,7 +3,8 @@ import shutil
 import hashlib
 from pathlib import Path
 from typing import Optional
-from fastapi import APIRouter, HTTPException, UploadFile, File, Form
+from fastapi import APIRouter, HTTPException, UploadFile, File, Form, Depends
+from ..auth import require_role
 from fastapi.responses import FileResponse
 
 from ..config import DOCUMENTS_DIR, DATA_DIR
@@ -13,7 +14,7 @@ from ..pipeline.coordinator import run_full_pipeline
 
 router = APIRouter(prefix="/api/documents", tags=["Documents"])
 
-@router.get("/{doc_id}/file")
+@router.get("/{doc_id}/file", dependencies=[Depends(require_role(["OFFICER", "APPLICANT"]))])
 def get_document_file(doc_id: str):
     """Serves the actual document image or PDF for side-by-side officer review"""
     apps = load_applications()
@@ -26,7 +27,7 @@ def get_document_file(doc_id: str):
                     return FileResponse(p, media_type=media_type)
     raise HTTPException(status_code=404, detail=f"Document {doc_id} not found on disk")
 
-@router.get("/{doc_id}/ela")
+@router.get("/{doc_id}/ela", dependencies=[Depends(require_role(["OFFICER"]))])
 def get_document_ela_heatmap(doc_id: str):
     """Serves the Error Level Analysis (ELA) heatmap image for tamper inspection"""
     apps = load_applications()
@@ -47,7 +48,7 @@ def get_document_ela_heatmap(doc_id: str):
 
     raise HTTPException(status_code=404, detail="ELA visual not available")
 
-@router.post("/upload")
+@router.post("/upload", dependencies=[Depends(require_role(["APPLICANT"]))])
 async def upload_document(
     application_id: str = Form(...),
     doc_type: str = Form(...),

@@ -2,6 +2,18 @@ import { en } from './en';
 
 export const gu: typeof en = {
   common: {
+    skipToContent: "મુખ્ય સામગ્રી પર જાઓ",
+    primaryNavigation: "મુખ્ય નેવિગેશન",
+    collapseSidebar: "નેવિગેશન સંક્ષિપ્ત કરો",
+    expandSidebar: "નેવિગેશન વિસ્તૃત કરો",
+    sectionWorkspace: "કાર્યક્ષેત્ર અને કતાર",
+    sectionTools: "નિયમનકારી ચકાસણી સાધનો",
+    sectionGovernance: "વહીવટ અને કામગીરી",
+    sectionCompliance: "ઓડિટ અને નિદાન",
+    sectionResources: "અરજદાર સંસાધનો",
+    statutoryGuidelines: "વૈધાનિક માર્ગદર્શિકા (APH)",
+    technicalHelpdesk: "તકનીકી હેલ્પડેસ્ક",
+
     close: "બંધ કરો",
     cancel: "રદ કરો",
     confirm: "પુષ્ટિ કરો",
@@ -59,12 +71,22 @@ export const gu: typeof en = {
     langLabel: "ભાષા",
     themeLight: "લાઇટ મોડ",
     themeDark: "ડાર્ક મોડ",
-    textSize: "ટેક્સ્ટ કદ",
     tour: "માર્ગદર્શિત પ્રવાસ",
     modelCard: "મોડેલ કાર્ડ અને ન્યાયીપણું",
     healthCheck: "સિસ્ટમ સ્થિતિ",
     logout: "સાઇન આઉટ",
-    officerBadge: "અધિકારી"
+    officerBadge: "અધિકારી",
+    logoAlt: "AICTE સત્તાવાર પ્રતીક અને પોર્ટલ લોગો",
+    moreMenu: "વધુ વિકલ્પો",
+    breadcrumbsHome: "AICTE પોર્ટલ",
+    officerBreadcrumb: "તપાસ અધિકારી",
+    adminBreadcrumb: "કાઉન્સિલ વહીવટ",
+    applicantBreadcrumb: "સંસ્થાકીય અરજદાર",
+    queueBreadcrumb: "સમીક્ષા કતાર અને ડોઝિયર",
+    rulesBreadcrumb: "KPIs અને નિયમો રૂપરેખાંકન",
+    benchmarkBreadcrumb: "મોડેલ મૂલ્યાંકન બેંચમાર્ક",
+    checklistBreadcrumb: "દસ્તાવેજ ચેકલિસ્ટ અને સુધારો",
+    accessDenied: "પ્રવેશ નકારાયો: તમને આ વિભાગ જોવાની પરવાનગી નથી."
   },
   pipeline: {
     step1: "1. ઇનટેક",
@@ -139,7 +161,6 @@ export const gu: typeof en = {
     btnAuditTrail: "ઓડિટ ટ્રેઇલ",
     btnDownloadPdf: "PDF ડાઉનલોડ",
     linkGraphTitle: "અરજી લિંક ગ્રાફ",
-    keyboardShortcutsTitle: "કીબોર્ડ શોર્ટકટ્સ (?)",
     timelineTitle: "ઓડિટ સમયરેખા"
   },
   applicant: {

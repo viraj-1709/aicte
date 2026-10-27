@@ -1,5 +1,17 @@
 export const en = {
   common: {
+    skipToContent: "Skip to main content",
+    primaryNavigation: "Primary Navigation",
+    collapseSidebar: "Collapse navigation",
+    expandSidebar: "Expand navigation",
+    sectionWorkspace: "Workspace & Queue",
+    sectionTools: "Regulatory Scrutiny Tools",
+    sectionGovernance: "Governance & Operations",
+    sectionCompliance: "Audit & Diagnostics",
+    sectionResources: "Applicant Resources",
+    statutoryGuidelines: "Statutory Guidelines (APH)",
+    technicalHelpdesk: "Technical Helpdesk",
+
     close: "Close",
     cancel: "Cancel",
     confirm: "Confirm",
@@ -24,7 +36,7 @@ export const en = {
   auth: {
     title: "AICTE Application Validation Platform",
     subtitle: "Official Scrutiny & Regulatory Verification Portal",
-    loginTab: "Sign In",
+    loginTab: "Login",
     registerTab: "Institutional Registration",
     roleLabel: "Select Portal Role",
     roleOfficer: "Scrutiny Officer",
@@ -35,7 +47,7 @@ export const en = {
     rememberMe: "Remember session on this device",
     forgotPassword: "Forgot password?",
     forgotPasswordModal: "Password reset request submitted. Authorized institutional contact will receive instructions.",
-    submitLogin: "Sign In to Portal",
+    submitLogin: "Login to Portal",
     submitRegister: "Submit Registration",
     nameLabel: "Authorized Signatory Name",
     mobileLabel: "Official Contact Mobile",
@@ -57,12 +69,22 @@ export const en = {
     langLabel: "Language",
     themeLight: "Light Mode",
     themeDark: "Dark Mode",
-    textSize: "Text Size",
     tour: "Guided Tour",
     modelCard: "Model Card & Fairness",
     healthCheck: "System Health",
-    logout: "Sign Out",
-    officerBadge: "Officer"
+    logout: "Logout",
+    officerBadge: "Officer",
+    logoAlt: "AICTE Official Emblem & Portal Logo",
+    moreMenu: "More Options",
+    breadcrumbsHome: "AICTE Portal",
+    officerBreadcrumb: "Scrutiny Officer",
+    adminBreadcrumb: "Council Administration",
+    applicantBreadcrumb: "Institutional Applicant",
+    queueBreadcrumb: "Review Queue & Dossier",
+    rulesBreadcrumb: "KPIs & Rules Configuration",
+    benchmarkBreadcrumb: "Model Evaluation Benchmarks",
+    checklistBreadcrumb: "Document Checklist & Rectification",
+    accessDenied: "Access Denied: You do not have permission to view this section."
   },
   pipeline: {
     step1: "1. Intake",
@@ -137,7 +159,6 @@ export const en = {
     btnAuditTrail: "View Audit Trail",
     btnDownloadPdf: "Export Official Scrutiny PDF",
     linkGraphTitle: "Cross-Application Link & Fraud Graph",
-    keyboardShortcutsTitle: "Keyboard Shortcuts (? to view)",
     timelineTitle: "Case Audit Timeline"
   },
   applicant: {

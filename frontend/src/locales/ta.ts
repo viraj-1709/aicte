@@ -2,6 +2,18 @@ import { en } from './en';
 
 export const ta: typeof en = {
   common: {
+    skipToContent: "முக்கிய உள்ளடக்கத்திற்குச் செல்லவும்",
+    primaryNavigation: "முதன்மை வழிசெலுத்தல்",
+    collapseSidebar: "வழிசெலுத்தலை சுருக்குக",
+    expandSidebar: "வழிசெலுத்தலை விரிவாக்குக",
+    sectionWorkspace: "பணியிடம் மற்றும் வரிசை",
+    sectionTools: "ஒழுங்குமுறை ஆய்வு கருவிகள்",
+    sectionGovernance: "நிர்வாகம் மற்றும் செயல்பாடுகள்",
+    sectionCompliance: "தணிக்கை மற்றும் கண்டறிதல்",
+    sectionResources: "விண்ணப்பதாரர் வளங்கள்",
+    statutoryGuidelines: "சட்டப்பூர்வ வழிகாட்டுதல்கள் (APH)",
+    technicalHelpdesk: "தொழில்நுட்ப உதவி மையம்",
+
     close: "மூடு",
     cancel: "ரத்து செய்",
     confirm: "உறுதி செய்",
@@ -59,12 +71,22 @@ export const ta: typeof en = {
     langLabel: "மொழி",
     themeLight: "வெளிச்ச பயன்முறை",
     themeDark: "இருள் பயன்முறை",
-    textSize: "எழுத்து அளவு",
     tour: "வழிகாட்டப்பட்ட பயணம்",
     modelCard: "மாதிரி அட்டை & நேர்மை",
     healthCheck: "கணினி நிலை",
     logout: "வெளியேறு",
-    officerBadge: "அலுவலர்"
+    officerBadge: "அலுவலர்",
+    logoAlt: "AICTE அதிகாரப்பூர்வ சின்னம் மற்றும் போர்டல் லோகோ",
+    moreMenu: "கூடுதல் விருப்பங்கள்",
+    breadcrumbsHome: "AICTE போர்டல்",
+    officerBreadcrumb: "ஆய்வு அதிகாரி",
+    adminBreadcrumb: "கவுன்சில் நிர்வாகம்",
+    applicantBreadcrumb: "நிறுவன விண்ணப்பதாரர்",
+    queueBreadcrumb: "மதிப்பாய்வு வரிசை மற்றும் கோப்பு",
+    rulesBreadcrumb: "KPIகள் மற்றும் விதிகள் உள்ளமைப்பு",
+    benchmarkBreadcrumb: "மாதிரி மதிப்பீட்டு அளவுகோல்கள்",
+    checklistBreadcrumb: "ஆவண சரிபார்ப்பு பட்டியல் & திருத்தம்",
+    accessDenied: "அணுகல் மறுக்கப்பட்டது: இந்த பகுதியை பார்க்க உங்களுக்கு அனுமதி இல்லை."
   },
   pipeline: {
     step1: "1. உட்கொள்ளல்",
@@ -139,7 +161,6 @@ export const ta: typeof en = {
     btnAuditTrail: "தணிக்கை பதிவு",
     btnDownloadPdf: "PDF ஏற்றுமதி",
     linkGraphTitle: "விண்ணப்ப இணைப்பு வரைபடம்",
-    keyboardShortcutsTitle: "விசைப்பலகை குறுக்குவழிகள் (?)",
     timelineTitle: "காலவரிசை"
   },
   applicant: {

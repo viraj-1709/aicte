@@ -69,7 +69,7 @@ export const GuidedTourModal: React.FC = () => {
           <div className="flex items-center space-x-2.5">
             <Compass className="w-5 h-5 text-govNavy-700 dark:text-blue-400" />
             <h3 className="text-sm font-bold text-slate-800 dark:text-slate-100">
-              Interactive Prototype Walkthrough ({step + 1} of {tourSteps.length})
+              Interactive Portal Walkthrough ({step + 1} of {tourSteps.length})
             </h3>
           </div>
           <button

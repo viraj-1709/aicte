@@ -2,7 +2,7 @@
 set -e
 
 echo "========================================================================="
-echo "  AICTE Application Validation Platform (Prototype)"
+echo "  AICTE Application Validation Platform"
 echo "========================================================================="
 echo ""
 echo "Product Principle: DECISION SUPPORT, NOT A DECISION MAKER."

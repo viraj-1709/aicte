@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { UserRole, UserSession, Lang, Theme, TextSize } from '../types';
+import { UserRole, UserSession, Lang, Theme } from '../types';
 import { translations, LANGUAGE_OPTIONS } from '../locales';
 import { en } from '../locales/en';
 
@@ -19,12 +19,9 @@ interface AppContextType {
   setLang: (l: Lang) => void;
   t: typeof en;
   isRTL: boolean;
-
-  // Theme & Text Size
+  // Theme
   theme: Theme;
   toggleTheme: () => void;
-  textSize: TextSize;
-  toggleTextSize: () => void;
 
   // Active Application Selection
   selectedAppId: string;
@@ -43,8 +40,6 @@ interface AppContextType {
   setIsHealthCheckOpen: (open: boolean) => void;
   isTourOpen: boolean;
   setIsTourOpen: (open: boolean) => void;
-  isShortcutsOpen: boolean;
-  setIsShortcutsOpen: (open: boolean) => void;
   reasonForAccessAppId: string | null;
   setReasonForAccessAppId: (id: string | null) => void;
 
@@ -113,25 +108,14 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     }
   }, [theme]);
 
-  // 4. Text scale: Normal or Large (A- / A+)
-  const [textSize, setTextSizeState] = useState<TextSize>(() => {
-    const saved = localStorage.getItem('aicte_text_size') as TextSize;
-    return saved === 'large' ? 'large' : 'normal';
-  });
-
-  const toggleTextSize = () => {
-    const next = textSize === 'normal' ? 'large' : 'normal';
-    setTextSizeState(next);
-    localStorage.setItem('aicte_text_size', next);
-  };
-
+  // 4. Clear any stored font-size preference on load so old values cannot affect the layout
   useEffect(() => {
-    if (textSize === 'large') {
-      document.documentElement.classList.add('text-size-large');
-    } else {
+    try {
+      localStorage.removeItem('aicte_text_size');
       document.documentElement.classList.remove('text-size-large');
-    }
-  }, [textSize]);
+    } catch (_) {}
+  }, []);
+
 
   // 5. Active Case Dossier
   const [selectedAppId, setSelectedAppId] = useState<string>('AICTE-2026-APEX-TAMPERED');
@@ -143,7 +127,6 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   const [isModelCardOpen, setIsModelCardOpen] = useState<boolean>(false);
   const [isHealthCheckOpen, setIsHealthCheckOpen] = useState<boolean>(false);
   const [isTourOpen, setIsTourOpen] = useState<boolean>(false);
-  const [isShortcutsOpen, setIsShortcutsOpen] = useState<boolean>(false);
   const [reasonForAccessAppId, setReasonForAccessAppId] = useState<string | null>(null);
 
   // 7. Toast Notification
@@ -160,13 +143,13 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     setUser(session);
     setLockoutCount(0);
     localStorage.setItem('aicte_session', JSON.stringify(session));
-    showToast(`Signed in successfully as ${session.name} (${session.role})`);
+    showToast(`Logged in successfully as ${session.name} (${session.role})`);
   };
 
   const logout = () => {
     setUser(null);
     localStorage.removeItem('aicte_session');
-    showToast('Signed out of the platform.');
+    showToast('Logged out of the platform.');
   };
 
   const recordFailedLogin = () => {
@@ -206,8 +189,6 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         isRTL,
         theme,
         toggleTheme,
-        textSize,
-        toggleTextSize,
         selectedAppId,
         setSelectedAppId,
         isTamperDemoOpen,
@@ -222,8 +203,6 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         setIsHealthCheckOpen,
         isTourOpen,
         setIsTourOpen,
-        isShortcutsOpen,
-        setIsShortcutsOpen,
         reasonForAccessAppId,
         setReasonForAccessAppId,
         toastMessage,

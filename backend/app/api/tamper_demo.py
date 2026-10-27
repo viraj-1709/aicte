@@ -1,8 +1,9 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, Depends
+from ..auth import require_role
 from .applications import load_applications
 from ..pipeline.coordinator import run_full_pipeline
 
-router = APIRouter(prefix="/api/tamper-demo", tags=["Tamper Demo"])
+router = APIRouter(prefix="/api/tamper-demo", tags=["Tamper Demo"], dependencies=[Depends(require_role(["OFFICER"]))])
 
 @router.get("")
 def get_tamper_demo_comparison():

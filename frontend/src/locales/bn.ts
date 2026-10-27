@@ -2,6 +2,18 @@ import { en } from './en';
 
 export const bn: typeof en = {
   common: {
+    skipToContent: "মূল বিষয়বস্তুতে যান",
+    primaryNavigation: "প্রধান নেভিগেশন",
+    collapseSidebar: "সাইডবার সংকুচিত করুন",
+    expandSidebar: "সাইডবার প্রসারিত করুন",
+    sectionWorkspace: "কর্মক্ষেত্র ও সারি",
+    sectionTools: "নিয়ন্ত্রক যাচাইকরণ সরঞ্জাম",
+    sectionGovernance: "প্রশাসন ও পরিচালনা",
+    sectionCompliance: "অডিট ও ডায়াগনস্টিক",
+    sectionResources: "আবেদনকারী সংস্থান",
+    statutoryGuidelines: "সংবিধিবদ্ধ নির্দেশিকা (APH)",
+    technicalHelpdesk: "প্রযুক্তিগত সহায়তা কেন্দ্র",
+
     close: "বন্ধ করুন",
     cancel: "বাতিল",
     confirm: "নিশ্চিত করুন",
@@ -59,12 +71,22 @@ export const bn: typeof en = {
     langLabel: "ভাষা",
     themeLight: "লাইট মোড",
     themeDark: "ডার্ক মোড",
-    textSize: "ফন্ট সাইজ",
     tour: "নির্দেশিত সফর",
     modelCard: "মডেল কার্ড এবং ন্যায্যতা",
     healthCheck: "সিস্টেম স্থিতি",
     logout: "সাইন আউট",
-    officerBadge: "অফিসার"
+    officerBadge: "অফিসার",
+    logoAlt: "AICTE অফিসিয়াল প্রতীক এবং পোর্টাল লোগো",
+    moreMenu: "আরও বিকল্প",
+    breadcrumbsHome: "AICTE পোর্টাল",
+    officerBreadcrumb: "যাচাইকারী আধিকারিক",
+    adminBreadcrumb: "কাউন্সিল প্রশাসন",
+    applicantBreadcrumb: "প্রাতিষ্ঠানিক আবেদনকারী",
+    queueBreadcrumb: "পর্যালোচনা সারি এবং ডসিয়ার",
+    rulesBreadcrumb: "কেপিআই এবং নিয়ম কনফিগারেশন",
+    benchmarkBreadcrumb: "মডেল মূল্যায়ন বেঞ্চমার্ক",
+    checklistBreadcrumb: "নথিপত্র চেকলিস্ট ও সংশোধন",
+    accessDenied: "প্রবেশাধিকার অস্বীকৃত: আপনার এই বিভাগটি দেখার অনুমতি নেই।"
   },
   pipeline: {
     step1: "1. ইনটেক",
@@ -139,7 +161,6 @@ export const bn: typeof en = {
     btnAuditTrail: "অডিট ট্রেইল দেখুন",
     btnDownloadPdf: "PDF ডাউনলোড করুন",
     linkGraphTitle: "আবেদন সংযোগ গ্রাফ",
-    keyboardShortcutsTitle: "কীবোর্ড শর্টকাট (?)",
     timelineTitle: "কেস টাইমলাইন"
   },
   applicant: {

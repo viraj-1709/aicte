@@ -1,4 +1,4 @@
-# AICTE Application Validation Platform (Prototype)
+# AICTE Application Validation Platform
 
 An automated validation, document authentication, and regulatory compliance verification platform for AICTE scrutiny officers.
 
@@ -87,6 +87,15 @@ flowchart TD
 
 - **8 Official Indian Languages + Urdu RTL**: English (default), हिन्दी, தமிழ், తెలుగు, मराठी, ગુજરાતી, বাংলা, and اردو (with full right-to-left layout mirroring).
 - **Strict Light and Dark Theme**: Government palette (navy `#0F2C59`, saffron, green accents, neutral grays). No gradients, no neon pastels, no emojis.
+- **Unified Role-Based Vertical Sidebar Navigation**:
+  - Replaces all legacy top navbar tabs, quick action bars, and dropdown menus with a single vertical sidebar.
+  - Built strictly from the logged-in role (`Officer`, `Admin`, or `Applicant`) with zero cross-role page exposure.
+  - **Desktop (1024px+)**: Full height sticky rail below the header, collapsible from ~240-260px wide to an icon-only 64px rail with state persisted in local storage per user. In icon-only mode, translated tooltips and aria-labels are fully preserved.
+  - **Mobile & Tablet (<1024px)**: Responsive overlay drawer triggered by the header menu button with accessible backdrop, Esc key dismissal, focus trapping, and focus return.
+  - **RTL Support (Urdu)**: Automatically mirrors to the right side of the screen using CSS logical properties (`border-e`, `start-0`, `ms-`, `pe-`, `border-s-4`).
+  - **Active State Highlighting**: High-contrast indicator combining a colored border bar (`border-s-4`), bold text, background tint, and `aria-current="page"`.
+- **Streamlined Government Header**: AICTE official logo (80-96px height with light backing area), national tricolor strip, statutory principle banner, 8-language switcher, light/dark mode toggle, alerts notification bell with badge, and profile menu with Logout.
+- **Standard WCAG Accessibility**: Clean base typography (16px root, rem-based) supporting native browser zoom up to 200% without layout clipping. Custom text-size toggles and non-standard hotkeys were intentionally removed in compliance with WCAG 2.1 AA keyboard navigation (standard Tab order, Enter/Space, Esc dismissal).
 - **Bulk Scrutiny Queue (500+ Cases)**: Fast pagination, sorting by Risk Score / SLA / Date, filtering by risk band, state, and category.
 - **SLA Deadline Tracker**: Countdown of days remaining per case with auto-escalation highlights.
 - **What-If Risk Simulator**: Interactive sandbox where officers can toggle individual flags off to observe hypothetical score recalculations live without modifying stored data.
@@ -99,7 +108,6 @@ flowchart TD
 - **Cross-Application Fraud Link Graph**: Visual network identifying shared telephone numbers, trust registration IDs, addresses, and document hashes across different applicants.
 - **Tamper Forensics Demo Mode**: 1-click side-by-side comparison of a clean application vs a tampered twin with injected flaws, plus a 1-click **Reset Demo Data** button.
 - **Immutable Hash-Chained Audit Ledger**: Every view, check, reason for access, and decision is cryptographically sealed via recursive SHA-256 digests. Features 1-click integrity verification and a tamper simulation toggle.
-- **Officer Keyboard Shortcuts**: `A` (Accept), `R` (Reject), `C` (Request Clarification), `N` (Next case), `P` (Previous case), `F` (Focus flags), `?` (Shortcut reference overlay).
 - **First-Run Guided Tour**: Step-by-step walkthrough across login, review queue, showcase case, what-if simulator, and tamper demo.
 
 ---
@@ -136,12 +144,12 @@ Open `http://localhost:5173/` in your browser. The application runs 100% offline
 
 1. **Login Page (0:00 - 0:25)**
    - Open `http://localhost:5173/`. Notice the clean, official government styling, statutory decision principle banner, and privacy notice.
-   - Use the language switcher in the header to switch to **हिन्दी (Hindi)**, then to **اردو (Urdu)** to demonstrate instant full-layout RTL transformation.
-   - Switch back to English, toggle the **Light / Dark theme** (sun/moon), and adjust text size (A- / A+).
-   - In the "Demo Credentials" drawer, click **Officer** and sign in.
+   - Use the language switcher in the header to switch to **हिन्दी (Hindi)**, then to **اردو (Urdu)** to demonstrate instant full-layout RTL transformation with right-aligned elements.
+   - Switch back to English and toggle the **Light / Dark theme** (sun/moon).
+   - In the "Demo Credentials" drawer, click **Officer** and log in.
 
 2. **Bulk Queue & SLA Tracker (0:25 - 0:50)**
-   - In the Officer Workspace, observe the 520+ simulated applications.
+   - In the Officer Workspace (accessed via the left vertical sidebar), observe the 520+ simulated applications.
    - Filter by `Risk: High` or sort by `SLA Deadline`. Notice cases nearing deadline highlighted with red/amber badges.
    - Demonstrate the **Bulk Approve Zero-Flag Cases** button with confirmation dialog and mandatory audit remarks.
 
@@ -157,16 +165,16 @@ Open `http://localhost:5173/` in your browser. The application runs 100% offline
    - Return to the flags tab and click `Mark False Alarm` on a flag. Notice the visible notice confirming threshold weight reduction.
 
 5. **Cross-App Link Graph (2:00 - 2:20)**
-   - Click **Link Graph** in the top navigation.
+   - Click **Fraud Link Graph** in the left sidebar navigation.
    - Inspect the visual network showing how Apex Institute shares a contact phone number and trust deed hash with another applicant.
 
 6. **Tamper Forensics Demo & Demo Reset (2:20 - 2:40)**
-   - Click **Tamper Demo** in the header.
+   - Click **Tamper Forensics Demo** in the left sidebar navigation.
    - Review the side-by-side matrix comparing Apex Clean (0 Risk) vs Tampered Twin (85 Risk).
    - Click **Reset Demo Data** to restore all records to baseline in one click.
 
 7. **Cryptographic Audit Ledger Verification (2:40 - 3:00)**
-   - Click **Audit Trail** in the header.
+   - Click **Audit Trail** in the left sidebar navigation.
    - Click **Verify Integrity**: all cryptographic blocks verify successfully from Genesis to Head.
    - Click **Simulate Tampering** to tamper with Block #2. Click **Verify Integrity** again: the system immediately pinpoints the broken block with a clear cryptographic warning.
 
@@ -176,16 +184,16 @@ Open `http://localhost:5173/` in your browser. The application runs 100% offline
 
 | Shot # | Time | Screen / View | Action & Narration Focus |
 |---|---|---|---|
-| 01 | 0:00 - 0:15 | Login Screen | Header, accessibility tools (8 languages, Urdu RTL, theme toggle, text size). |
+| 01 | 0:00 - 0:15 | Login Screen | Header, accessibility tools (8 languages, Urdu RTL, theme toggle, clean layout). |
 | 02 | 0:15 - 0:30 | Login Demo Panel | 1-click credential fill, role-based redirection to Officer Workspace. |
-| 03 | 0:30 - 0:50 | Bulk Queue | Review queue with 520+ records, SLA deadline badges, filter by risk band. |
+| 03 | 0:30 - 0:50 | Bulk Queue | Review queue with 520+ records, SLA deadline badges, filter by risk band next to left sidebar. |
 | 04 | 0:50 - 1:15 | Showcase Dossier | 6-step pipeline tracker, 85/100 risk score breakdown, side-by-side doc viewer. |
 | 05 | 1:15 - 1:35 | Evidence & ELA | Bounding boxes on land deed, ELA compression error heatmap. |
 | 06 | 1:35 - 1:55 | What-If Simulator | Toggle flag exclusions; live recalculation of risk score. |
-| 07 | 1:55 - 2:15 | Fraud Link Graph | Cross-application shared phone & certificate duplicate network. |
-| 08 | 2:15 - 2:35 | Tamper Demo | Side-by-side Clean vs Tampered comparison; 1-click Reset Demo Data. |
+| 07 | 1:55 - 2:15 | Fraud Link Graph | Cross-application shared phone & certificate duplicate network from sidebar. |
+| 08 | 2:15 - 2:35 | Tamper Demo | Side-by-side Clean vs Tampered comparison from sidebar; 1-click Reset Demo Data. |
 | 09 | 2:35 - 2:50 | Audit Trail | SHA-256 chain verification, simulated tampering failure pinpointing Block #2. |
-| 10 | 2:50 - 3:00 | Applicant & Admin | Applicant checklist & pre-check; Admin KPIs and live rule tuning. |
+| 10 | 2:50 - 3:00 | Applicant & Admin | Applicant checklist & pre-check; Admin KPIs, benchmarks, and live rule tuning. |
 
 ---
 
@@ -199,7 +207,7 @@ Evaluated on 30 synthetic test dossiers with ground-truth defect annotations:
 - **OCR Multi-Script Accuracy**: Latin English (98.8%), Devanagari Hindi/Marathi (96.2%), Gujarati (95.4%), Tamil (95.1%), Telugu (94.8%), Bengali (94.6%), Urdu (93.8%).
 
 ### Known Failure Cases and Engineering Mitigations:
-1. **Degraded Rubber Notary Stamps**: Hand-stamped impressions with uneven ink can produce low-confidence OCR text (&lt; 70%). The system routes these fields automatically to Manual Review instead of guessing.
+1. **Degraded Rubber Notary Stamps**: Hand-stamped impressions with uneven ink can produce low-confidence OCR text (< 70%). The system routes these fields automatically to Manual Review instead of guessing.
 2. **Non-Rectilinear Blueprint Geometry**: Curved or non-standard architectural layouts can cause room bounding-box detectors to undercount area by 3-5%. Flagged as advisory for visual confirmation.
 3. **Multi-Pass Compressed Images**: Repeatedly forwarded JPEG scans exhibit elevated global compression noise. The platform pairs ELA with perceptual hashing (pHash) and EXIF metadata consistency to avoid false alarms.
 
@@ -207,16 +215,24 @@ Evaluated on 30 synthetic test dossiers with ground-truth defect annotations:
 
 ## 7. i18n Key Coverage Verification
 
-The project includes an automated verification script that verifies 100% key completeness across all 8 languages:
+The project includes automated verification scripts that verify 100% key completeness across all 8 languages:
 ```bash
+# Key coverage check
 node frontend/scripts/check_i18n.js
+
+# Hard-coded string and policy scanner
+node frontend/scripts/scan_hardcoded_strings.js
+
+# End-to-end 8-language translation and RTL test
+node frontend/scripts/test_e2e_translations.js
 ```
-The script inspects every key in `en.ts` against `hi.ts`, `ta.ts`, `te.ts`, `mr.ts`, `gu.ts`, `bn.ts`, and `ur.ts`, failing the build if any translation key is missing.
 
 ---
 
-## 8. Limitations and Next Steps
+## 8. Limitations and Architectural Notes
 
+- **Removal of Custom Hotkeys and In-App Font Toggles**: In alignment with modern WCAG 2.1 AA and Indian Government Web Guidelines (GIGW), non-standard keyboard shortcuts (which conflicted with assistive technology screen readers) and proprietary text-zoom controls were retired. The interface now relies on native accessible Tab navigation, standard dialog Esc dismissals, and fluid rem-based typography compatible with standard browser zoom up to 200%.
+- **Single Vertical Navigation Architecture**: The former dual top navbar and "More" dropdowns have been consolidated into a unified role-specific sidebar. The desktop rail collapses down to 64px while retaining tooltip labels and aria tags.
 - **Real Government Issuer Gateway**: Current version uses simulated mock adapters with realistic latency and error injection. Production rollout requires signing MOUs with State Land Revenue and Fire Directorate API gateways.
 - **Native-Speaker Translation Review**: While all 8 Indian language dictionaries are structured and complete, final government deployment should undergo vetting by certified native translators.
 - **High-Resolution Vector Blueprint Parsing**: Expanding computer vision parsing from rasterized architectural plans to native AutoCAD DWG/DXF files.

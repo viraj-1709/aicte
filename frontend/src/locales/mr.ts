@@ -2,6 +2,18 @@ import { en } from './en';
 
 export const mr: typeof en = {
   common: {
+    skipToContent: "मुख्य सामग्रीकडे जा",
+    primaryNavigation: "मुख्य नेव्हिगेशन",
+    collapseSidebar: "नेव्हिगेशन संक्षिप्त करा",
+    expandSidebar: "नेव्हिगेशन विस्तृत करा",
+    sectionWorkspace: "कार्यक्षेत्र आणि रांग",
+    sectionTools: "नियामक छाननी साधने",
+    sectionGovernance: "प्रशासन आणि कामकाज",
+    sectionCompliance: "लेखापरीक्षण आणि निदान",
+    sectionResources: "अर्जदार संसाधने",
+    statutoryGuidelines: "वैधानिक मार्गदर्शक तत्त्वे (APH)",
+    technicalHelpdesk: "तांत्रिक मदत केंद्र",
+
     close: "बंद करा",
     cancel: "रद्द करा",
     confirm: "पुष्टी करा",
@@ -59,12 +71,22 @@ export const mr: typeof en = {
     langLabel: "भाषा",
     themeLight: "लाइट मोड",
     themeDark: "डार्क मोड",
-    textSize: "फॉन्ट आकार",
     tour: "मार्गदर्शित दौरा",
     modelCard: "मॉडेल कार्ड आणि निष्पक्षता",
     healthCheck: "सिस्टम स्थिती",
     logout: "साइन आउट",
-    officerBadge: "अधिकारी"
+    officerBadge: "अधिकारी",
+    logoAlt: "AICTE अधिकृत चिन्ह आणि पोर्टल लोगो",
+    moreMenu: "अधिक पर्याय",
+    breadcrumbsHome: "एआयसीटीई पोर्टल",
+    officerBreadcrumb: "छाननी अधिकारी",
+    adminBreadcrumb: "परिषद प्रशासन",
+    applicantBreadcrumb: "संस्थात्मक अर्जदार",
+    queueBreadcrumb: "पुनरावलोकन रांग आणि डॉसियर",
+    rulesBreadcrumb: "केपीआय आणि नियम संरचना",
+    benchmarkBreadcrumb: "मॉडेल मूल्यमापन निकष",
+    checklistBreadcrumb: "कागदपत्र चेकलिस्ट व दुरुस्ती",
+    accessDenied: "प्रवेश नाकारला: आपल्याला हा विभाग पाहण्याची परवानगी नाही."
   },
   pipeline: {
     step1: "1. इनटेक",
@@ -139,7 +161,6 @@ export const mr: typeof en = {
     btnAuditTrail: "ऑडिट ट्रेल पहा",
     btnDownloadPdf: "PDF डाउनलोड करा",
     linkGraphTitle: "अर्ज परस्पर संबंध आलेख",
-    keyboardShortcutsTitle: "कीबोर्ड शॉर्टकट (?)",
     timelineTitle: "केस टाइमलाइन"
   },
   applicant: {

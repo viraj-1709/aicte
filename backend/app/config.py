@@ -11,7 +11,7 @@ DOCUMENTS_DIR.mkdir(parents=True, exist_ok=True)
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 # Project Metadata
-PROJECT_NAME = "AICTE Application Validation Platform (Prototype)"
+PROJECT_NAME = "AICTE Application Validation Platform"
 PRODUCT_PRINCIPLE = (
     "DECISION SUPPORT, NOT A DECISION MAKER: Every flag is advisory, carries evidence "
     "and a plain-language reason, and the final decision always stays with the AICTE scrutiny officer."

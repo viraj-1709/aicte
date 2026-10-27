@@ -21,6 +21,7 @@ import {
   ChevronUp
 } from 'lucide-react';
 import { UserRole } from '../types';
+import { AicteLogo } from '../components/AicteLogo';
 
 export const LoginPage: React.FC = () => {
   const { 
@@ -29,9 +30,7 @@ export const LoginPage: React.FC = () => {
     setLang, 
     theme, 
     toggleTheme, 
-    textSize, 
-    toggleTextSize, 
-    t, 
+t, 
     showToast,
     lockoutCount,
     recordFailedLogin
@@ -155,11 +154,19 @@ export const LoginPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-slate-100 dark:bg-slate-950 text-slate-800 dark:text-slate-100 flex flex-col justify-between selection:bg-govNavy-100 dark:selection:bg-govNavy-800">
+      {/* National Tricolor Strip */}
+      <div className="w-full flex h-1.5 shrink-0" aria-hidden="true">
+        <div className="flex-1 bg-[#FF9933]" />
+        <div className="flex-1 bg-white" />
+        <div className="flex-1 bg-[#138808]" />
+      </div>
+
       {/* 1. Official Header Bar */}
       <header className="bg-govNavy-900 text-white border-b border-govNavy-950 px-4 sm:px-8 py-3.5 shadow-sm">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <div className="w-9 h-9 rounded bg-govNavy-800 border border-govNavy-700 flex items-center justify-center shrink-0">
+            <AicteLogo size="login" />
+            <div className="hidden">
               <ShieldCheck className="w-5 h-5 text-govSaffron-500" />
             </div>
             <div>
@@ -199,16 +206,6 @@ export const LoginPage: React.FC = () => {
               aria-label={theme === 'dark' ? t.header.themeLight : t.header.themeDark}
             >
               {theme === 'dark' ? <Sun className="w-4 h-4 text-amber-300" /> : <Moon className="w-4 h-4" />}
-            </button>
-
-            {/* Text Size (A- / A+) */}
-            <button
-              onClick={toggleTextSize}
-              className="px-2 py-1 rounded bg-govNavy-800 hover:bg-govNavy-700 border border-govNavy-700 text-govNavy-200 hover:text-white font-mono font-bold text-xs"
-              title="Text size (A- / A+)"
-              aria-label="Toggle text size scale"
-            >
-              {textSize === 'normal' ? 'A+' : 'A-'}
             </button>
           </div>
         </div>
@@ -264,7 +261,7 @@ export const LoginPage: React.FC = () => {
               </div>
             )}
 
-            {/* TAB 1: SIGN IN */}
+            {/* TAB 1: LOGIN */}
             {activeTab === 'LOGIN' ? (
               <form onSubmit={handleLoginSubmit} className="space-y-4">
                 {/* Role Selection Radios */}
@@ -514,7 +511,7 @@ export const LoginPage: React.FC = () => {
       {/* 4. Neutral Government Footer (Section 1 branding rule) */}
       <footer className="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-4 px-6 text-xs text-slate-500 text-center">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
-          <span>© AICTE Application Validation Platform (Prototype)</span>
+          <span>© AICTE Application Validation Platform</span>
           <div className="flex items-center space-x-4 text-[11px]">
             <span>Helpdesk</span>
             <span>•</span>

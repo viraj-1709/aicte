@@ -403,5 +403,30 @@ export const api = {
 
   getDocumentElaUrl(id: string): string {
     return `#/document-ela/${id}`;
+  },
+
+  async logAccessDenial(params: { user: string; role: string; target_path: string; reason?: string }) {
+    try {
+      await fetch('http://127.0.0.1:8000/api/auth/log-denial', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-User-Role': params.role,
+          'X-User-Name': params.user
+        },
+        body: JSON.stringify({
+          ...params,
+          timestamp: new Date().toISOString()
+        })
+      });
+    } catch (_) {
+      const key = 'aicte_denials_log';
+      const existing = JSON.parse(localStorage.getItem(key) || '[]');
+      existing.push({
+        ...params,
+        timestamp: new Date().toISOString()
+      });
+      localStorage.setItem(key, JSON.stringify(existing));
+    }
   }
 };

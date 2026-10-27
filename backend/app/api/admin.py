@@ -1,12 +1,13 @@
 import json
 from pathlib import Path
 from typing import Dict, Any, List
-from fastapi import APIRouter, HTTPException, Body
+from fastapi import APIRouter, HTTPException, Body, Depends
+from ..auth import require_role
 from ..config import DATA_DIR
 from .applications import load_applications, save_applications
 from ..pipeline.coordinator import load_rules_config
 
-router = APIRouter(prefix="/api/admin", tags=["Admin Dashboard"])
+router = APIRouter(prefix="/api/admin", tags=["Admin Dashboard"], dependencies=[Depends(require_role(["ADMIN"]))])
 
 def get_rules_path() -> Path:
     return DATA_DIR / "rules_config.json"

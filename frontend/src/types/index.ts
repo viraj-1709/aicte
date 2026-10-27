@@ -1,7 +1,6 @@
 export type UserRole = 'OFFICER' | 'APPLICANT' | 'ADMIN';
 export type Lang = 'en' | 'hi' | 'ta' | 'te' | 'mr' | 'gu' | 'bn' | 'ur';
 export type Theme = 'light' | 'dark';
-export type TextSize = 'normal' | 'large';
 
 export interface UserSession {
   id: string;

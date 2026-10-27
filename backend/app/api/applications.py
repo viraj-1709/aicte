@@ -16,6 +16,7 @@ from ..models.schemas import (
 from ..pipeline.coordinator import run_full_pipeline
 from ..audit.hash_chain import HashChainedAuditLedger
 from ..audit.pdf_exporter import generate_audit_pdf
+from ..auth import require_role
 
 router = APIRouter(prefix="/api/applications", tags=["Applications"])
 
@@ -34,7 +35,7 @@ def save_applications(apps: List[dict]):
     with open(p, "w", encoding="utf-8") as f:
         json.dump(apps, f, indent=2)
 
-@router.get("", response_model=List[dict])
+@router.get("", response_model=List[dict], dependencies=[Depends(require_role(["OFFICER"]))])
 def list_applications(
     category: Optional[str] = None,
     status: Optional[str] = None,
@@ -63,7 +64,7 @@ def list_applications(
 
     return all_processed
 
-@router.get("/{app_id}")
+@router.get("/{app_id}", dependencies=[Depends(require_role(["OFFICER", "APPLICANT"]))])
 def get_application(app_id: str):
     """
     Fetches consolidated case dossier for scrutiny review.
@@ -77,7 +78,7 @@ def get_application(app_id: str):
     app = run_full_pipeline(app, apps, record_audit=False)
     return app
 
-@router.post("/{app_id}/precheck")
+@router.post("/{app_id}/precheck", dependencies=[Depends(require_role(["APPLICANT"]))])
 def applicant_precheck(app_id: str):
     """
     Applicant Pre-Check: Instant non-binding pre-submission feedback.
@@ -105,7 +106,7 @@ def applicant_precheck(app_id: str):
         )
     }
 
-@router.post("/{app_id}/decision")
+@router.post("/{app_id}/decision", dependencies=[Depends(require_role(["OFFICER"]))])
 def record_officer_decision(app_id: str, req: OfficerDecisionRequest):
     """
     Scrutiny Officer Records Statutory Decision (Accept / Reject / Request Clarification).
@@ -153,7 +154,7 @@ def record_officer_decision(app_id: str, req: OfficerDecisionRequest):
         "timestamp": decision_timestamp
     }
 
-@router.post("/{app_id}/feedback")
+@router.post("/{app_id}/feedback", dependencies=[Depends(require_role(["OFFICER"]))])
 def submit_officer_feedback(app_id: str, req: FeedbackRequest):
     """
     Human-in-the-loop feedback:
@@ -202,7 +203,7 @@ def submit_officer_feedback(app_id: str, req: FeedbackRequest):
         "updated_risk_score": app.get("risk_score")
     }
 
-@router.get("/{app_id}/verify-audit")
+@router.get("/{app_id}/verify-audit", dependencies=[Depends(require_role(["OFFICER", "ADMIN"]))])
 def verify_audit_trail(app_id: str):
     """
     Cryptographically verifies SHA-256 chain integrity of the immutable audit ledger.
@@ -220,7 +221,7 @@ def verify_audit_trail(app_id: str):
     res = HashChainedAuditLedger.verify_chain_integrity(chain)
     return res
 
-@router.get("/{app_id}/audit-pdf")
+@router.get("/{app_id}/audit-pdf", dependencies=[Depends(require_role(["OFFICER", "ADMIN"]))])
 def download_audit_pdf(app_id: str):
     """
     Generates and downloads the official AICTE Scrutiny Dossier & Audit Certificate PDF.

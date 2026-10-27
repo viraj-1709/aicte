@@ -39,7 +39,6 @@ export const OfficerWorkspace: React.FC = () => {
     setSelectedAppId, 
     setIsAuditModalOpen, 
     setIsLinkGraphOpen,
-    setIsShortcutsOpen,
     setReasonForAccessAppId,
     showToast, 
     user,
@@ -253,56 +252,7 @@ export const OfficerWorkspace: React.FC = () => {
     }
   };
 
-  // 7. Global Keyboard Shortcuts Listener
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      // Do not trigger shortcuts while typing in form inputs or textareas
-      const target = e.target as HTMLElement;
-      if (['INPUT', 'TEXTAREA', 'SELECT'].includes(target.tagName) || target.isContentEditable) {
-        return;
-      }
-
-      const key = e.key.toUpperCase();
-      if (key === 'A') {
-        e.preventDefault();
-        setDecisionType('ACCEPTED');
-        remarksInputRef.current?.focus();
-        showToast('Shortcut A: Focused Accept decision & remarks.');
-      } else if (key === 'R') {
-        e.preventDefault();
-        setDecisionType('REJECTED');
-        remarksInputRef.current?.focus();
-        showToast('Shortcut R: Focused Reject decision & remarks.');
-      } else if (key === 'C') {
-        e.preventDefault();
-        setShowClarificationModal(true);
-      } else if (key === 'F') {
-        e.preventDefault();
-        setActiveTab('EVIDENCE');
-        showToast('Shortcut F: Switched to explainable flags view.');
-      } else if (key === '?') {
-        e.preventDefault();
-        setIsShortcutsOpen(true);
-      } else if (key === 'N') {
-        e.preventDefault();
-        const currentIndex = queueItems.findIndex(q => q.id === selectedAppId);
-        if (currentIndex !== -1 && currentIndex < queueItems.length - 1) {
-          handleSelectCase(queueItems[currentIndex + 1]);
-          showToast(`Navigated to next case: ${queueItems[currentIndex + 1].reference_no}`);
-        }
-      } else if (key === 'P') {
-        e.preventDefault();
-        const currentIndex = queueItems.findIndex(q => q.id === selectedAppId);
-        if (currentIndex > 0) {
-          handleSelectCase(queueItems[currentIndex - 1]);
-          showToast(`Navigated to previous case: ${queueItems[currentIndex - 1].reference_no}`);
-        }
-      }
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [queueItems, selectedAppId, setIsShortcutsOpen, showToast]);
+  
 
   return (
     <div className="max-w-[1600px] mx-auto px-4 sm:px-6 py-6 space-y-6">
@@ -674,9 +624,6 @@ export const OfficerWorkspace: React.FC = () => {
                   <h3 className="text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300">
                     Explainable Regulatory Flags ({currentApp.flags?.length || 0})
                   </h3>
-                  <span className="text-[11px] text-slate-500">
-                    Keyboard Shortcut: <kbd className="font-mono bg-slate-100 dark:bg-slate-800 px-1 py-0.5 rounded border">F</kbd>
-                  </span>
                 </div>
 
                 {currentApp.flags && currentApp.flags.length > 0 ? (

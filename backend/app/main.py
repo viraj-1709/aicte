@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-from fastapi import FastAPI
+from fastapi import FastAPI, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
@@ -11,11 +11,12 @@ from .config import (
 )
 from .api import applications, documents, admin, tamper_demo, evaluation
 from .issuer_mock.mock_service import mock_issuer_service
+from .auth import router as auth_router, require_role
 
 app = FastAPI(
     title=PROJECT_NAME,
     description=(
-        f"Official Regulatory Validation Platform (Prototype). {PRODUCT_PRINCIPLE}"
+        f"Official Regulatory Validation Platform. {PRODUCT_PRINCIPLE}"
     ),
     version="1.0.0"
 )
@@ -34,13 +35,14 @@ DOCUMENTS_DIR.mkdir(parents=True, exist_ok=True)
 app.mount("/static/documents", StaticFiles(directory=str(DOCUMENTS_DIR)), name="documents")
 
 # Include Core API Routers
+app.include_router(auth_router)
 app.include_router(applications.router)
 app.include_router(documents.router)
 app.include_router(admin.router)
 app.include_router(tamper_demo.router)
 
 # Evaluation Benchmark Endpoint
-@app.get("/api/evaluation/benchmark", tags=["Evaluation"])
+@app.get("/api/evaluation/benchmark", tags=["Evaluation"], dependencies=[Depends(require_role(["ADMIN"]))])
 def get_evaluation_metrics():
     return evaluation.run_evaluation_benchmark()
 

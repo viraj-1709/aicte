@@ -1,5 +1,17 @@
 export const hi = {
   common: {
+    skipToContent: "मुख्य सामग्री पर जाएं",
+    primaryNavigation: "मुख्य नेविगेशन",
+    collapseSidebar: "नेविगेशन संक्षिप्त करें",
+    expandSidebar: "नेविगेशन विस्तृत करें",
+    sectionWorkspace: "कार्यक्षेत्र एवं कतार",
+    sectionTools: "विनियामक संवीक्षा उपकरण",
+    sectionGovernance: "प्रशासन एवं संचालन",
+    sectionCompliance: "लेखापरीक्षा एवं निदान",
+    sectionResources: "आवेदक संसाधन",
+    statutoryGuidelines: "सांविधिक दिशानिर्देश (APH)",
+    technicalHelpdesk: "तकनीकी सहायता केंद्र",
+
     close: "बंद करें",
     cancel: "रद्द करें",
     confirm: "पुष्टि करें",
@@ -57,12 +69,22 @@ export const hi = {
     langLabel: "भाषा",
     themeLight: "लाइट मोड",
     themeDark: "डार्क मोड",
-    textSize: "फ़ॉन्ट आकार",
     tour: "मार्गदर्शित दौरा",
     modelCard: "मॉडल कार्ड और निष्पक्षता",
     healthCheck: "सिस्टम स्थिति",
     logout: "साइन आउट",
-    officerBadge: "अधिकारी"
+    officerBadge: "अधिकारी",
+    logoAlt: "अखिल भारतीय तकनीकी शिक्षा परिषद आधिकारिक प्रतीक व पोर्टल लोगो",
+    moreMenu: "अधिक विकल्प",
+    breadcrumbsHome: "एआईसीटीई पोर्टल",
+    officerBreadcrumb: "जांच अधिकारी",
+    adminBreadcrumb: "परिषद प्रशासन",
+    applicantBreadcrumb: "संस्थागत आवेदक",
+    queueBreadcrumb: "समीक्षा कतार व डोजियर",
+    rulesBreadcrumb: "केपीआई व नियम विन्यास",
+    benchmarkBreadcrumb: "मॉडल मूल्यांकन बेंचमार्क",
+    checklistBreadcrumb: "दस्तावेज़ चेकलिस्ट व सुधार",
+    accessDenied: "पहुंच अस्वीकृत: आपको इस अनुभाग को देखने की अनुमति नहीं है।"
   },
   pipeline: {
     step1: "1. इनटेक",
@@ -137,7 +159,6 @@ export const hi = {
     btnAuditTrail: "ऑडिट ट्रेल देखें",
     btnDownloadPdf: "आधिकारिक संवीक्षा पीडीएफ निर्यात करें",
     linkGraphTitle: "अंतर-आवेदन संबंध और लिंक ग्राफ",
-    keyboardShortcutsTitle: "कीबोर्ड शॉर्टकट (? देखने के लिए)",
     timelineTitle: "केस ऑडिट समयरेखा"
   },
   applicant: {

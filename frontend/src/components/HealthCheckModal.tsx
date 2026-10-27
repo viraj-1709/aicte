@@ -102,7 +102,7 @@ export const HealthCheckModal: React.FC = () => {
             <div className="flex items-center space-x-2">
               <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
               <span className="font-semibold text-emerald-900 dark:text-emerald-200">
-                All 5 core prototype systems are running offline without external dependencies.
+                All 5 core validation systems are running offline without external dependencies.
               </span>
             </div>
             <button
